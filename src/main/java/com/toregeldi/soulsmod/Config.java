@@ -1,4 +1,4 @@
-package com.timewarp.soulsmod;
+package com.toregeldi.soulsmod;
 
 import java.util.List;
 import java.util.Set;
