@@ -1,5 +1,7 @@
 {
   "item.soulsmod.ruby": "Ruby",
   "item.soulsmod.sapphire": "Sapphire",
-  "item.soulsmod.topaz": "Topaz"
+  "item.soulsmod.topaz": "Topaz",
+
+  "block.soulsmod.ruby_ore": "Block of Ruby Ore"
 }

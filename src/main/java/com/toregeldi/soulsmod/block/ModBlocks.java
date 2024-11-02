@@ -1,10 +1,10 @@
 package com.toregeldi.soulsmod.block;
 
-import com.jcraft.jorbis.Block;
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -18,7 +18,15 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+                    .strength(4f).requiresCorrectToolForDrops();
+
+    public static final DeferredBlock<Block> SAPPHIRE_BLOCK = registerBlock("topaz_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops();
+
+    public static final DeferredBlock<Block> TOPAZ_BLOCK = registerBlock("topaz_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops();
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -51,6 +51,8 @@ public class SoulsMod
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.RUBY_BLOCK);
+            event.accept(ModBlocks.SAPPHIRE_BLOCK);
+            event.accept(ModBlocks.TOPAZ_BLOCK);
         }
     }
 
