@@ -42,6 +42,8 @@ public class SoulsMod
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RUBY);
+            event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.TOPAZ);
         }
     }
 
