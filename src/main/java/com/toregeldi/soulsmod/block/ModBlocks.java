@@ -18,15 +18,15 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops();
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> SAPPHIRE_BLOCK = registerBlock("topaz_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops();
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> TOPAZ_BLOCK = registerBlock("topaz_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops();
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
