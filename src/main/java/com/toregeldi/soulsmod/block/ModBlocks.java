@@ -20,7 +20,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-    public static final DeferredBlock<Block> SAPPHIRE_BLOCK = registerBlock("topaz_ore",
+    public static final DeferredBlock<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 

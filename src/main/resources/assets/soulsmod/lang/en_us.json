@@ -3,5 +3,7 @@
   "item.soulsmod.sapphire": "Sapphire",
   "item.soulsmod.topaz": "Topaz",
 
-  "block.soulsmod.ruby_ore": "Block of Ruby Ore"
+  "block.soulsmod.ruby_ore": "Block of Ruby Ore",
+  "block.soulsmod.sapphire_ore": "Block of Sapphire Ore",
+  "block.soulsmod.topaz_ore": "Block of Topaz Ore"
 }
