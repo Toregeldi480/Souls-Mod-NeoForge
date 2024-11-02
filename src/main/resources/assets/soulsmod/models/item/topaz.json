@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "soulsmod:item/topaz.png"
+    "layer0": "soulsmod:item/topaz"
   }
 }
