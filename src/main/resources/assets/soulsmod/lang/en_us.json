@@ -1,9 +1,19 @@
 {
+
+  "item.soulsmod.raw_titanium": "Raw Titanium",
+  "item.soulsmod.titanium_ingot": "Titanium Ingot",
+
   "item.soulsmod.ruby": "Ruby",
   "item.soulsmod.sapphire": "Sapphire",
   "item.soulsmod.topaz": "Topaz",
 
+  "block.soulsmod.titanium_ore": "Block of Titanium Ore",
   "block.soulsmod.ruby_ore": "Block of Ruby Ore",
   "block.soulsmod.sapphire_ore": "Block of Sapphire Ore",
-  "block.soulsmod.topaz_ore": "Block of Topaz Ore"
+  "block.soulsmod.topaz_ore": "Block of Topaz Ore",
+
+  "block.soulsmod.ruby_block": "Block of Ruby",
+
+  "creativetab.soulsmod.jewelry_items": "Jewelry Items",
+  "creativetab.soulsmod.jewelry_blocks": "Jewelry Blocks"
 }

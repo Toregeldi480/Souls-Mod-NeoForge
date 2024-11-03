@@ -1,6 +1,7 @@
 package com.toregeldi.soulsmod;
 
 import com.toregeldi.soulsmod.block.ModBlocks;
+import com.toregeldi.soulsmod.item.ModCreativeModTabs;
 import com.toregeldi.soulsmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,8 @@ public class SoulsMod
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -45,14 +48,18 @@ public class SoulsMod
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RAW_TITANIUM);
+            event.accept(ModItems.TITANIUM_INGOT);
             event.accept(ModItems.RUBY);
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.TOPAZ);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.RUBY_BLOCK);
-            event.accept(ModBlocks.SAPPHIRE_BLOCK);
-            event.accept(ModBlocks.TOPAZ_BLOCK);
+            event.accept(ModBlocks.TITANIUM_ORE);
+            event.accept(ModBlocks.RUBY_ORE);
+            event.accept(ModBlocks.SAPPHIRE_ORE);
+            event.accept(ModBlocks.TOPAZ_ORE);
         }
     }
 

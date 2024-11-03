@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "soulsmod:ruby_block",
+    "soulsmod:ruby_ore",
+    "soulsmod:sapphire_ore",
+    "soulsmod:topaz_ore"
+  ]
+}
