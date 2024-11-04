@@ -1,9 +1,8 @@
 package com.toregeldi.soulsmod;
 
 import com.toregeldi.soulsmod.block.ModBlocks;
-import com.toregeldi.soulsmod.item.ModCreativeModTabs;
+import com.toregeldi.soulsmod.item.ModCreativeTabs;
 import com.toregeldi.soulsmod.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -33,7 +32,7 @@ public class SoulsMod
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
-        ModCreativeModTabs.register(modEventBus);
+        ModCreativeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -48,7 +47,7 @@ public class SoulsMod
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ESTUS_FLASK);
+            event.accept(ModItems.RUBY_APPLE);
             event.accept(ModItems.RAW_TITANIUM);
             event.accept(ModItems.TITANIUM_INGOT);
             event.accept(ModItems.RUBY);

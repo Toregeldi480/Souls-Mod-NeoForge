@@ -12,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class ModCreativeModTabs {
+public class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SoulsMod.MOD_ID);
 
     public static final Supplier<CreativeModeTab> JEWELRY_ITEMS_TAB = CREATIVE_MODE_TAB.register("jewelry_items_tab",
@@ -39,13 +39,23 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.TOPAZ_ORE);
                     }).build());
 
-    public static final Supplier<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TAB.register("food_tab",
+    public static final Supplier<CreativeModeTab> POTION_TAB = CREATIVE_MODE_TAB.register("potion_tab",
             () -> CreativeModeTab.builder()
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "jewelry_blocks_tab"))
-                    .icon(() -> new ItemStack((ModItems.ESTUS_FLASK.get())))
+//                    .icon(() -> new ItemStack(ModItems.ESTUS_FLASK.get()))
+                    .title(Component.translatable("creativetab.soulsmod.potions"))
+                    .displayItems((itemDisplayParameters, output) -> {
+//                        output.accept(ModItems.ESTUS_FLASK);
+                    })
+                    .build());
+
+    public static final Supplier<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TAB.register("food_tab",
+            () -> CreativeModeTab.builder()
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "potion_tab"))
+                    .icon(() -> new ItemStack(ModItems.RUBY_APPLE.get()))
                     .title(Component.translatable("creativetab.soulsmod.foods"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ESTUS_FLASK);
+                        output.accept(ModItems.RUBY_APPLE);
                     })
                     .build());
 
