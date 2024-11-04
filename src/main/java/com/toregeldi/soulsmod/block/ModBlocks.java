@@ -22,7 +22,7 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(4, 6),
                     BlockBehaviour.Properties.of()
                             .strength(3f)
-                            .destroyTime(1f)
+                            .destroyTime(4f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
 

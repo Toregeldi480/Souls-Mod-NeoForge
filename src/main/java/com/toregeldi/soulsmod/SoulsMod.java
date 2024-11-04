@@ -48,6 +48,7 @@ public class SoulsMod
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.ESTUS_FLASK);
             event.accept(ModItems.RAW_TITANIUM);
             event.accept(ModItems.TITANIUM_INGOT);
             event.accept(ModItems.RUBY);

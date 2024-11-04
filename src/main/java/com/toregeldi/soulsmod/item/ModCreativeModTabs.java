@@ -39,6 +39,16 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.TOPAZ_ORE);
                     }).build());
 
+    public static final Supplier<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TAB.register("food_tab",
+            () -> CreativeModeTab.builder()
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "jewelry_blocks_tab"))
+                    .icon(() -> new ItemStack((ModItems.ESTUS_FLASK.get())))
+                    .title(Component.translatable("creativetab.soulsmod.foods"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.ESTUS_FLASK);
+                    })
+                    .build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }
