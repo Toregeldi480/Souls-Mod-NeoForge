@@ -18,17 +18,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SoulsMod.MOD_ID);
 
-
-    public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_block",
-            () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of()
-                            .strength(2f)
-                            .destroyTime(1f)
-                            .requiresCorrectToolForDrops()
-                            .sound(SoundType.AMETHYST)));
-
-
-    public static final DeferredBlock<Block> TITANIUM_ORE = registerBlock("titanium_block",
+    public static final DeferredBlock<Block> TITANIUM_ORE = registerBlock("titanium_ore",
             () -> new DropExperienceBlock(UniformInt.of(4, 6),
                     BlockBehaviour.Properties.of()
                             .strength(3f)

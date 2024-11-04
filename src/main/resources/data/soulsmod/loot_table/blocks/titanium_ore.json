@@ -40,7 +40,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "soulsmod:item/raw_titanium"
+              "name": "soulsmod:raw_titanium"
             }
           ]
         }
@@ -48,5 +48,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soulsmod:item/raw_titanium"
+  "random_sequence": "soulsmod:block/titanium_ore"
 }

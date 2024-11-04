@@ -55,7 +55,6 @@ public class SoulsMod
             event.accept(ModItems.TOPAZ);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.RUBY_BLOCK);
             event.accept(ModBlocks.TITANIUM_ORE);
             event.accept(ModBlocks.RUBY_ORE);
             event.accept(ModBlocks.SAPPHIRE_ORE);

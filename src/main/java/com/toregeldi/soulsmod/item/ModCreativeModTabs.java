@@ -33,7 +33,6 @@ public class ModCreativeModTabs {
                     .icon(() -> new ItemStack(ModBlocks.RUBY_ORE.get()))
                     .title(Component.translatable("creativetab.soulsmod.jewelry_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.RUBY_BLOCK);
                         output.accept(ModBlocks.TITANIUM_ORE);
                         output.accept(ModBlocks.RUBY_ORE);
                         output.accept(ModBlocks.SAPPHIRE_ORE);

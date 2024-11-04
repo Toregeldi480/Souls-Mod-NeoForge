@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "soulsmod:topaz_ore"
+          "name": "soulsmod:topaz"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "soulsmod:item/topaz"
+  "random_sequence": "soulsmod:blocks/topaz_ore"
 }
