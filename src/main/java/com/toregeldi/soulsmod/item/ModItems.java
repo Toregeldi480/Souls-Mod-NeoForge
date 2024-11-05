@@ -10,7 +10,12 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SoulsMod.MOD_ID);
 
 
+    public static final DeferredItem<Item> PALLADIUM_INGOT = ITEMS.register("palladium_ingot",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> RAW_PALLADIUM = ITEMS.register("raw_palladium",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_TITANIUM = ITEMS.register("raw_titanium",
             () -> new Item(new Item.Properties()));
@@ -24,6 +29,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> RUBY_APPLE = ITEMS.register("ruby_apple",
             () -> new Item(new Item.Properties().food(ModFoodProperties.RUBY_APPLE)));
+    public static final DeferredItem<Item> SAPPHIRE_APPLE = ITEMS.register("sapphire_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SAPPHIRE_APPLE)));
 
 
     public static void register(IEventBus eventBus) {

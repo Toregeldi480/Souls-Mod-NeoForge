@@ -8,7 +8,13 @@ public class ModFoodProperties {
     public static final FoodProperties RUBY_APPLE = new FoodProperties.Builder()
             .nutrition(5)
             .alwaysEdible()
-            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000, 2), 100)
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 2500, 2), 100)
             .effect(() -> new MobEffectInstance(MobEffects.HEAL, 10, 2), 100)
+            .build();
+
+    public static final FoodProperties SAPPHIRE_APPLE = new FoodProperties.Builder()
+            .nutrition(5)
+            .alwaysEdible()
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2500, 1), 100)
             .build();
 }

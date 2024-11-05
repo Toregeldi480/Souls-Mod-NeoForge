@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "soulsmod:palladium_ore",
     "soulsmod:titanium_ore",
     "soulsmod:ruby_ore",
     "soulsmod:sapphire_ore",

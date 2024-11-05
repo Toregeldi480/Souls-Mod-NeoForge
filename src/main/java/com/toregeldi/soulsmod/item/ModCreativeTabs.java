@@ -21,6 +21,8 @@ public class ModCreativeTabs {
                     .title(Component.translatable("creativetab.soulsmod.jewelry_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RAW_TITANIUM);
+                        output.accept(ModItems.RAW_PALLADIUM);
+                        output.accept(ModItems.PALLADIUM_INGOT);
                         output.accept(ModItems.TITANIUM_INGOT);
                         output.accept(ModItems.RUBY);
                         output.accept(ModItems.SAPPHIRE);
@@ -33,6 +35,7 @@ public class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModBlocks.RUBY_ORE.get()))
                     .title(Component.translatable("creativetab.soulsmod.jewelry_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.PALLADIUM_ORE);
                         output.accept(ModBlocks.TITANIUM_ORE);
                         output.accept(ModBlocks.RUBY_ORE);
                         output.accept(ModBlocks.SAPPHIRE_ORE);
@@ -56,6 +59,7 @@ public class ModCreativeTabs {
                     .title(Component.translatable("creativetab.soulsmod.foods"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RUBY_APPLE);
+                        output.accept(ModItems.SAPPHIRE_APPLE);
                     })
                     .build());
 

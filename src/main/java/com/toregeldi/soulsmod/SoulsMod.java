@@ -48,13 +48,17 @@ public class SoulsMod
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RUBY_APPLE);
+            event.accept(ModItems.SAPPHIRE_APPLE);
+            event.accept(ModItems.RAW_PALLADIUM);
             event.accept(ModItems.RAW_TITANIUM);
+            event.accept(ModItems.PALLADIUM_INGOT);
             event.accept(ModItems.TITANIUM_INGOT);
             event.accept(ModItems.RUBY);
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.TOPAZ);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.PALLADIUM_ORE);
             event.accept(ModBlocks.TITANIUM_ORE);
             event.accept(ModBlocks.RUBY_ORE);
             event.accept(ModBlocks.SAPPHIRE_ORE);

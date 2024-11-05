@@ -18,6 +18,14 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SoulsMod.MOD_ID);
 
+    public static final DeferredBlock<Block> PALLADIUM_ORE = registerBlock("palladium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+                    BlockBehaviour.Properties.of()
+                            .strength(3f)
+                            .destroyTime(3f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
+
     public static final DeferredBlock<Block> TITANIUM_ORE = registerBlock("titanium_ore",
             () -> new DropExperienceBlock(UniformInt.of(4, 6),
                     BlockBehaviour.Properties.of()
