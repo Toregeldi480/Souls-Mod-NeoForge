@@ -15,7 +15,7 @@ import java.util.function.Supplier;
 public class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SoulsMod.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> JEWELRY_ITEMS_TAB = CREATIVE_MODE_TAB.register("jewelry_items_tab",
+    public static final Supplier<CreativeModeTab> FOSSIL_ITEMS_TAB = CREATIVE_MODE_TAB.register("fossil_items_tab",
             () ->  CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.RUBY.get()))
                     .title(Component.translatable("creativetab.soulsmod.jewelry_items"))
@@ -29,7 +29,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.TOPAZ);
                     }).build());
 
-    public static final Supplier<CreativeModeTab> JEWELRY_BLOCKS_TAB = CREATIVE_MODE_TAB.register("jewelry_blocks_tab",
+    public static final Supplier<CreativeModeTab> FOSSIL_BLOCKS_TAB = CREATIVE_MODE_TAB.register("fossils_blocks_tab",
             () ->  CreativeModeTab.builder()
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "jewelry_items_tab"))
                     .icon(() -> new ItemStack(ModBlocks.RUBY_ORE.get()))
