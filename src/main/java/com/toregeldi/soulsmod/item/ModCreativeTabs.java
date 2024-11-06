@@ -18,10 +18,11 @@ public class ModCreativeTabs {
     public static final Supplier<CreativeModeTab> FOSSIL_ITEMS_TAB = CREATIVE_MODE_TAB.register("fossil_items_tab",
             () ->  CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.RUBY.get()))
-                    .title(Component.translatable("creativetab.soulsmod.jewelry_items"))
+                    .title(Component.translatable("creativetab.soulsmod.fossil_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RAW_TITANIUM);
                         output.accept(ModItems.RAW_PALLADIUM);
+                        output.accept(ModItems.SHROOMITE_INGOT);
                         output.accept(ModItems.PALLADIUM_INGOT);
                         output.accept(ModItems.TITANIUM_INGOT);
                         output.accept(ModItems.RUBY);
@@ -31,9 +32,9 @@ public class ModCreativeTabs {
 
     public static final Supplier<CreativeModeTab> FOSSIL_BLOCKS_TAB = CREATIVE_MODE_TAB.register("fossils_blocks_tab",
             () ->  CreativeModeTab.builder()
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "jewelry_items_tab"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "fossil_items_tab"))
                     .icon(() -> new ItemStack(ModBlocks.RUBY_ORE.get()))
-                    .title(Component.translatable("creativetab.soulsmod.jewelry_blocks"))
+                    .title(Component.translatable("creativetab.soulsmod.fossil_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.PALLADIUM_ORE);
                         output.accept(ModBlocks.TITANIUM_ORE);
@@ -42,9 +43,9 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.TOPAZ_ORE);
                     }).build());
 
-    public static final Supplier<CreativeModeTab> POTION_TAB = CREATIVE_MODE_TAB.register("potion_tab",
+    public static final Supplier<CreativeModeTab> POTION_TAB = CREATIVE_MODE_TAB.register("potions_tab",
             () -> CreativeModeTab.builder()
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "jewelry_blocks_tab"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "fossil_blocks_tab"))
 //                    .icon(() -> new ItemStack(ModItems.ESTUS_FLASK.get()))
                     .title(Component.translatable("creativetab.soulsmod.potions"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -52,9 +53,9 @@ public class ModCreativeTabs {
                     })
                     .build());
 
-    public static final Supplier<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TAB.register("food_tab",
+    public static final Supplier<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TAB.register("foods_tab",
             () -> CreativeModeTab.builder()
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "potion_tab"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "potions_tab"))
                     .icon(() -> new ItemStack(ModItems.RUBY_APPLE.get()))
                     .title(Component.translatable("creativetab.soulsmod.foods"))
                     .displayItems((itemDisplayParameters, output) -> {

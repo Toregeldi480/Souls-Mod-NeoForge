@@ -51,6 +51,7 @@ public class SoulsMod
             event.accept(ModItems.SAPPHIRE_APPLE);
             event.accept(ModItems.RAW_PALLADIUM);
             event.accept(ModItems.RAW_TITANIUM);
+            event.accept(ModItems.SHROOMITE_INGOT);
             event.accept(ModItems.PALLADIUM_INGOT);
             event.accept(ModItems.TITANIUM_INGOT);
             event.accept(ModItems.RUBY);

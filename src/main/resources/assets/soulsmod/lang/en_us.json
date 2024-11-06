@@ -2,6 +2,7 @@
   "item.soulsmod.raw_palladium": "Raw Palladium",
   "item.soulsmod.raw_titanium": "Raw Titanium",
 
+  "item.soulsmod.shroomite_ingot": "Shroomite Ingot",
   "item.soulsmod.palladium_ingot": "Palladium Ingot",
   "item.soulsmod.titanium_ingot": "Titanium Ingot",
 
@@ -22,5 +23,6 @@
 
   "creativetab.soulsmod.fossil_items": "Fossil Items",
   "creativetab.soulsmod.fossil_blocks": "Fossil Blocks",
+  "creativetab.soulsmod.potions": "Potions",
   "creativetab.soulsmod.foods": "Foods"
 }
