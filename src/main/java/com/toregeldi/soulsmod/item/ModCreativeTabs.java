@@ -23,6 +23,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.RAW_TITANIUM);
                         output.accept(ModItems.RAW_PALLADIUM);
 
+                        output.accept(ModItems.SPECTRE_INGOT);
                         output.accept(ModItems.CHLOROPHYTE_INGOT);
                         output.accept(ModItems.SHROOMITE_INGOT);
                         output.accept(ModItems.PALLADIUM_INGOT);
@@ -33,7 +34,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.TOPAZ);
                     }).build());
 
-    public static final Supplier<CreativeModeTab> FOSSIL_BLOCKS_TAB = CREATIVE_MODE_TAB.register("fossils_blocks_tab",
+    public static final Supplier<CreativeModeTab> FOSSIL_BLOCKS_TAB = CREATIVE_MODE_TAB.register("fossil_blocks_tab",
             () ->  CreativeModeTab.builder()
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "fossil_items_tab"))
                     .icon(() -> new ItemStack(ModBlocks.RUBY_ORE.get()))
