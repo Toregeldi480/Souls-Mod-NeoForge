@@ -9,6 +9,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SoulsMod.MOD_ID);
 
+    public static final DeferredItem<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> HELLSTONE_INGOT = ITEMS.register("hellstone_ingot",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CHLOROPHYTE_INGOT = ITEMS.register("chlorophyte_ingot",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SPECTRE_INGOT = ITEMS.register("spectre_ingot",

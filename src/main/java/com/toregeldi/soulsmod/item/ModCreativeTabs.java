@@ -23,8 +23,10 @@ public class ModCreativeTabs {
                         output.accept(ModItems.RAW_TITANIUM);
                         output.accept(ModItems.RAW_PALLADIUM);
 
-                        output.accept(ModItems.SPECTRE_INGOT);
+                        output.accept(ModItems.PLATINUM_INGOT);
+                        output.accept(ModItems.HELLSTONE_INGOT);
                         output.accept(ModItems.CHLOROPHYTE_INGOT);
+                        output.accept(ModItems.SPECTRE_INGOT);
                         output.accept(ModItems.SHROOMITE_INGOT);
                         output.accept(ModItems.PALLADIUM_INGOT);
                         output.accept(ModItems.TITANIUM_INGOT);

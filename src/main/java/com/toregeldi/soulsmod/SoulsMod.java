@@ -53,6 +53,9 @@ public class SoulsMod
             event.accept(ModItems.RAW_PALLADIUM);
             event.accept(ModItems.RAW_TITANIUM);
 
+
+            event.accept(ModItems.PLATINUM_INGOT);
+            event.accept(ModItems.HELLSTONE_INGOT);
             event.accept(ModItems.CHLOROPHYTE_INGOT);
             event.accept(ModItems.SPECTRE_INGOT);
             event.accept(ModItems.SHROOMITE_INGOT);
