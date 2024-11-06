@@ -22,9 +22,12 @@ public class ModCreativeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RAW_TITANIUM);
                         output.accept(ModItems.RAW_PALLADIUM);
+
+                        output.accept(ModItems.CHLOROPHYTE_INGOT);
                         output.accept(ModItems.SHROOMITE_INGOT);
                         output.accept(ModItems.PALLADIUM_INGOT);
                         output.accept(ModItems.TITANIUM_INGOT);
+
                         output.accept(ModItems.RUBY);
                         output.accept(ModItems.SAPPHIRE);
                         output.accept(ModItems.TOPAZ);
