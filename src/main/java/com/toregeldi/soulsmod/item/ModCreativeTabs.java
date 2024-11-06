@@ -70,6 +70,15 @@ public class ModCreativeTabs {
                     })
                     .build());
 
+    public static final Supplier<CreativeModeTab> COMBAT_TAB = CREATIVE_MODE_TAB.register("combat_tab",
+            () -> CreativeModeTab.builder()
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "foods_tab"))
+                    .icon(() -> new ItemStack(ModItems.RUBY_APPLE.get()))
+                    .title(Component.translatable("creativetab.soulsmod.combat"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                    })
+                    .build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }

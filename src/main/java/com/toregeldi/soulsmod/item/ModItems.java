@@ -1,6 +1,7 @@
 package com.toregeldi.soulsmod.item;
 
 import com.toregeldi.soulsmod.SoulsMod;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
