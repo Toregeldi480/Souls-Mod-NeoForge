@@ -53,6 +53,13 @@ public class SoulsMod
             event.accept(ModItems.RAW_PALLADIUM);
             event.accept(ModItems.RAW_TITANIUM);
 
+            event.accept(ModItems.PLATINUM_HELMET);
+            event.accept(ModItems.HELLSTONE_HELMET);
+            event.accept(ModItems.CHLOROPHYTE_HELMET);
+            event.accept(ModItems.SPECTRE_HELMET);
+            event.accept(ModItems.SHROOMITE_HELMET);
+            event.accept(ModItems.PALLADIUM_HELMET);
+            event.accept(ModItems.TITANIUM_HELMET);
 
             event.accept(ModItems.PLATINUM_INGOT);
             event.accept(ModItems.HELLSTONE_INGOT);

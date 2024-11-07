@@ -10,6 +10,14 @@
   "item.soulsmod.palladium_ingot": "Palladium Ingot",
   "item.soulsmod.titanium_ingot": "Titanium Ingot",
 
+  "item.soulsmod.platinum_helmet": "Platinum Helmet",
+  "item.soulsmod.hellstone_helmet": "Hellstone Helmet",
+  "item.soulsmod.chlorophyte_helmet": "Chlorophyte Helmet",
+  "item.soulsmod.spectre_helmet": "Spectre Helmet",
+  "item.soulsmod.shroomite_helmet": "Shroomite Helmet",
+  "item.soulsmod.palladium_helmet": "Palladium Helmet",
+  "item.soulsmod.titanium_helmet": "Titanium Helmet",
+
   "block.soulsmod.palladium_ore": "Block of Palladium Ore",
   "block.soulsmod.titanium_ore": "Block of Titanium Ore",
   "block.soulsmod.ruby_ore": "Block of Ruby Ore",

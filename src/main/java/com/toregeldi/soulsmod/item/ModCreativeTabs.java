@@ -17,7 +17,7 @@ public class ModCreativeTabs {
 
     public static final Supplier<CreativeModeTab> FOSSIL_ITEMS_TAB = CREATIVE_MODE_TAB.register("fossil_items_tab",
             () ->  CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.RUBY.get()))
+                    .icon(() -> new ItemStack(ModItems.PLATINUM_INGOT.get()))
                     .title(Component.translatable("creativetab.soulsmod.fossil_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RAW_TITANIUM);
@@ -73,9 +73,16 @@ public class ModCreativeTabs {
     public static final Supplier<CreativeModeTab> COMBAT_TAB = CREATIVE_MODE_TAB.register("combat_tab",
             () -> CreativeModeTab.builder()
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "foods_tab"))
-                    .icon(() -> new ItemStack(ModItems.RUBY_APPLE.get()))
+                    .icon(() -> new ItemStack(ModItems.PLATINUM_HELMET.get()))
                     .title(Component.translatable("creativetab.soulsmod.combat"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.PLATINUM_HELMET);
+                        output.accept(ModItems.HELLSTONE_HELMET);
+                        output.accept(ModItems.CHLOROPHYTE_HELMET);
+                        output.accept(ModItems.SPECTRE_HELMET);
+                        output.accept(ModItems.SHROOMITE_HELMET);
+                        output.accept(ModItems.PALLADIUM_HELMET);
+                        output.accept(ModItems.TITANIUM_HELMET);
                     })
                     .build());
 
