@@ -10,6 +10,11 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SoulsMod.MOD_ID);
 
+    public static final DeferredItem<Item> RAW_PALLADIUM = ITEMS.register("raw_palladium",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_TITANIUM = ITEMS.register("raw_titanium",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> HELLSTONE_INGOT = ITEMS.register("hellstone_ingot",
@@ -23,11 +28,6 @@ public class ModItems {
     public static final DeferredItem<Item> PALLADIUM_INGOT = ITEMS.register("palladium_ingot",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot",
-            () -> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> RAW_PALLADIUM = ITEMS.register("raw_palladium",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RAW_TITANIUM = ITEMS.register("raw_titanium",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> RUBY = ITEMS.register("ruby",
