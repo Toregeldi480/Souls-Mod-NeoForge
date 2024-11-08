@@ -1,0 +1,16 @@
+// 1.21	2024-11-08T02:15:59.964425022	Block States: soulsmod
+a90203984bc30aa59e718dce03b61f5b9e710d6c assets/soulsmod/blockstates/palladium_ore.json
+6928f1f691ffe15b292602e0d1eea94d13253d5e assets/soulsmod/blockstates/ruby_ore.json
+8f6882a261e3524cce4fb6965d9decc49ab0ccb0 assets/soulsmod/blockstates/sapphire_ore.json
+14590293dcd8ce1099ef5928f6237d66d6f3acf6 assets/soulsmod/blockstates/titanium_ore.json
+999880fe2f42aa4f96934dfde4bc52fa00c7cc11 assets/soulsmod/blockstates/topaz_ore.json
+4789c228d8c8a5e8f99d0129805b1678dd7f342d assets/soulsmod/models/block/palladium_ore.json
+3d08e59a80ee9b87438c6f1740265a49c1babdc8 assets/soulsmod/models/block/ruby_ore.json
+9b6314e52404d62a1ac9a071c01812127edd33e6 assets/soulsmod/models/block/sapphire_ore.json
+4c66639e06fb0d7c6e32e57313e66a6d335f2c2b assets/soulsmod/models/block/titanium_ore.json
+0dfdf280bdc355b3b60c38aba5747e98ddc54657 assets/soulsmod/models/block/topaz_ore.json
+5cfdc11ac7781b98758f3b6b8083acd8eaffa9ea assets/soulsmod/models/item/palladium_ore.json
+952781dbf0d8aa1967406a3a7c747248ab76e409 assets/soulsmod/models/item/ruby_ore.json
+1f5b5604183cd1b5d1fe4a0c62a12ce06d679d0f assets/soulsmod/models/item/sapphire_ore.json
+956263f549915d34cb959ce38ffc6d4db9bdfd7d assets/soulsmod/models/item/titanium_ore.json
+b5e9722733f48683b0540524d396ee96037794ca assets/soulsmod/models/item/topaz_ore.json
