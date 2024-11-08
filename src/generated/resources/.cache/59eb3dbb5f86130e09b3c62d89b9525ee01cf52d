@@ -1,5 +1,7 @@
-// 1.21	2024-11-08T01:32:52.074081291	Loot Tables
+// 1.21	2024-11-08T03:46:18.041918775	Loot Tables
+27dd0285fc6fa437e2ed516dce3925616d014ec0 data/soulsmod/loot_table/blocks/chlorophyte_ore.json
 923b666bd2ee697cfde8150fb6d8a3966a52dc10 data/soulsmod/loot_table/blocks/palladium_ore.json
+948f0cfd30ce77f77f0ed7e643e5ad73a8848b9e data/soulsmod/loot_table/blocks/platinum_ore.json
 d059a2522488e91e908a157aa38ac7ddd9f69179 data/soulsmod/loot_table/blocks/ruby_ore.json
 b35383e8fa8e0451fb63f5ea8c29bd46ed029129 data/soulsmod/loot_table/blocks/sapphire_ore.json
 abe5e25065018c431118264a04752b1efa0680ed data/soulsmod/loot_table/blocks/titanium_ore.json

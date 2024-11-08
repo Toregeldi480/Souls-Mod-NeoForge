@@ -10,7 +10,16 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SoulsMod.MOD_ID);
 
-
+    public static final DeferredItem<Item> RAW_PLATINUM = ITEMS.register("raw_platinum",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_HELLSTONE = ITEMS.register("raw_hellstone",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_CHLOROPHYTE = ITEMS.register("raw_chlorophyte",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_SPECTRE = ITEMS.register("raw_spectre",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_SHROOMITE = ITEMS.register("raw_shroomite",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_PALLADIUM = ITEMS.register("raw_palladium",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_TITANIUM = ITEMS.register("raw_titanium",

@@ -20,8 +20,13 @@ public class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModItems.PLATINUM_INGOT.get()))
                     .title(Component.translatable("creativetab.soulsmod.fossil_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.RAW_TITANIUM);
+                        output.accept(ModItems.RAW_PLATINUM);
+                        output.accept(ModItems.RAW_HELLSTONE);
+                        output.accept(ModItems.RAW_CHLOROPHYTE);
+                        output.accept(ModItems.RAW_SPECTRE);
+                        output.accept(ModItems.RAW_SHROOMITE);
                         output.accept(ModItems.RAW_PALLADIUM);
+                        output.accept(ModItems.RAW_TITANIUM);
 
                         output.accept(ModItems.PLATINUM_INGOT);
                         output.accept(ModItems.HELLSTONE_INGOT);
@@ -42,6 +47,8 @@ public class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModBlocks.RUBY_ORE.get()))
                     .title(Component.translatable("creativetab.soulsmod.fossil_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.PLATINUM_ORE);
+                        output.accept(ModBlocks.CHLOROPHYTE_ORE);
                         output.accept(ModBlocks.PALLADIUM_ORE);
                         output.accept(ModBlocks.TITANIUM_ORE);
                         output.accept(ModBlocks.RUBY_ORE);
@@ -83,6 +90,33 @@ public class ModCreativeTabs {
                         output.accept(ModItems.SHROOMITE_HELMET);
                         output.accept(ModItems.PALLADIUM_HELMET);
                         output.accept(ModItems.TITANIUM_HELMET);
+
+
+                        output.accept(ModItems.PLATINUM_CHESTPLATE);
+                        output.accept(ModItems.HELLSTONE_CHESTPLATE);
+                        output.accept(ModItems.CHLOROPHYTE_CHESTPLATE);
+                        output.accept(ModItems.SPECTRE_CHESTPLATE);
+                        output.accept(ModItems.SHROOMITE_CHESTPLATE);
+                        output.accept(ModItems.PALLADIUM_CHESTPLATE);
+                        output.accept(ModItems.TITANIUM_CHESTPLATE);
+
+
+                        output.accept(ModItems.PLATINUM_LEGGINGS);
+                        output.accept(ModItems.HELLSTONE_LEGGINGS);
+                        output.accept(ModItems.CHLOROPHYTE_LEGGINGS);
+                        output.accept(ModItems.SPECTRE_LEGGINGS);
+                        output.accept(ModItems.SHROOMITE_LEGGINGS);
+                        output.accept(ModItems.PALLADIUM_LEGGINGS);
+                        output.accept(ModItems.TITANIUM_LEGGINGS);
+
+
+                        output.accept(ModItems.PLATINUM_BOOTS);
+                        output.accept(ModItems.HELLSTONE_BOOTS);
+                        output.accept(ModItems.CHLOROPHYTE_BOOTS);
+                        output.accept(ModItems.SPECTRE_BOOTS);
+                        output.accept(ModItems.SHROOMITE_BOOTS);
+                        output.accept(ModItems.PALLADIUM_BOOTS);
+                        output.accept(ModItems.TITANIUM_BOOTS);
                     })
                     .build());
 

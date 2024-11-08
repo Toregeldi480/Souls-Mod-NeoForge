@@ -1,4 +1,4 @@
-// 1.21	2024-11-08T02:15:59.962990512	Tags for minecraft:block mod id soulsmod
-d2ef542a8e9c82ebd30d58104567f5bd203f42b1 data/minecraft/tags/block/mineable/pickaxe.json
-0e27571a11b5b8a05e62209f84efbd7a412edaa2 data/minecraft/tags/block/needs_diamond_tool.json
-155d7f931dde6d685063460b3b69f266254558c6 data/minecraft/tags/block/needs_iron_tool.json
+// 1.21	2024-11-08T03:46:18.040379286	Tags for minecraft:block mod id soulsmod
+112925565307638650c3af045601864c0b74f9b3 data/minecraft/tags/block/mineable/pickaxe.json
+79fb6fbf9986430e81f01a2332775b07ee9ba680 data/minecraft/tags/block/needs_diamond_tool.json
+340424624dfdb723861581f964c3011ea35dae78 data/minecraft/tags/block/needs_iron_tool.json

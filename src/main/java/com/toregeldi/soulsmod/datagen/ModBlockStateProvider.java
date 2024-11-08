@@ -14,8 +14,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        blockWithItem(ModBlocks.PLATINUM_ORE);
+        blockWithItem(ModBlocks.CHLOROPHYTE_ORE);
         blockWithItem(ModBlocks.PALLADIUM_ORE);
         blockWithItem(ModBlocks.TITANIUM_ORE);
+
         blockWithItem(ModBlocks.RUBY_ORE);
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
         blockWithItem(ModBlocks.TOPAZ_ORE);

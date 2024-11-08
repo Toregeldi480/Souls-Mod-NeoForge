@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_soulsmod:spectre_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "soulsmod:spectre_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "soulsmod:spectre_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_soulsmod:spectre_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "soulsmod:spectre_helmet"
+    ]
+  }
+}

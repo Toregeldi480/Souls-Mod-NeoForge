@@ -13,8 +13,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        basicItem(ModItems.RAW_PLATINUM.get());
+        basicItem(ModItems.RAW_HELLSTONE.get());
+        basicItem(ModItems.RAW_CHLOROPHYTE.get());
+        basicItem(ModItems.RAW_SPECTRE.get());
+        basicItem(ModItems.RAW_SHROOMITE.get());
         basicItem(ModItems.RAW_PALLADIUM.get());
         basicItem(ModItems.RAW_TITANIUM.get());
+
         basicItem(ModItems.PLATINUM_INGOT.get());
         basicItem(ModItems.HELLSTONE_INGOT.get());
         basicItem(ModItems.CHLOROPHYTE_INGOT.get());
@@ -22,6 +28,30 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SHROOMITE_INGOT.get());
         basicItem(ModItems.PALLADIUM_INGOT.get());
         basicItem(ModItems.TITANIUM_INGOT.get());
+
+        basicItem(ModItems.PLATINUM_CHESTPLATE.get());
+        basicItem(ModItems.HELLSTONE_CHESTPLATE.get());
+        basicItem(ModItems.CHLOROPHYTE_CHESTPLATE.get());
+        basicItem(ModItems.SPECTRE_CHESTPLATE.get());
+        basicItem(ModItems.SHROOMITE_CHESTPLATE.get());
+        basicItem(ModItems.PALLADIUM_CHESTPLATE.get());
+        basicItem(ModItems.TITANIUM_CHESTPLATE.get());
+
+        basicItem(ModItems.PLATINUM_LEGGINGS.get());
+        basicItem(ModItems.HELLSTONE_LEGGINGS.get());
+        basicItem(ModItems.CHLOROPHYTE_LEGGINGS.get());
+        basicItem(ModItems.SPECTRE_LEGGINGS.get());
+        basicItem(ModItems.SHROOMITE_LEGGINGS.get());
+        basicItem(ModItems.PALLADIUM_LEGGINGS.get());
+        basicItem(ModItems.TITANIUM_LEGGINGS.get());
+
+        basicItem(ModItems.PLATINUM_BOOTS.get());
+        basicItem(ModItems.HELLSTONE_BOOTS.get());
+        basicItem(ModItems.CHLOROPHYTE_BOOTS.get());
+        basicItem(ModItems.SPECTRE_BOOTS.get());
+        basicItem(ModItems.SHROOMITE_HELMET.get());
+        basicItem(ModItems.PALLADIUM_BOOTS.get());
+        basicItem(ModItems.TITANIUM_BOOTS.get());
 
         basicItem(ModItems.PLATINUM_HELMET.get());
         basicItem(ModItems.HELLSTONE_HELMET.get());

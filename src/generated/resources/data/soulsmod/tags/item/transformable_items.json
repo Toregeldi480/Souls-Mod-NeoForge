@@ -1,5 +1,10 @@
 {
   "values": [
+    "soulsmod:raw_platinum",
+    "soulsmod:raw_hellstone",
+    "soulsmod:raw_chlorophyte",
+    "soulsmod:raw_spectre",
+    "soulsmod:raw_shroomite",
     "soulsmod:raw_palladium",
     "soulsmod:raw_titanium"
   ]

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_soulsmod:palladium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "soulsmod:palladium_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "soulsmod:palladium_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_soulsmod:palladium_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "soulsmod:palladium_helmet"
+    ]
+  }
+}

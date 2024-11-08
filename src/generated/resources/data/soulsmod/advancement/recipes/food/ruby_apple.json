@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_soulsmod:ruby": {
+      "conditions": {
+        "items": [
+          {
+            "items": "soulsmod:ruby"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "soulsmod:ruby_apple"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_soulsmod:ruby"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "soulsmod:ruby_apple"
+    ]
+  }
+}

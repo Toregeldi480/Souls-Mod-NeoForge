@@ -50,6 +50,11 @@ public class SoulsMod
             event.accept(ModItems.RUBY_APPLE);
             event.accept(ModItems.SAPPHIRE_APPLE);
 
+            event.accept(ModItems.RAW_PLATINUM);
+            event.accept(ModItems.RAW_HELLSTONE);
+            event.accept(ModItems.RAW_CHLOROPHYTE);
+            event.accept(ModItems.RAW_SPECTRE);
+            event.accept(ModItems.RAW_SHROOMITE);
             event.accept(ModItems.RAW_PALLADIUM);
             event.accept(ModItems.RAW_TITANIUM);
 
@@ -60,6 +65,30 @@ public class SoulsMod
             event.accept(ModItems.SHROOMITE_HELMET);
             event.accept(ModItems.PALLADIUM_HELMET);
             event.accept(ModItems.TITANIUM_HELMET);
+
+            event.accept(ModItems.PLATINUM_CHESTPLATE);
+            event.accept(ModItems.HELLSTONE_CHESTPLATE);
+            event.accept(ModItems.CHLOROPHYTE_CHESTPLATE);
+            event.accept(ModItems.SPECTRE_CHESTPLATE);
+            event.accept(ModItems.SHROOMITE_CHESTPLATE);
+            event.accept(ModItems.PALLADIUM_CHESTPLATE);
+            event.accept(ModItems.TITANIUM_CHESTPLATE);
+
+            event.accept(ModItems.PLATINUM_LEGGINGS);
+            event.accept(ModItems.HELLSTONE_LEGGINGS);
+            event.accept(ModItems.CHLOROPHYTE_LEGGINGS);
+            event.accept(ModItems.SPECTRE_LEGGINGS);
+            event.accept(ModItems.SHROOMITE_LEGGINGS);
+            event.accept(ModItems.PALLADIUM_LEGGINGS);
+            event.accept(ModItems.TITANIUM_LEGGINGS);
+
+            event.accept(ModItems.PLATINUM_BOOTS);
+            event.accept(ModItems.HELLSTONE_BOOTS);
+            event.accept(ModItems.CHLOROPHYTE_BOOTS);
+            event.accept(ModItems.SPECTRE_BOOTS);
+            event.accept(ModItems.SHROOMITE_BOOTS);
+            event.accept(ModItems.PALLADIUM_BOOTS);
+            event.accept(ModItems.TITANIUM_BOOTS);
 
             event.accept(ModItems.PLATINUM_INGOT);
             event.accept(ModItems.HELLSTONE_INGOT);

@@ -20,6 +20,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
+                .add(ModItems.RAW_PLATINUM.get())
+                .add(ModItems.RAW_HELLSTONE.get())
+                .add(ModItems.RAW_CHLOROPHYTE.get())
+                .add(ModItems.RAW_SPECTRE.get())
+                .add(ModItems.RAW_SHROOMITE.get())
                 .add(ModItems.RAW_PALLADIUM.get())
                 .add(ModItems.RAW_TITANIUM.get());
     }
