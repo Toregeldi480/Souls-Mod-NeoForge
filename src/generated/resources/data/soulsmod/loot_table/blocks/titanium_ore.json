@@ -49,7 +49,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "soulsmod:titanium_ingot"
+              "name": "soulsmod:raw_titanium"
             }
           ]
         }

@@ -1,4 +1,4 @@
-// 1.21	2024-11-08T03:46:18.042640764	Item Models: soulsmod
+// 1.21	2024-11-08T05:14:58.239867308	Item Models: soulsmod
 c2974fb3e31577bf16b16ae2739abebdb3c448e6 assets/soulsmod/models/item/chlorophyte_boots.json
 7c47a8b71d7d5b245a9607e128c8203b72827547 assets/soulsmod/models/item/chlorophyte_chestplate.json
 22c67adec357c1b6692cf57dc4f241cf9a7a1a7b assets/soulsmod/models/item/chlorophyte_helmet.json
@@ -30,6 +30,7 @@ b4fc544e5982cf971ae05e252c04e2acaadca8ae assets/soulsmod/models/item/ruby.json
 50786b2851efb9ce2ce595eebadd2f528150ff91 assets/soulsmod/models/item/ruby_apple.json
 f0054057f3f6dd7b4833156225e48c2f5bbe365e assets/soulsmod/models/item/sapphire.json
 116ebe7f16ebeb5cad44ac3b26c00a839e748a76 assets/soulsmod/models/item/sapphire_apple.json
+8f1d1aa1a94e2b84abc3ca6493dd4ea98676aee9 assets/soulsmod/models/item/shroomite_boots.json
 a71c4ca9fd0d7cebd021a6edd90134573ec5caf6 assets/soulsmod/models/item/shroomite_chestplate.json
 50f90638c935fe8efc18987ee423920961c3481a assets/soulsmod/models/item/shroomite_helmet.json
 7b15d1cb315d786b7bc68d5f8b0d3d894cf723e6 assets/soulsmod/models/item/shroomite_ingot.json
@@ -45,3 +46,4 @@ be188a27c0c682966239b7337ad9f6b5885eca80 assets/soulsmod/models/item/titanium_he
 f3bdfb7d77a4d3cc6537fc756a1b1cd749899ec3 assets/soulsmod/models/item/titanium_ingot.json
 56f16825fae600af4f1a2646d00a61a74bbb6afc assets/soulsmod/models/item/titanium_leggings.json
 13b002331e357d6492d78a01b399a0e3ed67bb3a assets/soulsmod/models/item/topaz.json
+33b7b3f2e048ea0ec0195cb2dbc3b23f493ca982 assets/soulsmod/models/item/topaz_apple.json

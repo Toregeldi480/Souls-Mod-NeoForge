@@ -29,6 +29,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.PALLADIUM_INGOT.get());
         basicItem(ModItems.TITANIUM_INGOT.get());
 
+        basicItem(ModItems.PLATINUM_HELMET.get());
+        basicItem(ModItems.HELLSTONE_HELMET.get());
+        basicItem(ModItems.CHLOROPHYTE_HELMET.get());
+        basicItem(ModItems.SPECTRE_HELMET.get());
+        basicItem(ModItems.SHROOMITE_HELMET.get());
+        basicItem(ModItems.PALLADIUM_HELMET.get());
+        basicItem(ModItems.TITANIUM_HELMET.get());
+
         basicItem(ModItems.PLATINUM_CHESTPLATE.get());
         basicItem(ModItems.HELLSTONE_CHESTPLATE.get());
         basicItem(ModItems.CHLOROPHYTE_CHESTPLATE.get());
@@ -49,17 +57,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.HELLSTONE_BOOTS.get());
         basicItem(ModItems.CHLOROPHYTE_BOOTS.get());
         basicItem(ModItems.SPECTRE_BOOTS.get());
-        basicItem(ModItems.SHROOMITE_HELMET.get());
+        basicItem(ModItems.SHROOMITE_BOOTS.get());
         basicItem(ModItems.PALLADIUM_BOOTS.get());
         basicItem(ModItems.TITANIUM_BOOTS.get());
-
-        basicItem(ModItems.PLATINUM_HELMET.get());
-        basicItem(ModItems.HELLSTONE_HELMET.get());
-        basicItem(ModItems.CHLOROPHYTE_HELMET.get());
-        basicItem(ModItems.SPECTRE_HELMET.get());
-        basicItem(ModItems.SHROOMITE_HELMET.get());
-        basicItem(ModItems.PALLADIUM_HELMET.get());
-        basicItem(ModItems.TITANIUM_HELMET.get());
 
         basicItem(ModItems.RUBY.get());
         basicItem(ModItems.SAPPHIRE.get());
@@ -67,5 +67,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.RUBY_APPLE.get());
         basicItem(ModItems.SAPPHIRE_APPLE.get());
+        basicItem(ModItems.TOPAZ_APPLE.get());
     }
 }
