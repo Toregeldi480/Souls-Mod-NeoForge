@@ -24,6 +24,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(RecipeOutput output) {
         createApple(ModItems.RUBY.get(), ModItems.RUBY_APPLE.get(), output);
         createApple(ModItems.SAPPHIRE.get(), ModItems.SAPPHIRE_APPLE.get(), output);
+        createApple(ModItems.TOPAZ.get(), ModItems.TOPAZ_APPLE.get(), output);
 
         createHelmet(ModItems.PLATINUM_INGOT.get(), ModItems.PLATINUM_HELMET.get(), output);
         createHelmet(ModItems.HELLSTONE_INGOT.get(), ModItems.HELLSTONE_HELMET.get(), output);

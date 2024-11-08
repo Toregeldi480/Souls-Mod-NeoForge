@@ -1,4 +1,9 @@
 {
+  "item.soulsmod.raw_platinum": "Raw Platinum",
+  "item.soulsmod.raw_hellstone": "Raw Hellstone",
+  "item.soulsmod.raw_chlorophyte": "Raw Chlorophyte",
+  "item.soulsmod.raw_spectre": "Raw Spectre",
+  "item.soulsmod.raw_shroomite": "Raw Shroomite",
   "item.soulsmod.raw_palladium": "Raw Palladium",
   "item.soulsmod.raw_titanium": "Raw Titanium",
 
@@ -18,6 +23,32 @@
   "item.soulsmod.palladium_helmet": "Palladium Helmet",
   "item.soulsmod.titanium_helmet": "Titanium Helmet",
 
+  "item.soulsmod.platinum_chestplate": "Platinum Chestplate",
+  "item.soulsmod.hellstone_chestplate": "Hellstone Chestplate",
+  "item.soulsmod.chlorophyte_chestplate": "Chlorophyte Chestplate",
+  "item.soulsmod.spectre_chestplate": "Spectre Chestplate",
+  "item.soulsmod.shroomite_chestplate": "Shroomite Chestplate",
+  "item.soulsmod.palladium_chestplate": "Palladium Chestplate",
+  "item.soulsmod.titanium_chestplate": "Titanium Chestplate",
+
+  "item.soulsmod.platinum_leggings": "Platinum Leggings",
+  "item.soulsmod.hellstone_leggings": "Hellstone Leggings",
+  "item.soulsmod.chlorophyte_leggings": "Chlorophyte Leggings",
+  "item.soulsmod.spectre_leggings": "Spectre Leggings",
+  "item.soulsmod.shroomite_leggings": "Shroomite Leggings",
+  "item.soulsmod.palladium_leggings": "Palladium Leggings",
+  "item.soulsmod.titanium_leggings": "Titanium Leggings",
+
+  "item.soulsmod.platinum_boots": "Platinum Boots",
+  "item.soulsmod.hellstone_boots": "Hellstone Boots",
+  "item.soulsmod.chlorophyte_boots": "Chlorophyte Boots",
+  "item.soulsmod.spectre_boots": "Spectre Boots",
+  "item.soulsmod.shroomite_boots": "Shroomite Boots",
+  "item.soulsmod.palladium_boots": "Palladium Boots",
+  "item.soulsmod.titanium_boots": "Titanium Boots",
+
+  "block.soulsmod.platinum_ore": "Block of Platinum Ore",
+  "block.soulsmod.chlorophyte_ore": "Block of Chlorophyte Ore",
   "block.soulsmod.palladium_ore": "Block of Palladium Ore",
   "block.soulsmod.titanium_ore": "Block of Titanium Ore",
   "block.soulsmod.ruby_ore": "Block of Ruby Ore",

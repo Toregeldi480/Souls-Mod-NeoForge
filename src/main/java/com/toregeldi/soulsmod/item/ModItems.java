@@ -77,24 +77,24 @@ public class ModItems {
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
             ));
     public static final DeferredItem<ArmorItem> HELLSTONE_CHESTPLATE = ITEMS.register("hellstone_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
+            () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
             ));
     public static final DeferredItem<ArmorItem> CHLOROPHYTE_CHESTPLATE = ITEMS.register("chlorophyte_chestplate",
             () -> new ArmorItem(ModArmorMaterials.CHLOROPHYTE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
             ));
     public static final DeferredItem<ArmorItem> SPECTRE_CHESTPLATE = ITEMS.register("spectre_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.SPECTRE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
+            () -> new ArmorItem(ModArmorMaterials.SPECTRE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
             ));
     public static final DeferredItem<ArmorItem> SHROOMITE_CHESTPLATE = ITEMS.register("shroomite_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.SHROOMITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
+            () -> new ArmorItem(ModArmorMaterials.SHROOMITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
             ));
     public static final DeferredItem<ArmorItem> PALLADIUM_CHESTPLATE = ITEMS.register("palladium_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
+            () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
             ));
     public static final DeferredItem<ArmorItem> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate",
             () -> new ArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
@@ -174,6 +174,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.RUBY_APPLE)));
     public static final DeferredItem<Item> SAPPHIRE_APPLE = ITEMS.register("sapphire_apple",
             () -> new Item(new Item.Properties().food(ModFoodProperties.SAPPHIRE_APPLE)));
+    public static final DeferredItem<Item> TOPAZ_APPLE = ITEMS.register("topaz_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.TOPAZ_APPLE)));
 
 
     public static void register(IEventBus eventBus) {

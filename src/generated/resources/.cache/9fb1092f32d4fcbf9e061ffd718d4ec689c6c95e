@@ -1,4 +1,4 @@
-// 1.21	2024-11-08T04:46:04.272910396	Recipes
+// 1.21	2024-11-08T04:56:47.365508349	Recipes
 4ced7a848f62365743f14f5d572e2861c7d97b2a data/soulsmod/advancement/recipes/combat/chlorophyte_boots.json
 9a08fdfab9959cbb8287eb9c553f52b678bd571b data/soulsmod/advancement/recipes/combat/chlorophyte_chestplate.json
 a0f5870cf1751f427c3766b4249f829ec4b4338e data/soulsmod/advancement/recipes/combat/chlorophyte_helmet.json
@@ -29,6 +29,7 @@ ba58dea93f0cf694b39a72175d355b204a662292 data/soulsmod/advancement/recipes/comba
 657da8f224a0b080beac0737d7d35563c54d76cf data/soulsmod/advancement/recipes/combat/titanium_leggings.json
 82b3f4eb4e65b6c2ccfbd720dbafcb3e6a92208b data/soulsmod/advancement/recipes/food/ruby_apple.json
 9cb39ce1b1732baeee76346e25c44893f4c584a0 data/soulsmod/advancement/recipes/food/sapphire_apple.json
+fac97c87ecca7942af54418190ddb3eced1d9311 data/soulsmod/advancement/recipes/food/topaz_apple.json
 424163078b92624cdfc19fdc9a7fcaa5221010b5 data/soulsmod/recipe/chlorophyte_boots.json
 fbc6fdd1c6e0566134874ded5b3e615461560d11 data/soulsmod/recipe/chlorophyte_chestplate.json
 d92eebbbf2f94f9e2538123436a249de91425a6e data/soulsmod/recipe/chlorophyte_helmet.json
@@ -59,3 +60,4 @@ a090ad2211067835f58769ddc59afff69b6163fe data/soulsmod/recipe/titanium_boots.jso
 a9cff9a8ff4681b90145ec51212e9b604e3553c5 data/soulsmod/recipe/titanium_chestplate.json
 969f480c6e063c37cef65568992e58ffa90a0548 data/soulsmod/recipe/titanium_helmet.json
 9fccc42fdd413bdfddc4ba27899069340be18ed2 data/soulsmod/recipe/titanium_leggings.json
+7c859099ef136f65941ce52ca75aa46988288415 data/soulsmod/recipe/topaz_apple.json

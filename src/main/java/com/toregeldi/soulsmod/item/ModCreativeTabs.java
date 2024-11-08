@@ -74,6 +74,7 @@ public class ModCreativeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RUBY_APPLE);
                         output.accept(ModItems.SAPPHIRE_APPLE);
+                        output.accept(ModItems.TOPAZ_APPLE);
                     })
                     .build());
 
