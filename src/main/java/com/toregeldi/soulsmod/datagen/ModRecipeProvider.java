@@ -10,6 +10,7 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -22,6 +23,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput output) {
+        List<ItemLike> PLATINUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM);
+        List<ItemLike> PALLADIUM_SMELTABLES = List.of(ModItems.RAW_PALLADIUM);
+
         createApple(ModItems.RUBY.get(), ModItems.RUBY_APPLE.get(), output);
         createApple(ModItems.SAPPHIRE.get(), ModItems.SAPPHIRE_APPLE.get(), output);
         createApple(ModItems.TOPAZ.get(), ModItems.TOPAZ_APPLE.get(), output);
@@ -57,6 +61,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         createBoots(ModItems.SHROOMITE_INGOT.get(), ModItems.SHROOMITE_BOOTS.get(), output);
         createBoots(ModItems.PALLADIUM_INGOT.get(), ModItems.PALLADIUM_BOOTS.get(), output);
         createBoots(ModItems.TITANIUM_INGOT.get(), ModItems.TITANIUM_BOOTS.get(), output);
+
+        oreSmelting(output, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 0.25f, 250, "platinum");
+        oreSmelting(output, PALLADIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PALLADIUM_INGOT.get(), 0.25f, 250, "palladium");
     }
 
     private void createApple(Item item, Item result, RecipeOutput output) {

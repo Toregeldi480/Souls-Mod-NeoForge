@@ -27,13 +27,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         add(ModBlocks.PLATINUM_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 2, 5));
+                block -> createMultipleOreDrops(ModBlocks.PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get(), 1, 1));
         add(ModBlocks.CHLOROPHYTE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.CHLOROPHYTE_ORE.get(), ModItems.RAW_CHLOROPHYTE.get(), 2, 5));
+                block -> createMultipleOreDrops(ModBlocks.CHLOROPHYTE_ORE.get(), ModItems.RAW_CHLOROPHYTE.get(), 1, 1));
         add(ModBlocks.TITANIUM_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get(), 2, 5));
+                block -> createMultipleOreDrops(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get(), 1, 1));
         add(ModBlocks.PALLADIUM_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.PALLADIUM_ORE.get(), ModItems.RAW_PALLADIUM.get(), 2, 5));
+                block -> createMultipleOreDrops(ModBlocks.PALLADIUM_ORE.get(), ModItems.RAW_PALLADIUM.get(), 1, 1));
 
         add(ModBlocks.RUBY_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get(), 2, 5));

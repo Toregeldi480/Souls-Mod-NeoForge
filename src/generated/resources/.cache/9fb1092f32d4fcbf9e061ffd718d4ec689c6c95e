@@ -1,4 +1,8 @@
-// 1.21	2024-11-08T04:56:47.365508349	Recipes
+// 1.21	2024-11-09T05:02:24.378541143	Recipes
+98ac6245e5ee9540a3f9c01af475b39ed4a7e3cc data/minecraft/advancement/recipes/misc/palladium_ingot_from_smelting_raw_palladium.json
+e499d6ab2dec6499d205b6de91cff8fb26560d3a data/minecraft/advancement/recipes/misc/platinum_ingot_from_smelting_raw_platinum.json
+440ce51ecec2c7d56bf32e45d2db37cb3cdfd982 data/minecraft/recipe/palladium_ingot_from_smelting_raw_palladium.json
+3c977830c7f3c1a654ec823093f0d57fd24f4607 data/minecraft/recipe/platinum_ingot_from_smelting_raw_platinum.json
 4ced7a848f62365743f14f5d572e2861c7d97b2a data/soulsmod/advancement/recipes/combat/chlorophyte_boots.json
 9a08fdfab9959cbb8287eb9c553f52b678bd571b data/soulsmod/advancement/recipes/combat/chlorophyte_chestplate.json
 a0f5870cf1751f427c3766b4249f829ec4b4338e data/soulsmod/advancement/recipes/combat/chlorophyte_helmet.json

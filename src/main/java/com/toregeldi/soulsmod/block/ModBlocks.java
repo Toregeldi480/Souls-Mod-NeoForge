@@ -26,6 +26,14 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
 
+//    public static final DeferredBlock<Block> HELLSTONE_ORE = registerBlock("hellstone_ore",
+//            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+//                    BlockBehaviour.Properties.of()
+//                            .strength(3f)
+//                            .destroyTime(3f)
+//                            .requiresCorrectToolForDrops()
+//                            .sound(SoundType.STONE)));
+
     public static final DeferredBlock<Block> CHLOROPHYTE_ORE = registerBlock("chlorophyte_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of()

@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials {
-    public static final Holder<ArmorMaterial> PLATINUM_ARMOR_MATERIAL = register("platinum_ingot",
+    public static final Holder<ArmorMaterial> PLATINUM_ARMOR_MATERIAL = register("platinum",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.HELMET, 6);
                 attribute.put(ArmorItem.Type.CHESTPLATE, 9);
@@ -27,7 +27,7 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 11);
             }), 16, 2f, 0.2f, () -> ModItems.PLATINUM_INGOT.get());
 
-    public static final Holder<ArmorMaterial> HELLSTONE_ARMOR_MATERIAL = register("hellstone_ingot",
+    public static final Holder<ArmorMaterial> HELLSTONE_ARMOR_MATERIAL = register("hellstone",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.HELMET, 6);
                 attribute.put(ArmorItem.Type.CHESTPLATE, 9);
@@ -36,7 +36,7 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 11);
             }), 16, 2f, 0.2f, () -> ModItems.HELLSTONE_INGOT.get());
 
-    public static final Holder<ArmorMaterial> CHLOROPHYTE_ARMOR_MATERIAL = register("chlorophyte_ingot",
+    public static final Holder<ArmorMaterial> CHLOROPHYTE_ARMOR_MATERIAL = register("chlorophyte",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.HELMET, 6);
                 attribute.put(ArmorItem.Type.CHESTPLATE, 9);
@@ -45,7 +45,7 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 11);
             }), 16, 2f, 0.2f, () -> ModItems.CHLOROPHYTE_INGOT.get());
 
-    public static final Holder<ArmorMaterial> SPECTRE_ARMOR_MATERIAL = register("spectre_ingot",
+    public static final Holder<ArmorMaterial> SPECTRE_ARMOR_MATERIAL = register("spectre",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.HELMET, 6);
                 attribute.put(ArmorItem.Type.CHESTPLATE, 9);
@@ -54,7 +54,7 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 11);
             }), 16, 2f, 0.2f, () -> ModItems.SPECTRE_INGOT.get());
 
-    public static final Holder<ArmorMaterial> SHROOMITE_ARMOR_MATERIAL = register("shroomite_ingot",
+    public static final Holder<ArmorMaterial> SHROOMITE_ARMOR_MATERIAL = register("shroomite",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.HELMET, 6);
                 attribute.put(ArmorItem.Type.CHESTPLATE, 9);
@@ -63,7 +63,7 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 11);
             }), 16, 2f, 0.2f, () -> ModItems.SHROOMITE_INGOT.get());
 
-    public static final Holder<ArmorMaterial> PALLADIUM_ARMOR_MATERIAL = register("palladium_ingot",
+    public static final Holder<ArmorMaterial> PALLADIUM_ARMOR_MATERIAL = register("palladium",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.HELMET, 6);
                 attribute.put(ArmorItem.Type.CHESTPLATE, 9);
@@ -72,7 +72,7 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 11);
             }), 16, 2f, 0.2f, () -> ModItems.PALLADIUM_INGOT.get());
 
-    public static final Holder<ArmorMaterial> TITANIUM_ARMOR_MATERIAL = register("titanium_ingot",
+    public static final Holder<ArmorMaterial> TITANIUM_ARMOR_MATERIAL = register("titanium",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.HELMET, 6);
                 attribute.put(ArmorItem.Type.CHESTPLATE, 9);
