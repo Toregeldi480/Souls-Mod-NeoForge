@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.25,
+  "group": "chlorophyte",
+  "ingredient": {
+    "item": "soulsmod:raw_chlorophyte"
+  },
+  "result": {
+    "count": 1,
+    "id": "soulsmod:chlorophyte_ingot"
+  }
+}

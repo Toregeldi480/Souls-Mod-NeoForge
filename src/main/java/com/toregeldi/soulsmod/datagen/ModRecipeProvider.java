@@ -1,5 +1,6 @@
 package com.toregeldi.soulsmod.datagen;
 
+import com.toregeldi.soulsmod.block.ModBlocks;
 import com.toregeldi.soulsmod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -23,8 +24,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput output) {
-        List<ItemLike> PLATINUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM);
-        List<ItemLike> PALLADIUM_SMELTABLES = List.of(ModItems.RAW_PALLADIUM);
+        List<ItemLike> PLATINUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM, ModBlocks.PLATINUM_ORE);
+        List<ItemLike> PALLADIUM_SMELTABLES = List.of(ModItems.RAW_PALLADIUM, ModBlocks.PALLADIUM_ORE);
+        List<ItemLike> TITANIUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM, ModBlocks.TITANIUM_ORE);
+        List<ItemLike> CHLOROPHYTE_SMELTABLES = List.of(ModItems.RAW_CHLOROPHYTE, ModBlocks.CHLOROPHYTE_ORE);
 
         createApple(ModItems.RUBY.get(), ModItems.RUBY_APPLE.get(), output);
         createApple(ModItems.SAPPHIRE.get(), ModItems.SAPPHIRE_APPLE.get(), output);
@@ -64,6 +67,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(output, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 0.25f, 250, "platinum");
         oreSmelting(output, PALLADIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PALLADIUM_INGOT.get(), 0.25f, 250, "palladium");
+        oreSmelting(output, CHLOROPHYTE_SMELTABLES, RecipeCategory.MISC, ModItems.CHLOROPHYTE_INGOT.get(), 0.25f, 250, "chlorophyte");
+        oreSmelting(output, TITANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(), 0.25f, 250, "titanium");
+
+        oreBlasting(output, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 0.25f, 250, "platinum");
+        oreBlasting(output, PALLADIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PALLADIUM_INGOT.get(), 0.25f, 250, "palladium");
+        oreBlasting(output, CHLOROPHYTE_SMELTABLES, RecipeCategory.MISC, ModItems.CHLOROPHYTE_INGOT.get(), 0.25f, 250, "chlorophyte");
+        oreBlasting(output, TITANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(), 0.25f, 250, "titanium");
     }
 
     private void createApple(Item item, Item result, RecipeOutput output) {
