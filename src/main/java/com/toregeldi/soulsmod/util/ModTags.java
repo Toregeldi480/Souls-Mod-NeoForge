@@ -18,13 +18,13 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_SHROOMITE_TOOL = createTag("needs_shroomite_tool");
         public static final TagKey<Block> NEEDS_HELLSTONE_TOOL = createTag("needs_hellstone_tool");
 
-        public static final TagKey<Block> INCORRECT_FOR_PLATINUM_TOOL = createTag("incorrect_platinum_tool");
-        public static final TagKey<Block> INCORRECT_FOR_PALLADIUM_TOOL = createTag("incorrect_palladium_tool");
-        public static final TagKey<Block> INCORRECT_FOR_TITANIUM_TOOL = createTag("incorrect_titanium_tool");
-        public static final TagKey<Block> INCORRECT_FOR_CHLOROPHYTE_TOOL = createTag("incorrect_chlorophyte_tool");
-        public static final TagKey<Block> INCORRECT_FOR_SPECTRE_TOOL = createTag("incorrect_spectre_tool");
-        public static final TagKey<Block> INCORRECT_FOR_SHROOMITE_TOOL = createTag("incorrect_shroomite_tool");
-        public static final TagKey<Block> INCORRECT_FOR_HELLSTONE_TOOL = createTag("incorrect_hellstone_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PLATINUM_TOOL = createTag("incorrect_for_platinum_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PALLADIUM_TOOL = createTag("incorrect_for_palladium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_TITANIUM_TOOL = createTag("incorrect_for_titanium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_CHLOROPHYTE_TOOL = createTag("incorrect_for_chlorophyte_tool");
+        public static final TagKey<Block> INCORRECT_FOR_SPECTRE_TOOL = createTag("incorrect_for_spectre_tool");
+        public static final TagKey<Block> INCORRECT_FOR_SHROOMITE_TOOL = createTag("incorrect_for_shroomite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_HELLSTONE_TOOL = createTag("incorrect_for_hellstone_tool");
 
         private static TagKey<Block> createTag(String name) {
 

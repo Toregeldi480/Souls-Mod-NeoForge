@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#soulsmod:needs_platinum_tool"
+  ],
+  "values": [
+    "#soulsmod:incorrect_for_palladium_tool"
+  ]
+}

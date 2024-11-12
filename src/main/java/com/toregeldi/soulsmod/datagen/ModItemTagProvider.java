@@ -40,7 +40,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.PICKAXES)
                 .add(ModItems.PLATINUM_PICKAXE.get())
-                .add(ModItems.PLATINUM_PICKAXE.get())
                 .add(ModItems.PALLADIUM_PICKAXE.get())
                 .add(ModItems.TITANIUM_PICKAXE.get())
                 .add(ModItems.CHLOROPHYTE_PICKAXE.get())
@@ -49,7 +48,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.HELLSTONE_PICKAXE.get());
 
         tag(ItemTags.AXES)
-                .add(ModItems.PLATINUM_AXE.get())
                 .add(ModItems.PLATINUM_AXE.get())
                 .add(ModItems.PALLADIUM_AXE.get())
                 .add(ModItems.TITANIUM_AXE.get())
@@ -60,7 +58,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.SHOVELS)
                 .add(ModItems.PLATINUM_SHOVEL.get())
-                .add(ModItems.PLATINUM_SHOVEL.get())
                 .add(ModItems.PALLADIUM_SHOVEL.get())
                 .add(ModItems.TITANIUM_SHOVEL.get())
                 .add(ModItems.CHLOROPHYTE_SHOVEL.get())
@@ -69,7 +66,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.HELLSTONE_SHOVEL.get());
 
         tag(ItemTags.HOES)
-                .add(ModItems.PLATINUM_HOE.get())
                 .add(ModItems.PLATINUM_HOE.get())
                 .add(ModItems.PALLADIUM_HOE.get())
                 .add(ModItems.TITANIUM_HOE.get())

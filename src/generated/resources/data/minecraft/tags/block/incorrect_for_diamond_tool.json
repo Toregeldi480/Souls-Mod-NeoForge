@@ -1,0 +1,9 @@
+{
+  "remove": [
+    "#minecraft:needs_diamond_tool"
+  ],
+  "values": [
+    "minecraft:netherrack",
+    "minecraft:netherite_block"
+  ]
+}
