@@ -33,6 +33,46 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         createApple(ModItems.SAPPHIRE.get(), ModItems.SAPPHIRE_APPLE.get(), output);
         createApple(ModItems.TOPAZ.get(), ModItems.TOPAZ_APPLE.get(), output);
 
+        createSword(ModItems.PLATINUM_INGOT.get(), ModItems.PLATINUM_SWORD.get(), output);
+        createSword(ModItems.PALLADIUM_INGOT.get(), ModItems.PALLADIUM_SWORD.get(), output);
+        createSword(ModItems.TITANIUM_INGOT.get(), ModItems.TITANIUM_SWORD.get(), output);
+        createSword(ModItems.CHLOROPHYTE_INGOT.get(), ModItems.CHLOROPHYTE_SWORD.get(), output);
+        createSword(ModItems.SPECTRE_INGOT.get(), ModItems.SPECTRE_SWORD.get(), output);
+        createSword(ModItems.SHROOMITE_INGOT.get(), ModItems.SHROOMITE_SWORD.get(), output);
+        createSword(ModItems.HELLSTONE_INGOT.get(), ModItems.HELLSTONE_SWORD.get(), output);
+
+        createPickaxe(ModItems.PLATINUM_INGOT.get(), ModItems.PLATINUM_PICKAXE.get(), output);
+        createPickaxe(ModItems.PALLADIUM_INGOT.get(), ModItems.PALLADIUM_PICKAXE.get(), output);
+        createPickaxe(ModItems.TITANIUM_INGOT.get(), ModItems.TITANIUM_PICKAXE.get(), output);
+        createPickaxe(ModItems.CHLOROPHYTE_INGOT.get(), ModItems.CHLOROPHYTE_PICKAXE.get(), output);
+        createPickaxe(ModItems.SPECTRE_INGOT.get(), ModItems.SPECTRE_PICKAXE.get(), output);
+        createPickaxe(ModItems.SHROOMITE_INGOT.get(), ModItems.SHROOMITE_PICKAXE.get(), output);
+        createPickaxe(ModItems.HELLSTONE_INGOT.get(), ModItems.HELLSTONE_PICKAXE.get(), output);
+
+        createAxe(ModItems.PLATINUM_INGOT.get(), ModItems.PLATINUM_AXE.get(), output);
+        createAxe(ModItems.PALLADIUM_INGOT.get(), ModItems.PALLADIUM_AXE.get(), output);
+        createAxe(ModItems.TITANIUM_INGOT.get(), ModItems.TITANIUM_AXE.get(), output);
+        createAxe(ModItems.CHLOROPHYTE_INGOT.get(), ModItems.CHLOROPHYTE_AXE.get(), output);
+        createAxe(ModItems.SPECTRE_INGOT.get(), ModItems.SPECTRE_AXE.get(), output);
+        createAxe(ModItems.SHROOMITE_INGOT.get(), ModItems.SHROOMITE_AXE.get(), output);
+        createAxe(ModItems.HELLSTONE_INGOT.get(), ModItems.HELLSTONE_AXE.get(), output);
+
+        createShovel(ModItems.PLATINUM_INGOT.get(), ModItems.PLATINUM_SHOVEL.get(), output);
+        createShovel(ModItems.PALLADIUM_INGOT.get(), ModItems.PALLADIUM_SHOVEL.get(), output);
+        createShovel(ModItems.TITANIUM_INGOT.get(), ModItems.TITANIUM_SHOVEL.get(), output);
+        createShovel(ModItems.CHLOROPHYTE_INGOT.get(), ModItems.CHLOROPHYTE_SHOVEL.get(), output);
+        createShovel(ModItems.SPECTRE_INGOT.get(), ModItems.SPECTRE_SHOVEL.get(), output);
+        createShovel(ModItems.SHROOMITE_INGOT.get(), ModItems.SHROOMITE_SHOVEL.get(), output);
+        createShovel(ModItems.HELLSTONE_INGOT.get(), ModItems.HELLSTONE_SHOVEL.get(), output);
+
+        createHoe(ModItems.PLATINUM_INGOT.get(), ModItems.PLATINUM_HOE.get(), output);
+        createHoe(ModItems.PALLADIUM_INGOT.get(), ModItems.PALLADIUM_HOE.get(), output);
+        createHoe(ModItems.TITANIUM_INGOT.get(), ModItems.TITANIUM_HOE.get(), output);
+        createHoe(ModItems.CHLOROPHYTE_INGOT.get(), ModItems.CHLOROPHYTE_HOE.get(), output);
+        createHoe(ModItems.SPECTRE_INGOT.get(), ModItems.SPECTRE_HOE.get(), output);
+        createHoe(ModItems.SHROOMITE_INGOT.get(), ModItems.SHROOMITE_HOE.get(), output);
+        createHoe(ModItems.HELLSTONE_INGOT.get(), ModItems.HELLSTONE_HOE.get(), output);
+
         createHelmet(ModItems.PLATINUM_INGOT.get(), ModItems.PLATINUM_HELMET.get(), output);
         createHelmet(ModItems.HELLSTONE_INGOT.get(), ModItems.HELLSTONE_HELMET.get(), output);
         createHelmet(ModItems.CHLOROPHYTE_INGOT.get(), ModItems.CHLOROPHYTE_HELMET.get(), output);
@@ -83,6 +123,56 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("XXX")
                 .define('X', item)
                 .define('#', Items.APPLE)
+                .unlockedBy("has_" + item.toString().toLowerCase(), has(item)).save(output);
+    }
+
+    private void createSword(Item item, Item result, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" # ")
+                .define('X', item)
+                .define('#', Items.STICK)
+                .unlockedBy("has_" + item.toString().toLowerCase(), has(item)).save(output);
+    }
+
+    private void createPickaxe(Item item, Item result, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('X', item)
+                .define('#', Items.STICK)
+                .unlockedBy("has_" + item.toString().toLowerCase(), has(item)).save(output);
+    }
+
+    private void createAxe(Item item, Item result, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("XX ")
+                .pattern("X# ")
+                .pattern(" # ")
+                .define('X', item)
+                .define('#', Items.STICK)
+                .unlockedBy("has_" + item.toString().toLowerCase(), has(item)).save(output);
+    }
+
+    private void createShovel(Item item, Item result, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern(" X ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('X', item)
+                .define('#', Items.STICK)
+                .unlockedBy("has_" + item.toString().toLowerCase(), has(item)).save(output);
+    }
+
+    private void createHoe(Item item, Item result, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern("XX ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('X', item)
+                .define('#', Items.STICK)
                 .unlockedBy("has_" + item.toString().toLowerCase(), has(item)).save(output);
     }
 
