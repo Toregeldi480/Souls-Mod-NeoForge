@@ -49,6 +49,7 @@ public class SoulsMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RUBY_APPLE);
             event.accept(ModItems.SAPPHIRE_APPLE);
+            event.accept(ModItems.TOPAZ_APPLE);
 
             event.accept(ModItems.RAW_PLATINUM);
             event.accept(ModItems.RAW_HELLSTONE);
@@ -101,6 +102,46 @@ public class SoulsMod
             event.accept(ModItems.RUBY);
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.TOPAZ);
+
+            event.accept(ModItems.PLATINUM_SWORD);
+            event.accept(ModItems.PALLADIUM_SWORD);
+            event.accept(ModItems.TITANIUM_SWORD);
+            event.accept(ModItems.CHLOROPHYTE_SWORD);
+            event.accept(ModItems.SPECTRE_SWORD);
+            event.accept(ModItems.SHROOMITE_SWORD);
+            event.accept(ModItems.HELLSTONE_SWORD);
+
+            event.accept(ModItems.PLATINUM_PICKAXE);
+            event.accept(ModItems.PALLADIUM_PICKAXE);
+            event.accept(ModItems.TITANIUM_PICKAXE);
+            event.accept(ModItems.CHLOROPHYTE_PICKAXE);
+            event.accept(ModItems.SPECTRE_PICKAXE);
+            event.accept(ModItems.SHROOMITE_PICKAXE);
+            event.accept(ModItems.HELLSTONE_PICKAXE);
+
+            event.accept(ModItems.PLATINUM_AXE);
+            event.accept(ModItems.PALLADIUM_AXE);
+            event.accept(ModItems.TITANIUM_AXE);
+            event.accept(ModItems.CHLOROPHYTE_AXE);
+            event.accept(ModItems.SPECTRE_AXE);
+            event.accept(ModItems.SHROOMITE_AXE);
+            event.accept(ModItems.HELLSTONE_AXE);
+
+            event.accept(ModItems.PLATINUM_SHOVEL);
+            event.accept(ModItems.PALLADIUM_SHOVEL);
+            event.accept(ModItems.TITANIUM_SHOVEL);
+            event.accept(ModItems.CHLOROPHYTE_SHOVEL);
+            event.accept(ModItems.SPECTRE_SHOVEL);
+            event.accept(ModItems.SHROOMITE_SHOVEL);
+            event.accept(ModItems.HELLSTONE_SHOVEL);
+
+            event.accept(ModItems.PLATINUM_HOE);
+            event.accept(ModItems.PALLADIUM_HOE);
+            event.accept(ModItems.TITANIUM_HOE);
+            event.accept(ModItems.CHLOROPHYTE_HOE);
+            event.accept(ModItems.SPECTRE_HOE);
+            event.accept(ModItems.SHROOMITE_HOE);
+            event.accept(ModItems.HELLSTONE_HOE);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.PALLADIUM_ORE);

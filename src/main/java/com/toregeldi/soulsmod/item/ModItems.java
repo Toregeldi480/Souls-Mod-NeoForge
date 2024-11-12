@@ -3,6 +3,8 @@ package com.toregeldi.soulsmod.item;
 import com.toregeldi.soulsmod.SoulsMod;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -12,7 +14,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> RAW_PLATINUM = ITEMS.register("raw_platinum",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RAW_HELLSTONE = ITEMS.register("raw_hellstone",
+    public static final DeferredItem<Item> RAW_PALLADIUM = ITEMS.register("raw_palladium",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_TITANIUM = ITEMS.register("raw_titanium",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_CHLOROPHYTE = ITEMS.register("raw_chlorophyte",
             () -> new Item(new Item.Properties()));
@@ -20,15 +24,15 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_SHROOMITE = ITEMS.register("raw_shroomite",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RAW_PALLADIUM = ITEMS.register("raw_palladium",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RAW_TITANIUM = ITEMS.register("raw_titanium",
+    public static final DeferredItem<Item> RAW_HELLSTONE = ITEMS.register("raw_hellstone",
             () -> new Item(new Item.Properties()));
 
 
     public static final DeferredItem<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> HELLSTONE_INGOT = ITEMS.register("hellstone_ingot",
+    public static final DeferredItem<Item> PALLADIUM_INGOT = ITEMS.register("palladium_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CHLOROPHYTE_INGOT = ITEMS.register("chlorophyte_ingot",
             () -> new Item(new Item.Properties()));
@@ -36,9 +40,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SHROOMITE_INGOT = ITEMS.register("shroomite_ingot",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> PALLADIUM_INGOT = ITEMS.register("palladium_ingot",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot",
+    public static final DeferredItem<Item> HELLSTONE_INGOT = ITEMS.register("hellstone_ingot",
             () -> new Item(new Item.Properties()));
 
 
@@ -46,8 +48,12 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
             ));
-    public static final DeferredItem<ArmorItem> HELLSTONE_HELMET = ITEMS.register("hellstone_helmet",
-            () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+    public static final DeferredItem<ArmorItem> PALLADIUM_HELMET = ITEMS.register("palladium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
+            ));
+    public static final DeferredItem<ArmorItem> TITANIUM_HELMET = ITEMS.register("titanium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
             ));
     public static final DeferredItem<ArmorItem> CHLOROPHYTE_HELMET = ITEMS.register("chlorophyte_helmet",
@@ -62,12 +68,8 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.SHROOMITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
             ));
-    public static final DeferredItem<ArmorItem> PALLADIUM_HELMET = ITEMS.register("palladium_helmet",
-            () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
-            ));
-    public static final DeferredItem<ArmorItem> TITANIUM_HELMET = ITEMS.register("titanium_helmet",
-            () -> new ArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+    public static final DeferredItem<ArmorItem> HELLSTONE_HELMET = ITEMS.register("hellstone_helmet",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
             ));
 
@@ -76,8 +78,12 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
             ));
-    public static final DeferredItem<ArmorItem> HELLSTONE_CHESTPLATE = ITEMS.register("hellstone_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+    public static final DeferredItem<ArmorItem> PALLADIUM_CHESTPLATE = ITEMS.register("palladium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
+            ));
+    public static final DeferredItem<ArmorItem> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
             ));
     public static final DeferredItem<ArmorItem> CHLOROPHYTE_CHESTPLATE = ITEMS.register("chlorophyte_chestplate",
@@ -92,12 +98,8 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.SHROOMITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
             ));
-    public static final DeferredItem<ArmorItem> PALLADIUM_CHESTPLATE = ITEMS.register("palladium_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
-            ));
-    public static final DeferredItem<ArmorItem> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+    public static final DeferredItem<ArmorItem> HELLSTONE_CHESTPLATE = ITEMS.register("hellstone_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
             ));
 
@@ -106,8 +108,12 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))
             ));
-    public static final DeferredItem<ArmorItem> HELLSTONE_LEGGINGS = ITEMS.register("hellstone_leggings",
-            () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+    public static final DeferredItem<ArmorItem> PALLADIUM_LEGGINGS = ITEMS.register("palladium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))
+            ));
+    public static final DeferredItem<ArmorItem> TITANIUM_LEGGINGS = ITEMS.register("titanium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))
             ));
     public static final DeferredItem<ArmorItem> CHLOROPHYTE_LEGGINGS = ITEMS.register("chlorophyte_leggings",
@@ -122,12 +128,8 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.SHROOMITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))
             ));
-    public static final DeferredItem<ArmorItem> PALLADIUM_LEGGINGS = ITEMS.register("palladium_leggings",
-            () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))
-            ));
-    public static final DeferredItem<ArmorItem> TITANIUM_LEGGINGS = ITEMS.register("titanium_leggings",
-            () -> new ArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+    public static final DeferredItem<ArmorItem> HELLSTONE_LEGGINGS = ITEMS.register("hellstone_leggings",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))
             ));
 
@@ -136,8 +138,12 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.PLATINUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))
             ));
-    public static final DeferredItem<ArmorItem> HELLSTONE_BOOTS = ITEMS.register("hellstone_boots",
-            () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+    public static final DeferredItem<ArmorItem> PALLADIUM_BOOTS = ITEMS.register("palladium_boots",
+            () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))
+            ));
+    public static final DeferredItem<ArmorItem> TITANIUM_BOOTS = ITEMS.register("titanium_boots",
+            () -> new ArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))
             ));
     public static final DeferredItem<ArmorItem> CHLOROPHYTE_BOOTS = ITEMS.register("chlorophyte_boots",
@@ -152,12 +158,8 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.SHROOMITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))
             ));
-    public static final DeferredItem<ArmorItem> PALLADIUM_BOOTS = ITEMS.register("palladium_boots",
-            () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))
-            ));
-    public static final DeferredItem<ArmorItem> TITANIUM_BOOTS = ITEMS.register("titanium_boots",
-            () -> new ArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+    public static final DeferredItem<ArmorItem> HELLSTONE_BOOTS = ITEMS.register("hellstone_boots",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))
             ));
 
@@ -177,6 +179,121 @@ public class ModItems {
     public static final DeferredItem<Item> TOPAZ_APPLE = ITEMS.register("topaz_apple",
             () -> new Item(new Item.Properties().food(ModFoodProperties.TOPAZ_APPLE)));
 
+
+    public static final DeferredItem<SwordItem> PLATINUM_SWORD = ITEMS.register("platinum_sword",
+            () -> new SwordItem(ModToolTiers.PLATINUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.PLATINUM, 5, -1f))));
+    public static final DeferredItem<SwordItem> PALLADIUM_SWORD = ITEMS.register("palladium_sword",
+            () -> new SwordItem(ModToolTiers.PALLADIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.PALLADIUM, 10, -1f))));
+    public static final DeferredItem<SwordItem> TITANIUM_SWORD = ITEMS.register("titanium_sword",
+            () -> new SwordItem(ModToolTiers.TITANIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.TITANIUM, 14, -1f))));
+    public static final DeferredItem<SwordItem> CHLOROPHYTE_SWORD = ITEMS.register("chlorophyte_sword",
+            () -> new SwordItem(ModToolTiers.CHLOROPHYTE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.CHLOROPHYTE, 16, -1f))));
+    public static final DeferredItem<SwordItem> SPECTRE_SWORD = ITEMS.register("spectre_sword",
+            () -> new SwordItem(ModToolTiers.SPECTRE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SPECTRE, 18, -1f))));
+    public static final DeferredItem<SwordItem> SHROOMITE_SWORD = ITEMS.register("shroomite_sword",
+            () -> new SwordItem(ModToolTiers.SHROOMITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SHROOMITE, 18, -1f))));
+    public static final DeferredItem<SwordItem> HELLSTONE_SWORD = ITEMS.register("hellstone_sword",
+            () -> new SwordItem(ModToolTiers.HELLSTONE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.HELLSTONE, 22, -1f))));
+
+
+    public static final DeferredItem<PickaxeItem> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.PLATINUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM, 1, -2.4f))));
+    public static final DeferredItem<SwordItem> PALLADIUM_PICKAXE = ITEMS.register("palladium_pickaxe",
+            () -> new SwordItem(ModToolTiers.PALLADIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.PALLADIUM, 2, -2.4f))));
+    public static final DeferredItem<SwordItem> TITANIUM_PICKAXE = ITEMS.register("titanium_pickaxe",
+            () -> new SwordItem(ModToolTiers.TITANIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.TITANIUM, 2, -2.4f))));
+    public static final DeferredItem<SwordItem> CHLOROPHYTE_PICKAXE = ITEMS.register("chlorophyte_pickaxe",
+            () -> new SwordItem(ModToolTiers.CHLOROPHYTE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.CHLOROPHYTE, 3, -2.4f))));
+    public static final DeferredItem<SwordItem> SPECTRE_PICKAXE = ITEMS.register("spectre_pickaxe",
+            () -> new SwordItem(ModToolTiers.SPECTRE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SPECTRE, 3, -2.4f))));
+    public static final DeferredItem<SwordItem> SHROOMITE_PICKAXE = ITEMS.register("shroomite_pickaxe",
+            () -> new SwordItem(ModToolTiers.SHROOMITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SHROOMITE, 3, -2.4f))));
+    public static final DeferredItem<SwordItem> HELLSTONE_PICKAXE = ITEMS.register("hellstone_pickaxe",
+            () -> new SwordItem(ModToolTiers.HELLSTONE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.HELLSTONE, 4, -2.4f))));
+
+
+
+    public static final DeferredItem<PickaxeItem> PLATINUM_AXE = ITEMS.register("platinum_axe",
+            () -> new PickaxeItem(ModToolTiers.PLATINUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM, 5, -1.8f))));
+    public static final DeferredItem<SwordItem> PALLADIUM_AXE = ITEMS.register("palladium_axe",
+            () -> new SwordItem(ModToolTiers.PALLADIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.PALLADIUM, 7, -1.8f))));
+    public static final DeferredItem<SwordItem> TITANIUM_AXE = ITEMS.register("titanium_axe",
+            () -> new SwordItem(ModToolTiers.TITANIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.TITANIUM, 9, -1.8f))));
+    public static final DeferredItem<SwordItem> CHLOROPHYTE_AXE = ITEMS.register("chlorophyte_axe",
+            () -> new SwordItem(ModToolTiers.CHLOROPHYTE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.CHLOROPHYTE, 11, -1.8f))));
+    public static final DeferredItem<SwordItem> SPECTRE_AXE = ITEMS.register("spectre_axe",
+            () -> new SwordItem(ModToolTiers.SPECTRE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SPECTRE, 12, -1.8f))));
+    public static final DeferredItem<SwordItem> SHROOMITE_AXE = ITEMS.register("shroomite_axe",
+            () -> new SwordItem(ModToolTiers.SHROOMITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SHROOMITE, 12, -1.8f))));
+    public static final DeferredItem<SwordItem> HELLSTONE_AXE = ITEMS.register("hellstone_axe",
+            () -> new SwordItem(ModToolTiers.HELLSTONE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.HELLSTONE, 13, -1.8f))));
+
+
+    public static final DeferredItem<PickaxeItem> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel",
+            () -> new PickaxeItem(ModToolTiers.PLATINUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM, 1, -2.4f))));
+    public static final DeferredItem<SwordItem> PALLADIUM_SHOVEL = ITEMS.register("palladium_shovel",
+            () -> new SwordItem(ModToolTiers.PALLADIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.PALLADIUM, 2, -2.4f))));
+    public static final DeferredItem<SwordItem> TITANIUM_SHOVEL = ITEMS.register("titanium_shovel",
+            () -> new SwordItem(ModToolTiers.TITANIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.TITANIUM, 2, -2.4f))));
+    public static final DeferredItem<SwordItem> CHLOROPHYTE_SHOVEL = ITEMS.register("chlorophyte_shovel",
+            () -> new SwordItem(ModToolTiers.CHLOROPHYTE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.CHLOROPHYTE, 3, -2.4f))));
+    public static final DeferredItem<SwordItem> SPECTRE_SHOVEL = ITEMS.register("spectre_shovel",
+            () -> new SwordItem(ModToolTiers.SPECTRE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SPECTRE, 3, -2.4f))));
+    public static final DeferredItem<SwordItem> SHROOMITE_SHOVEL = ITEMS.register("shroomite_shovel",
+            () -> new SwordItem(ModToolTiers.SHROOMITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SHROOMITE, 3, -2.4f))));
+    public static final DeferredItem<SwordItem> HELLSTONE_SHOVEL = ITEMS.register("hellstone_shovel",
+            () -> new SwordItem(ModToolTiers.HELLSTONE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.HELLSTONE, 4, -2.4f))));
+
+
+    public static final DeferredItem<PickaxeItem> PLATINUM_HOE = ITEMS.register("platinum_hoe",
+            () -> new PickaxeItem(ModToolTiers.PLATINUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM, 1, 1f))));
+    public static final DeferredItem<SwordItem> PALLADIUM_HOE = ITEMS.register("palladium_hoe",
+            () -> new SwordItem(ModToolTiers.PALLADIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.PALLADIUM, 2, -2.4f))));
+    public static final DeferredItem<SwordItem> TITANIUM_HOE = ITEMS.register("titanium_hoe",
+            () -> new SwordItem(ModToolTiers.TITANIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.TITANIUM, 2, -2.4f))));
+    public static final DeferredItem<SwordItem> CHLOROPHYTE_HOE = ITEMS.register("chlorophyte_hoe",
+            () -> new SwordItem(ModToolTiers.CHLOROPHYTE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.CHLOROPHYTE, 3, -2.4f))));
+    public static final DeferredItem<SwordItem> SPECTRE_HOE = ITEMS.register("spectre_hoe",
+            () -> new SwordItem(ModToolTiers.SPECTRE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SPECTRE, 3, -2.4f))));
+    public static final DeferredItem<SwordItem> SHROOMITE_HOE = ITEMS.register("shroomite_hoe",
+            () -> new SwordItem(ModToolTiers.SHROOMITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SHROOMITE, 3, -2.4f))));
+    public static final DeferredItem<SwordItem> HELLSTONE_HOE = ITEMS.register("hellstone_hoe",
+            () -> new SwordItem(ModToolTiers.HELLSTONE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.HELLSTONE, 4, -2.4f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

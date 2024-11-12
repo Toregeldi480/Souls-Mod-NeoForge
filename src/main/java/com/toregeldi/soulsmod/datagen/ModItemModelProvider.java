@@ -3,12 +3,21 @@ package com.toregeldi.soulsmod.datagen;
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.item.ModItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, SoulsMod.MOD_ID, existingFileHelper);
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 
     @Override
@@ -68,5 +77,45 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RUBY_APPLE.get());
         basicItem(ModItems.SAPPHIRE_APPLE.get());
         basicItem(ModItems.TOPAZ_APPLE.get());
+
+        handheldItem(ModItems.PLATINUM_SWORD);
+        handheldItem(ModItems.PALLADIUM_SWORD);
+        handheldItem(ModItems.TITANIUM_SWORD);
+        handheldItem(ModItems.CHLOROPHYTE_SWORD);
+        handheldItem(ModItems.SPECTRE_SWORD);
+        handheldItem(ModItems.SHROOMITE_SWORD);
+        handheldItem(ModItems.HELLSTONE_SWORD);
+
+        handheldItem(ModItems.PLATINUM_PICKAXE);
+        handheldItem(ModItems.PALLADIUM_PICKAXE);
+        handheldItem(ModItems.TITANIUM_PICKAXE);
+        handheldItem(ModItems.CHLOROPHYTE_PICKAXE);
+        handheldItem(ModItems.SPECTRE_PICKAXE);
+        handheldItem(ModItems.SHROOMITE_PICKAXE);
+        handheldItem(ModItems.HELLSTONE_PICKAXE);
+
+        handheldItem(ModItems.PLATINUM_AXE);
+        handheldItem(ModItems.PALLADIUM_AXE);
+        handheldItem(ModItems.TITANIUM_AXE);
+        handheldItem(ModItems.CHLOROPHYTE_AXE);
+        handheldItem(ModItems.SPECTRE_AXE);
+        handheldItem(ModItems.SHROOMITE_AXE);
+        handheldItem(ModItems.HELLSTONE_AXE);
+
+        handheldItem(ModItems.PLATINUM_SHOVEL);
+        handheldItem(ModItems.PALLADIUM_SHOVEL);
+        handheldItem(ModItems.TITANIUM_SHOVEL);
+        handheldItem(ModItems.CHLOROPHYTE_SHOVEL);
+        handheldItem(ModItems.SPECTRE_SHOVEL);
+        handheldItem(ModItems.SHROOMITE_SHOVEL);
+        handheldItem(ModItems.HELLSTONE_SHOVEL);
+
+        handheldItem(ModItems.PLATINUM_HOE);
+        handheldItem(ModItems.PALLADIUM_HOE);
+        handheldItem(ModItems.TITANIUM_HOE);
+        handheldItem(ModItems.CHLOROPHYTE_HOE);
+        handheldItem(ModItems.SPECTRE_HOE);
+        handheldItem(ModItems.SHROOMITE_HOE);
+        handheldItem(ModItems.HELLSTONE_HOE);
     }
 }

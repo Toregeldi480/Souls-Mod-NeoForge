@@ -55,6 +55,46 @@
   "block.soulsmod.sapphire_ore": "Block of Sapphire Ore",
   "block.soulsmod.topaz_ore": "Block of Topaz Ore",
 
+  "item.soulsmod.platinum_sword": "Platinum Sword",
+  "item.soulsmod.palladium_sword": "Palladium Sword",
+  "item.soulsmod.titanium_sword": "Titanium Sword",
+  "item.soulsmod.chlorophyte_sword": "Chlorophyte Sword",
+  "item.soulsmod.spectre_sword": "Spectre Sword",
+  "item.soulsmod.shroomite_sword": "Shroomite Sword",
+  "item.soulsmod.hellstone_sword": "Hellstone Sword",
+
+  "item.soulsmod.platinum_pickaxe": "Platinum Pickaxe",
+  "item.soulsmod.palladium_pickaxe": "Palladium Pickaxe",
+  "item.soulsmod.titanium_pickaxe": "Titanium Pickaxe",
+  "item.soulsmod.chlorophyte_pickaxe": "Chlorophyte Pickaxe",
+  "item.soulsmod.spectre_pickaxe": "Spectre Pickaxe",
+  "item.soulsmod.shroomite_pickaxe": "Shroomite Pickaxe",
+  "item.soulsmod.hellstone_pickaxe": "Hellstone Pickaxe",
+
+  "item.soulsmod.platinum_axe": "Platinum Axe",
+  "item.soulsmod.palladium_axe": "Palladium Axe",
+  "item.soulsmod.titanium_axe": "Titanium Axe",
+  "item.soulsmod.chlorophyte_axe": "Chlorophyte Axe",
+  "item.soulsmod.spectre_axe": "Spectre Axe",
+  "item.soulsmod.shroomite_axe": "Shroomite Axe",
+  "item.soulsmod.hellstone_axe": "Hellstone Axe",
+
+  "item.soulsmod.platinum_shovel": "Platinum Shovel",
+  "item.soulsmod.palladium_shovel": "Palladium Shovel",
+  "item.soulsmod.titanium_shovel": "Titanium Shovel",
+  "item.soulsmod.chlorophyte_shovel": "Chlorophyte Shovel",
+  "item.soulsmod.spectre_shovel": "Spectre Shovel",
+  "item.soulsmod.shroomite_shovel": "Shroomite Shovel",
+  "item.soulsmod.hellstone_shovel": "Hellstone Shovel",
+
+  "item.soulsmod.platinum_hoe": "Platinum Hoe",
+  "item.soulsmod.palladium_hoe": "Palladium Hoe",
+  "item.soulsmod.titanium_hoe": "Titanium Hoe",
+  "item.soulsmod.chlorophyte_hoe": "Chlorophyte Hoe",
+  "item.soulsmod.spectre_hoe": "Spectre Hoe",
+  "item.soulsmod.shroomite_hoe": "Shroomite Hoe",
+  "item.soulsmod.hellstone_hoe": "Hellstone Hoe",
+
   "item.soulsmod.ruby": "Ruby",
   "item.soulsmod.sapphire": "Sapphire",
   "item.soulsmod.topaz": "Topaz",
@@ -63,9 +103,12 @@
 
   "item.soulsmod.ruby_apple": "Ruby Apple",
   "item.soulsmod.sapphire_apple": "Sapphire Apple",
+  "item.soulsmod.topaz_apple": "Topaz Apple",
 
   "creativetab.soulsmod.fossil_items": "Fossil Items",
   "creativetab.soulsmod.fossil_blocks": "Fossil Blocks",
   "creativetab.soulsmod.potions": "Potions",
-  "creativetab.soulsmod.foods": "Foods"
+  "creativetab.soulsmod.foods": "Foods",
+  "creativetab.soulsmod.combat": "Combat",
+  "creativetab.soulsmod.tools": "Tools"
 }

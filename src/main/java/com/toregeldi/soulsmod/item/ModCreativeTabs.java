@@ -81,7 +81,7 @@ public class ModCreativeTabs {
     public static final Supplier<CreativeModeTab> COMBAT_TAB = CREATIVE_MODE_TAB.register("combat_tab",
             () -> CreativeModeTab.builder()
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "foods_tab"))
-                    .icon(() -> new ItemStack(ModItems.PLATINUM_HELMET.get()))
+                    .icon(() -> new ItemStack(ModItems.PLATINUM_SWORD.get()))
                     .title(Component.translatable("creativetab.soulsmod.combat"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.PLATINUM_HELMET);
@@ -118,6 +118,55 @@ public class ModCreativeTabs {
                         output.accept(ModItems.SHROOMITE_BOOTS);
                         output.accept(ModItems.PALLADIUM_BOOTS);
                         output.accept(ModItems.TITANIUM_BOOTS);
+
+
+                        output.accept(ModItems.PLATINUM_SWORD);
+                        output.accept(ModItems.PALLADIUM_SWORD);
+                        output.accept(ModItems.TITANIUM_SWORD);
+                        output.accept(ModItems.CHLOROPHYTE_SWORD);
+                        output.accept(ModItems.SPECTRE_SWORD);
+                        output.accept(ModItems.SHROOMITE_SWORD);
+                        output.accept(ModItems.HELLSTONE_SWORD);
+                    })
+                    .build());
+
+    public static final Supplier<CreativeModeTab> TOOLS_TAB = CREATIVE_MODE_TAB.register("tools_tab",
+            () -> CreativeModeTab.builder()
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID,"combat_tab"))
+                    .icon(() -> new ItemStack(ModItems.PLATINUM_PICKAXE.get()))
+                    .title(Component.translatable("creativetab.soulsmod.tools"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.PLATINUM_PICKAXE);
+                        output.accept(ModItems.PALLADIUM_PICKAXE);
+                        output.accept(ModItems.TITANIUM_PICKAXE);
+                        output.accept(ModItems.CHLOROPHYTE_PICKAXE);
+                        output.accept(ModItems.SPECTRE_PICKAXE);
+                        output.accept(ModItems.SHROOMITE_PICKAXE);
+                        output.accept(ModItems.HELLSTONE_PICKAXE);
+
+                        output.accept(ModItems.PLATINUM_AXE);
+                        output.accept(ModItems.PALLADIUM_AXE);
+                        output.accept(ModItems.TITANIUM_AXE);
+                        output.accept(ModItems.CHLOROPHYTE_AXE);
+                        output.accept(ModItems.SPECTRE_AXE);
+                        output.accept(ModItems.SHROOMITE_AXE);
+                        output.accept(ModItems.HELLSTONE_AXE);
+
+                        output.accept(ModItems.PLATINUM_SHOVEL);
+                        output.accept(ModItems.PALLADIUM_SHOVEL);
+                        output.accept(ModItems.TITANIUM_SHOVEL);
+                        output.accept(ModItems.CHLOROPHYTE_SHOVEL);
+                        output.accept(ModItems.SPECTRE_SHOVEL);
+                        output.accept(ModItems.SHROOMITE_SHOVEL);
+                        output.accept(ModItems.HELLSTONE_SHOVEL);
+
+                        output.accept(ModItems.PLATINUM_HOE);
+                        output.accept(ModItems.PALLADIUM_HOE);
+                        output.accept(ModItems.TITANIUM_HOE);
+                        output.accept(ModItems.CHLOROPHYTE_HOE);
+                        output.accept(ModItems.SPECTRE_HOE);
+                        output.accept(ModItems.SHROOMITE_HOE);
+                        output.accept(ModItems.HELLSTONE_HOE);
                     })
                     .build());
 
