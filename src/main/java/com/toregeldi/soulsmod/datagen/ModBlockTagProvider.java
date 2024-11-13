@@ -86,6 +86,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.NETHERITE_BLOCK);
 
         tag(ModTags.Blocks.INCORRECT_FOR_TITANIUM_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_CHLOROPHYTE_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_CHLOROPHYTE_TOOL)
+                .addTag(ModTags.Blocks.INCORRECT_FOR_CHLOROPHYTE_TOOL);
     }
 }
