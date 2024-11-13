@@ -38,51 +38,54 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.TOPAZ_ORE.get());
 
         tag(ModTags.Blocks.NEEDS_PLATINUM_TOOL)
-                .add(ModBlocks.PALLADIUM_ORE.get())
-                .addTag(BlockTags.NEEDS_IRON_TOOL);
+                .add(ModBlocks.PALLADIUM_ORE.get());
 
         tag(ModTags.Blocks.NEEDS_PALLADIUM_TOOL)
                 .add(Blocks.DIAMOND_ORE)
                 .add(Blocks.DEEPSLATE_DIAMOND_ORE)
-                .add(Blocks.DIAMOND_BLOCK)
-                .addTag(ModTags.Blocks.NEEDS_PLATINUM_TOOL);
+                .add(Blocks.DIAMOND_BLOCK);
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.TITANIUM_ORE.get())
-                .addTag(ModTags.Blocks.NEEDS_PALLADIUM_TOOL);
+                .add(ModBlocks.TITANIUM_ORE.get());
 
         tag(ModTags.Blocks.NEEDS_TITANIUM_TOOL)
-                .add(ModBlocks.CHLOROPHYTE_ORE.get())
-                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+                .add(ModBlocks.CHLOROPHYTE_ORE.get());
 
-        tag(ModTags.Blocks.NEEDS_CHLOROPHYTE_TOOL);
+        tag(ModTags.Blocks.NEEDS_CHLOROPHYTE_TOOL)
+                .add(Blocks.NETHERITE_BLOCK)
+                .add(Blocks.NETHERRACK);
 
-        tag(ModTags.Blocks.NEEDS_SPECTRE_TOOL);
+        tag(ModTags.Blocks.NEEDS_SPECTRE_TOOL)
+                .add(Blocks.NETHERITE_BLOCK)
+                .add(Blocks.NETHERRACK);
 
-        tag(ModTags.Blocks.NEEDS_SHROOMITE_TOOL);
+        tag(ModTags.Blocks.NEEDS_SHROOMITE_TOOL)
+                .add(Blocks.NETHERITE_BLOCK)
+                .add(Blocks.NETHERRACK);
 
 
         tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
-                .remove(BlockTags.NEEDS_IRON_TOOL)
+                .addTag(ModTags.Blocks.NEEDS_PLATINUM_TOOL)
+                .addTag(ModTags.Blocks.INCORRECT_FOR_PLATINUM_TOOL)
                 .add(Blocks.DIAMOND_ORE)
                 .add(Blocks.DEEPSLATE_DIAMOND_ORE)
                 .add(Blocks.DIAMOND_BLOCK);
 
         tag(ModTags.Blocks.INCORRECT_FOR_PLATINUM_TOOL)
-                .addTag(ModTags.Blocks.INCORRECT_FOR_PALLADIUM_TOOL)
-                .remove(ModTags.Blocks.NEEDS_PLATINUM_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_PALLADIUM_TOOL)
+                .addTag(ModTags.Blocks.INCORRECT_FOR_PALLADIUM_TOOL);
 
         tag(ModTags.Blocks.INCORRECT_FOR_PALLADIUM_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
-                .remove(ModTags.Blocks.NEEDS_PALLADIUM_TOOL);
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
 
         tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
-                .remove(BlockTags.NEEDS_DIAMOND_TOOL)
+                .addTag(ModTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .addTag(ModTags.Blocks.INCORRECT_FOR_TITANIUM_TOOL)
                 .add(Blocks.NETHERRACK)
                 .add(Blocks.NETHERITE_BLOCK);
 
         tag(ModTags.Blocks.INCORRECT_FOR_TITANIUM_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
-                .remove(ModTags.Blocks.NEEDS_TITANIUM_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_CHLOROPHYTE_TOOL);
     }
 }

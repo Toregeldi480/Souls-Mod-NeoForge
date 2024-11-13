@@ -1,8 +1,7 @@
 {
-  "remove": [
-    "#minecraft:needs_diamond_tool"
-  ],
   "values": [
+    "#soulsmod:needs_titanium_tool",
+    "#soulsmod:incorrect_for_titanium_tool",
     "minecraft:netherrack",
     "minecraft:netherite_block"
   ]

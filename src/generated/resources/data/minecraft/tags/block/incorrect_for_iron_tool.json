@@ -1,8 +1,7 @@
 {
-  "remove": [
-    "#minecraft:needs_iron_tool"
-  ],
   "values": [
+    "#soulsmod:needs_platinum_tool",
+    "#soulsmod:incorrect_for_platinum_tool",
     "minecraft:diamond_ore",
     "minecraft:deepslate_diamond_ore",
     "minecraft:diamond_block"
