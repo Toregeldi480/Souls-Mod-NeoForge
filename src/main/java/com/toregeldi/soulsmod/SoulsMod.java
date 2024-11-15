@@ -35,6 +35,7 @@ public class SoulsMod
         ModCreativeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModPotions.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
