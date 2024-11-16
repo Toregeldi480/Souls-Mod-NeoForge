@@ -1,6 +1,7 @@
 package com.toregeldi.soulsmod;
 
 import com.toregeldi.soulsmod.block.ModBlocks;
+import com.toregeldi.soulsmod.effect.ModEffects;
 import com.toregeldi.soulsmod.item.ModCreativeTabs;
 import com.toregeldi.soulsmod.item.ModItems;
 import com.toregeldi.soulsmod.potion.ModPotions;
@@ -37,6 +38,7 @@ public class SoulsMod
 
         ModItems.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModEffects.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
