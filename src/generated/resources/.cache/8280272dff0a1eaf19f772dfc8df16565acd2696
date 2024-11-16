@@ -1,13 +1,16 @@
-// 1.21	2024-11-13T10:38:41.982600019	Tags for minecraft:block mod id soulsmod
-bc6657f22958fb761834d144f2d8cda7b68ef540 data/minecraft/tags/block/incorrect_for_diamond_tool.json
+// 1.21	2024-11-16T12:02:22.750685722	Tags for minecraft:block mod id soulsmod
+12c433554098dc09f2173abadd55ed8f2ee2345f data/minecraft/tags/block/incorrect_for_diamond_tool.json
 f227604c1488a9e710e37324ae0bb61de03f4976 data/minecraft/tags/block/incorrect_for_iron_tool.json
 fda6af640e6961aba0b16e6f05bb855c25096f3b data/minecraft/tags/block/mineable/pickaxe.json
 fb6c473f9c0f3bec345bf2046a06963938063cd6 data/minecraft/tags/block/needs_diamond_tool.json
 340424624dfdb723861581f964c3011ea35dae78 data/minecraft/tags/block/needs_iron_tool.json
+11e33a839620b178b9cf1437831cb7d30dab0a6d data/soulsmod/tags/block/incorrect_for_chlorophyte_tool.json
+ae3eeae1c662b0ca9d10d786012e600c723fcef2 data/soulsmod/tags/block/incorrect_for_netherite_tool.json
 c4a4557318527e964a86d177498227411eee5b88 data/soulsmod/tags/block/incorrect_for_palladium_tool.json
 b8610bbaff5e8a09ea20b6f0648452029bba524a data/soulsmod/tags/block/incorrect_for_platinum_tool.json
-2d3cf0c228ae3724cf6b8ff1d26157c03cb9339d data/soulsmod/tags/block/incorrect_for_titanium_tool.json
+7f171ad9c751b76efb43774440361eddbc6d2e93 data/soulsmod/tags/block/incorrect_for_titanium_tool.json
 d309e579932bfe322e62d2dced325753e2f38951 data/soulsmod/tags/block/needs_chlorophyte_tool.json
+cfab2ab481bf476a645d326b87627918009b9e50 data/soulsmod/tags/block/needs_hellstone_tool.json
 0619a13687c5b78bb812ba5e7e43f580f7f7d01b data/soulsmod/tags/block/needs_palladium_tool.json
 c7cd9a507cc9b0b8fda6e7fdd704f758a2223856 data/soulsmod/tags/block/needs_platinum_tool.json
 d309e579932bfe322e62d2dced325753e2f38951 data/soulsmod/tags/block/needs_shroomite_tool.json

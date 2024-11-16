@@ -1,4 +1,34 @@
 {
+  "item.soulsmod.mint": "Mint",
+  "item.soulsmod.cranberry": "Cranberry",
+  "item.soulsmod.blackberry": "Blackberry",
+  "item.soulsmod.blueberry": "Blueberry",
+  "item.soulsmod.raspberry": "Raspberry",
+  "item.soulsmod.strawberry": "Strawberry",
+  "item.soulsmod.orange": "Orange",
+  "item.soulsmod.lemon": "Lemon",
+
+  "item.soulsmod.ruby_apple": "Ruby Apple",
+  "item.soulsmod.sapphire_apple": "Sapphire Apple",
+  "item.soulsmod.topaz_apple": "Topaz Apple",
+
+
+  "item.minecraft.potion.effect.mint_water": "Mint Water",
+  "item.minecraft.potion.effect.cranberry_juice": "Cranberry Juice",
+  "item.minecraft.potion.effect.blackberry_juice": "Blackberry Juice",
+  "item.minecraft.potion.effect.blueberry_juice": "Blueberry Juice",
+  "item.minecraft.potion.effect.raspberry_juice": "Raspberry Juice",
+  "item.minecraft.potion.effect.strawberry_juice": "Strawberry Juice",
+  "item.minecraft.potion.effect.orange_juice": "Orange Juice",
+  "item.minecraft.potion.effect.lemon_juice": "Lemon Juice",
+
+  "item.minecraft.potion.effect.estus_flask": "Estus Flask",
+
+
+  "item.soulsmod.ruby": "Ruby",
+  "item.soulsmod.sapphire": "Sapphire",
+  "item.soulsmod.topaz": "Topaz",
+
   "item.soulsmod.raw_platinum": "Raw Platinum",
   "item.soulsmod.raw_palladium": "Raw Palladium",
   "item.soulsmod.raw_titanium": "Raw Titanium",
@@ -51,6 +81,7 @@
   "block.soulsmod.palladium_ore": "Block of Palladium Ore",
   "block.soulsmod.titanium_ore": "Block of Titanium Ore",
   "block.soulsmod.chlorophyte_ore": "Block of Chlorophyte Ore",
+
   "block.soulsmod.ruby_ore": "Block of Ruby Ore",
   "block.soulsmod.sapphire_ore": "Block of Sapphire Ore",
   "block.soulsmod.topaz_ore": "Block of Topaz Ore",
@@ -95,15 +126,6 @@
   "item.soulsmod.shroomite_hoe": "Shroomite Hoe",
   "item.soulsmod.hellstone_hoe": "Hellstone Hoe",
 
-  "item.soulsmod.ruby": "Ruby",
-  "item.soulsmod.sapphire": "Sapphire",
-  "item.soulsmod.topaz": "Topaz",
-
-  "item.soulsmod.estus_flask": "Estus Flask",
-
-  "item.soulsmod.ruby_apple": "Ruby Apple",
-  "item.soulsmod.sapphire_apple": "Sapphire Apple",
-  "item.soulsmod.topaz_apple": "Topaz Apple",
 
   "creativetab.soulsmod.fossil_items": "Fossil Items",
   "creativetab.soulsmod.fossil_blocks": "Fossil Blocks",

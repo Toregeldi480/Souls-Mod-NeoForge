@@ -3,6 +3,7 @@ package com.toregeldi.soulsmod;
 import com.toregeldi.soulsmod.block.ModBlocks;
 import com.toregeldi.soulsmod.item.ModCreativeTabs;
 import com.toregeldi.soulsmod.item.ModItems;
+import com.toregeldi.soulsmod.potion.ModPotions;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -46,72 +47,9 @@ public class SoulsMod
 
     }
 
+
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.RUBY_APPLE);
-            event.accept(ModItems.SAPPHIRE_APPLE);
-            event.accept(ModItems.TOPAZ_APPLE);
-
-            event.accept(ModItems.RAW_PLATINUM);
-            event.accept(ModItems.RAW_HELLSTONE);
-            event.accept(ModItems.RAW_CHLOROPHYTE);
-            event.accept(ModItems.RAW_SPECTRE);
-            event.accept(ModItems.RAW_SHROOMITE);
-            event.accept(ModItems.RAW_PALLADIUM);
-            event.accept(ModItems.RAW_TITANIUM);
-
-            event.accept(ModItems.PLATINUM_HELMET);
-            event.accept(ModItems.HELLSTONE_HELMET);
-            event.accept(ModItems.CHLOROPHYTE_HELMET);
-            event.accept(ModItems.SPECTRE_HELMET);
-            event.accept(ModItems.SHROOMITE_HELMET);
-            event.accept(ModItems.PALLADIUM_HELMET);
-            event.accept(ModItems.TITANIUM_HELMET);
-
-            event.accept(ModItems.PLATINUM_CHESTPLATE);
-            event.accept(ModItems.HELLSTONE_CHESTPLATE);
-            event.accept(ModItems.CHLOROPHYTE_CHESTPLATE);
-            event.accept(ModItems.SPECTRE_CHESTPLATE);
-            event.accept(ModItems.SHROOMITE_CHESTPLATE);
-            event.accept(ModItems.PALLADIUM_CHESTPLATE);
-            event.accept(ModItems.TITANIUM_CHESTPLATE);
-
-            event.accept(ModItems.PLATINUM_LEGGINGS);
-            event.accept(ModItems.HELLSTONE_LEGGINGS);
-            event.accept(ModItems.CHLOROPHYTE_LEGGINGS);
-            event.accept(ModItems.SPECTRE_LEGGINGS);
-            event.accept(ModItems.SHROOMITE_LEGGINGS);
-            event.accept(ModItems.PALLADIUM_LEGGINGS);
-            event.accept(ModItems.TITANIUM_LEGGINGS);
-
-            event.accept(ModItems.PLATINUM_BOOTS);
-            event.accept(ModItems.HELLSTONE_BOOTS);
-            event.accept(ModItems.CHLOROPHYTE_BOOTS);
-            event.accept(ModItems.SPECTRE_BOOTS);
-            event.accept(ModItems.SHROOMITE_BOOTS);
-            event.accept(ModItems.PALLADIUM_BOOTS);
-            event.accept(ModItems.TITANIUM_BOOTS);
-
-            event.accept(ModItems.PLATINUM_INGOT);
-            event.accept(ModItems.HELLSTONE_INGOT);
-            event.accept(ModItems.CHLOROPHYTE_INGOT);
-            event.accept(ModItems.SPECTRE_INGOT);
-            event.accept(ModItems.SHROOMITE_INGOT);
-            event.accept(ModItems.PALLADIUM_INGOT);
-            event.accept(ModItems.TITANIUM_INGOT);
-
-            event.accept(ModItems.RUBY);
-            event.accept(ModItems.SAPPHIRE);
-            event.accept(ModItems.TOPAZ);
-
-            event.accept(ModItems.PLATINUM_SWORD);
-            event.accept(ModItems.PALLADIUM_SWORD);
-            event.accept(ModItems.TITANIUM_SWORD);
-            event.accept(ModItems.CHLOROPHYTE_SWORD);
-            event.accept(ModItems.SPECTRE_SWORD);
-            event.accept(ModItems.SHROOMITE_SWORD);
-            event.accept(ModItems.HELLSTONE_SWORD);
-
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.PLATINUM_PICKAXE);
             event.accept(ModItems.PALLADIUM_PICKAXE);
             event.accept(ModItems.TITANIUM_PICKAXE);
@@ -143,6 +81,74 @@ public class SoulsMod
             event.accept(ModItems.SPECTRE_HOE);
             event.accept(ModItems.SHROOMITE_HOE);
             event.accept(ModItems.HELLSTONE_HOE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.PLATINUM_HELMET);
+            event.accept(ModItems.PALLADIUM_HELMET);
+            event.accept(ModItems.TITANIUM_HELMET);
+            event.accept(ModItems.CHLOROPHYTE_HELMET);
+            event.accept(ModItems.SHROOMITE_HELMET);
+            event.accept(ModItems.SPECTRE_HELMET);
+            event.accept(ModItems.HELLSTONE_HELMET);
+
+            event.accept(ModItems.PLATINUM_CHESTPLATE);
+            event.accept(ModItems.PALLADIUM_CHESTPLATE);
+            event.accept(ModItems.TITANIUM_CHESTPLATE);
+            event.accept(ModItems.CHLOROPHYTE_CHESTPLATE);
+            event.accept(ModItems.SHROOMITE_CHESTPLATE);
+            event.accept(ModItems.SPECTRE_CHESTPLATE);
+            event.accept(ModItems.HELLSTONE_CHESTPLATE);
+
+            event.accept(ModItems.PLATINUM_LEGGINGS);
+            event.accept(ModItems.PALLADIUM_LEGGINGS);
+            event.accept(ModItems.TITANIUM_LEGGINGS);
+            event.accept(ModItems.CHLOROPHYTE_LEGGINGS);
+            event.accept(ModItems.SHROOMITE_LEGGINGS);
+            event.accept(ModItems.SPECTRE_LEGGINGS);
+            event.accept(ModItems.HELLSTONE_LEGGINGS);
+
+            event.accept(ModItems.PLATINUM_BOOTS);
+            event.accept(ModItems.PALLADIUM_BOOTS);
+            event.accept(ModItems.TITANIUM_BOOTS);
+            event.accept(ModItems.CHLOROPHYTE_BOOTS);
+            event.accept(ModItems.SHROOMITE_BOOTS);
+            event.accept(ModItems.SPECTRE_BOOTS);
+            event.accept(ModItems.HELLSTONE_BOOTS);
+
+            event.accept(ModItems.PLATINUM_SWORD);
+            event.accept(ModItems.PALLADIUM_SWORD);
+            event.accept(ModItems.TITANIUM_SWORD);
+            event.accept(ModItems.CHLOROPHYTE_SWORD);
+            event.accept(ModItems.SPECTRE_SWORD);
+            event.accept(ModItems.SHROOMITE_SWORD);
+            event.accept(ModItems.HELLSTONE_SWORD);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RUBY_APPLE);
+            event.accept(ModItems.SAPPHIRE_APPLE);
+            event.accept(ModItems.TOPAZ_APPLE);
+
+            event.accept(ModItems.RAW_PLATINUM);
+            event.accept(ModItems.RAW_PALLADIUM);
+            event.accept(ModItems.RAW_TITANIUM);
+            event.accept(ModItems.RAW_CHLOROPHYTE);
+            event.accept(ModItems.RAW_SHROOMITE);
+            event.accept(ModItems.RAW_SPECTRE);
+            event.accept(ModItems.RAW_HELLSTONE);
+
+            event.accept(ModItems.PLATINUM_INGOT);
+            event.accept(ModItems.PALLADIUM_INGOT);
+            event.accept(ModItems.TITANIUM_INGOT);
+            event.accept(ModItems.CHLOROPHYTE_INGOT);
+            event.accept(ModItems.SHROOMITE_INGOT);
+            event.accept(ModItems.SPECTRE_INGOT);
+            event.accept(ModItems.HELLSTONE_INGOT);
+
+            event.accept(ModItems.RUBY);
+            event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.TOPAZ);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.PALLADIUM_ORE);

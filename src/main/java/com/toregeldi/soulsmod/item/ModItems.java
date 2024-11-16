@@ -9,6 +9,38 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SoulsMod.MOD_ID);
 
+    public static final DeferredItem<Item> MINT = ITEMS.register("mint",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.MINT)));
+    public static final DeferredItem<Item> CRANBERRY = ITEMS.register("cranberry",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CRANBERRY)));
+    public static final DeferredItem<Item> BLACKBERRY = ITEMS.register("blackberry",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BLACKBERRY)));
+    public static final DeferredItem<Item> BLUEBERRY = ITEMS.register("blueberry",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BLUEBERRY)));
+    public static final DeferredItem<Item> RASPBERRY = ITEMS.register("raspberry",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.RASPBERRY)));
+    public static final DeferredItem<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.STRAWBERRY)));
+    public static final DeferredItem<Item> ORANGE = ITEMS.register("orange",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ORANGE)));
+    public static final DeferredItem<Item> LEMON = ITEMS.register("lemon",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.LEMON)));
+
+    public static final DeferredItem<Item> RUBY_APPLE = ITEMS.register("ruby_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.RUBY_APPLE)));
+    public static final DeferredItem<Item> SAPPHIRE_APPLE = ITEMS.register("sapphire_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SAPPHIRE_APPLE)));
+    public static final DeferredItem<Item> TOPAZ_APPLE = ITEMS.register("topaz_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.TOPAZ_APPLE)));
+
+
+    public static final DeferredItem<Item> RUBY = ITEMS.register("ruby",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SAPPHIRE = ITEMS.register("sapphire",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TOPAZ = ITEMS.register("topaz",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> RAW_PLATINUM = ITEMS.register("raw_platinum",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_PALLADIUM = ITEMS.register("raw_palladium",
@@ -159,22 +191,6 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))
             ));
-
-
-    public static final DeferredItem<Item> RUBY = ITEMS.register("ruby",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SAPPHIRE = ITEMS.register("sapphire",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> TOPAZ = ITEMS.register("topaz",
-            () -> new Item(new Item.Properties()));
-
-
-    public static final DeferredItem<Item> RUBY_APPLE = ITEMS.register("ruby_apple",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.RUBY_APPLE)));
-    public static final DeferredItem<Item> SAPPHIRE_APPLE = ITEMS.register("sapphire_apple",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.SAPPHIRE_APPLE)));
-    public static final DeferredItem<Item> TOPAZ_APPLE = ITEMS.register("topaz_apple",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.TOPAZ_APPLE)));
 
 
     public static final DeferredItem<SwordItem> PLATINUM_SWORD = ITEMS.register("platinum_sword",

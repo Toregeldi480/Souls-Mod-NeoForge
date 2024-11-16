@@ -1,5 +1,8 @@
 {
   "values": [
-    "#soulsmod:needs_chlorophyte_tool"
+    "#soulsmod:needs_chlorophyte_tool",
+    "#soulsmod:incorrect_for_chlorophyte_tool",
+    "minecraft:netherrack",
+    "minecraft:netherite_block"
   ]
 }

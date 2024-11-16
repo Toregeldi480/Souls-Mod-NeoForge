@@ -22,28 +22,12 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of()
                             .strength(3f)
-                            .destroyTime(3f)
-                            .requiresCorrectToolForDrops()
-                            .sound(SoundType.STONE)));
-
-//    public static final DeferredBlock<Block> HELLSTONE_ORE = registerBlock("hellstone_ore",
-//            () -> new DropExperienceBlock(UniformInt.of(2, 4),
-//                    BlockBehaviour.Properties.of()
-//                            .strength(3f)
-//                            .destroyTime(3f)
-//                            .requiresCorrectToolForDrops()
-//                            .sound(SoundType.STONE)));
-
-    public static final DeferredBlock<Block> CHLOROPHYTE_ORE = registerBlock("chlorophyte_ore",
-            () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of()
-                            .strength(3f)
-                            .destroyTime(3f)
+                            .destroyTime(2f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> PALLADIUM_ORE = registerBlock("palladium_ore",
-            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+            () -> new DropExperienceBlock(UniformInt.of(3, 5),
                     BlockBehaviour.Properties.of()
                             .strength(3f)
                             .destroyTime(3f)
@@ -57,6 +41,15 @@ public class ModBlocks {
                             .destroyTime(4f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> CHLOROPHYTE_ORE = registerBlock("chlorophyte_ore",
+            () -> new DropExperienceBlock(UniformInt.of(5, 10),
+                    BlockBehaviour.Properties.of()
+                            .strength(3f)
+                            .destroyTime(5f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
+
 
     public static final DeferredBlock<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
