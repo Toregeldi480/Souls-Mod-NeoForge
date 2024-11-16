@@ -33,7 +33,7 @@ public class ModPotions {
             () -> new Potion(new MobEffectInstance(MobEffects.LUCK, 8000, 0)));
 
     public static final Holder<Potion> ESTUS_FLASK = POTIONS.register("estus_flask",
-        () -> new Potion(new MobEffectInstance(MobEffects.HEAL, 3000, 0)));
+        () -> new Potion(new MobEffectInstance(MobEffects.REGENERATION, 300, 3)));
 
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);
