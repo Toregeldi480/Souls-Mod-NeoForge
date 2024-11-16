@@ -25,7 +25,14 @@
   "item.minecraft.potion.effect.estus_flask": "Estus Flask",
 
 
-  "effect.soulsmod.freshness": "Freshness",
+  "effect.soulsmod.mint_effect": "Freshness",
+  "effect.soulsmod.cranberry_effect": "Freshness",
+  "effect.soulsmod.blackberry_effect": "Freshness",
+  "effect.soulsmod.blueberry_effect": "Freshness",
+  "effect.soulsmod.raspberry_effect": "Freshness",
+  "effect.soulsmod.strawberry_effect": "Freshness",
+  "effect.soulsmod.orange_effect": "Freshness",
+  "effect.soulsmod.lemon_effect": "Freshness",
 
 
   "item.soulsmod.ruby": "Ruby",
