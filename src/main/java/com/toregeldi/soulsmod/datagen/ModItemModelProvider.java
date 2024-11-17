@@ -74,6 +74,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SAPPHIRE.get());
         basicItem(ModItems.TOPAZ.get());
 
+//        basicItem(ModItems.CRANBERRY.get());
+//        basicItem(ModItems.BLACKBERRY.get());
+        basicItem(ModItems.BLUEBERRY.get());
+//        basicItem(ModItems.RASPBERRY.get());
+//        basicItem(ModItems.STRAWBERRY.get());
+//        basicItem(ModItems.ORANGE.get());
+//        basicItem(ModItems.LEMON.get());
+
         basicItem(ModItems.RUBY_APPLE.get());
         basicItem(ModItems.SAPPHIRE_APPLE.get());
         basicItem(ModItems.TOPAZ_APPLE.get());

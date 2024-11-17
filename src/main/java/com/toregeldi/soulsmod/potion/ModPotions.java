@@ -2,9 +2,11 @@ package com.toregeldi.soulsmod.potion;
 
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.effect.ModEffects;
+import net.minecraft.client.resources.MobEffectTextureManager;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffectUtil;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.alchemy.Potion;
 import net.neoforged.bus.api.IEventBus;
