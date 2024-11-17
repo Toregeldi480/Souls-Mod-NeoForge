@@ -1,6 +1,7 @@
 package com.toregeldi.soulsmod.item;
 
 import com.toregeldi.soulsmod.SoulsMod;
+import com.toregeldi.soulsmod.potion.ModPotions;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -25,6 +26,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.ORANGE)));
     public static final DeferredItem<Item> LEMON = ITEMS.register("lemon",
             () -> new Item(new Item.Properties().food(ModFoodProperties.LEMON)));
+
 
     public static final DeferredItem<Item> RUBY_APPLE = ITEMS.register("ruby_apple",
             () -> new Item(new Item.Properties().food(ModFoodProperties.RUBY_APPLE)));

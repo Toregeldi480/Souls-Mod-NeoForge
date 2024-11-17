@@ -2,6 +2,7 @@ package com.toregeldi.soulsmod.item;
 
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.block.ModBlocks;
+import com.toregeldi.soulsmod.potion.ModPotions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -56,19 +57,10 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.TOPAZ_ORE);
                     }).build());
 
-    public static final Supplier<CreativeModeTab> POTION_TAB = CREATIVE_MODE_TAB.register("potions_tab",
-            () -> CreativeModeTab.builder()
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "fossil_blocks_tab"))
-//                    .icon(() -> new ItemStack(ModItems.ESTUS_FLASK.get()))
-                    .title(Component.translatable("creativetab.soulsmod.potions"))
-                    .displayItems((itemDisplayParameters, output) -> {
-//                        output.accept(ModItems.ESTUS_FLASK);
-                    })
-                    .build());
 
     public static final Supplier<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TAB.register("foods_tab",
             () -> CreativeModeTab.builder()
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "potions_tab"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "fossil_blocks_tab"))
                     .icon(() -> new ItemStack(ModItems.RUBY_APPLE.get()))
                     .title(Component.translatable("creativetab.soulsmod.foods"))
                     .displayItems((itemDisplayParameters, output) -> {

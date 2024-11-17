@@ -14,25 +14,12 @@
 
 
   "item.minecraft.potion.effect.mint_water": "Mint Water",
-  "item.minecraft.potion.effect.cranberry_juice": "Cranberry Juice",
-  "item.minecraft.potion.effect.blackberry_juice": "Blackberry Juice",
-  "item.minecraft.potion.effect.blueberry_juice": "Blueberry Juice",
-  "item.minecraft.potion.effect.raspberry_juice": "Raspberry Juice",
-  "item.minecraft.potion.effect.strawberry_juice": "Strawberry Juice",
-  "item.minecraft.potion.effect.orange_juice": "Orange Juice",
-  "item.minecraft.potion.effect.lemon_juice": "Lemon Juice",
+  "item.minecraft.potion.effect.juice": "Juice",
 
   "item.minecraft.potion.effect.estus_flask": "Estus Flask",
 
 
-  "effect.soulsmod.mint_effect": "Freshness",
-  "effect.soulsmod.cranberry_effect": "Freshness",
-  "effect.soulsmod.blackberry_effect": "Freshness",
-  "effect.soulsmod.blueberry_effect": "Freshness",
-  "effect.soulsmod.raspberry_effect": "Freshness",
-  "effect.soulsmod.strawberry_effect": "Freshness",
-  "effect.soulsmod.orange_effect": "Freshness",
-  "effect.soulsmod.lemon_effect": "Freshness",
+  "effect.soulsmod.freshness": "Freshness",
 
 
   "item.soulsmod.ruby": "Ruby",
