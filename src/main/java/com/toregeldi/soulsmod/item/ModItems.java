@@ -12,8 +12,6 @@ public class ModItems {
 
     public static final DeferredItem<Item> MINT = ITEMS.register("mint",
             () -> new Item(new Item.Properties().food(ModFoodProperties.MINT)));
-    public static final DeferredItem<Item> CRANBERRY = ITEMS.register("cranberry",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.CRANBERRY)));
     public static final DeferredItem<Item> BLACKBERRY = ITEMS.register("blackberry",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BLACKBERRY)));
     public static final DeferredItem<Item> BLUEBERRY = ITEMS.register("blueberry",

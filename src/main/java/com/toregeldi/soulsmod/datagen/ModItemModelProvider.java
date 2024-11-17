@@ -74,7 +74,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SAPPHIRE.get());
         basicItem(ModItems.TOPAZ.get());
 
-//        basicItem(ModItems.CRANBERRY.get());
 //        basicItem(ModItems.BLACKBERRY.get());
         basicItem(ModItems.BLUEBERRY.get());
 //        basicItem(ModItems.RASPBERRY.get());

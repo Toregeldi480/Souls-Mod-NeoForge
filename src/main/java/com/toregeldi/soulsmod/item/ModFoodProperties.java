@@ -8,9 +8,6 @@ public class ModFoodProperties {
     public static final FoodProperties MINT = new FoodProperties.Builder()
             .nutrition(1)
             .build();
-    public static final FoodProperties CRANBERRY = new FoodProperties.Builder()
-            .nutrition(3)
-            .build();
     public static final FoodProperties BLACKBERRY = new FoodProperties.Builder()
             .nutrition(3)
             .build();
