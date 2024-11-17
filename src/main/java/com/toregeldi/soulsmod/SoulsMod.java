@@ -129,7 +129,6 @@ public class SoulsMod
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.MINT);
-            event.accept(ModItems.CRANBERRY);
             event.accept(ModItems.BLACKBERRY);
             event.accept(ModItems.BLUEBERRY);
             event.accept(ModItems.RASPBERRY);
