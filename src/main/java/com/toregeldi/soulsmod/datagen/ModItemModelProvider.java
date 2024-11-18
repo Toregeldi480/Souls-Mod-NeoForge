@@ -88,6 +88,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ORANGE_JUICE.get());
         basicItem(ModItems.LEMON_JUICE.get());
         basicItem(ModItems.SWEET_BERRIES_JUICE.get());
+        basicItem(ModItems.ESTUS_FLASK.get());
 
         basicItem(ModItems.RUBY_APPLE.get());
         basicItem(ModItems.SAPPHIRE_APPLE.get());

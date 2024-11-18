@@ -1,4 +1,4 @@
-// 1.21	2024-11-18T11:26:27.568878477	Item Models: soulsmod
+// 1.21	2024-11-18T15:58:45.760034957	Item Models: soulsmod
 200489da61daca5d7e3981b0e9f3a71cba3686c9 assets/soulsmod/models/item/blackberry.json
 ca33978e356d63521328c88d46721f399fb7acc0 assets/soulsmod/models/item/blackberry_juice.json
 387daa9b0256c08678166ecdb4ab0c35950655a5 assets/soulsmod/models/item/blueberry.json
@@ -13,6 +13,7 @@ c2974fb3e31577bf16b16ae2739abebdb3c448e6 assets/soulsmod/models/item/chlorophyte
 c543a3daadf988eb38bad3f6c1fa110443303090 assets/soulsmod/models/item/chlorophyte_pickaxe.json
 6140dc6329328f50c082a385bf57d386675f18c9 assets/soulsmod/models/item/chlorophyte_shovel.json
 44d2771bb9666bab5d8f1d43b13551d9e23e87d2 assets/soulsmod/models/item/chlorophyte_sword.json
+bd5540fcb55ae20168084858e0e14368d1e308b8 assets/soulsmod/models/item/estus_flask.json
 4b43ef5359a6ae6ff100adc44cae4988e891fe94 assets/soulsmod/models/item/hellstone_axe.json
 cb538cb053dfc2a7a94f19f419fb029be78e2b84 assets/soulsmod/models/item/hellstone_boots.json
 2598c6f2e3e748882c007407f2ce79c0888d2c18 assets/soulsmod/models/item/hellstone_chestplate.json

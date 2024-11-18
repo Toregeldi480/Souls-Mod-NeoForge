@@ -1,4 +1,6 @@
 {
+  "item.soulsmod.bottle": "Bottle",
+
   "item.soulsmod.mint": "Mint",
   "item.soulsmod.cranberry": "Cranberry",
   "item.soulsmod.blackberry": "Blackberry",
@@ -17,12 +19,11 @@
   "item.soulsmod.lemon_juice": "Lemon Juice",
   "item.soulsmod.sweet_berries_juice": "Sweet Berries Juice",
 
+  "item.soulsmod.estus_flask": "Estus Flask",
+
   "item.soulsmod.ruby_apple": "Ruby Apple",
   "item.soulsmod.sapphire_apple": "Sapphire Apple",
   "item.soulsmod.topaz_apple": "Topaz Apple",
-
-
-  "item.minecraft.potion.effect.estus_flask": "Estus Flask",
 
 
   "effect.soulsmod.freshness": "Freshness",

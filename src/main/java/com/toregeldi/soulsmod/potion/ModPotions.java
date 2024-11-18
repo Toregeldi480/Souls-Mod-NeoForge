@@ -16,9 +16,6 @@ public class ModPotions {
     public static final DeferredRegister<Potion> POTIONS =
         DeferredRegister.create(BuiltInRegistries.POTION, SoulsMod.MOD_ID);
 
-    public static final Holder<Potion> ESTUS_FLASK = POTIONS.register("estus_flask",
-        () -> new Potion(new MobEffectInstance(MobEffects.REGENERATION, 300, 3)));
-
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);
     }

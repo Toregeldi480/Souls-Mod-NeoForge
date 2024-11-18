@@ -31,30 +31,44 @@ public class ModFoodProperties {
     public static final FoodProperties BLACKBERRY_JUICE = new FoodProperties.Builder()
             .nutrition(6)
             .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .usingConvertsTo(ModItems.BOTTLE)
             .build();
     public static final FoodProperties BLUEBERRY_JUICE = new FoodProperties.Builder()
             .nutrition(6)
             .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .usingConvertsTo(ModItems.BOTTLE)
             .build();
     public static final FoodProperties RASPBERRY_JUICE = new FoodProperties.Builder()
             .nutrition(6)
             .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .usingConvertsTo(ModItems.BOTTLE)
             .build();
     public static final FoodProperties STRAWBERRY_JUICE = new FoodProperties.Builder()
             .nutrition(6)
             .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .usingConvertsTo(ModItems.BOTTLE)
             .build();
     public static final FoodProperties ORANGE_JUICE = new FoodProperties.Builder()
             .nutrition(6)
             .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .usingConvertsTo(ModItems.BOTTLE)
             .build();
     public static final FoodProperties LEMON_JUICE = new FoodProperties.Builder()
             .nutrition(6)
             .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .usingConvertsTo(ModItems.BOTTLE)
             .build();
     public static final FoodProperties SWEET_BERRIES_JUICE = new FoodProperties.Builder()
             .nutrition(6)
             .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .usingConvertsTo(ModItems.BOTTLE)
+            .build();
+
+    public static final FoodProperties ESTUS_FLASK = new FoodProperties.Builder()
+            .nutrition(10)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 300, 4), 100)
+            .alwaysEdible()
+            .usingConvertsTo(ModItems.BOTTLE)
             .build();
 
     public static final FoodProperties RUBY_APPLE = new FoodProperties.Builder()

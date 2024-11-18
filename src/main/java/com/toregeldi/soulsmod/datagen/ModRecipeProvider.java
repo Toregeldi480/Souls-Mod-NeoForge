@@ -5,10 +5,12 @@ import com.toregeldi.soulsmod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.ShapelessRecipe;
+import net.minecraft.world.item.PotionItem;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
@@ -26,6 +28,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> PALLADIUM_SMELTABLES = List.of(ModItems.RAW_PALLADIUM, ModBlocks.PALLADIUM_ORE);
         List<ItemLike> TITANIUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM, ModBlocks.TITANIUM_ORE);
         List<ItemLike> CHLOROPHYTE_SMELTABLES = List.of(ModItems.RAW_CHLOROPHYTE, ModBlocks.CHLOROPHYTE_ORE);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.ESTUS_FLASK)
+                .requires(ModItems.BOTTLE, 1)
+                .requires(Items.GOLD_NUGGET, 1)
+                .requires(ModItems.MINT, 1)
+                .requires(ModItems.ORANGE, 1)
+                .requires(ModItems.LEMON, 1)
+                .unlockedBy("has_bottle", has(ModItems.BOTTLE)).save(output);
 
         createJuice(ModItems.BLACKBERRY.get(), ModItems.BLACKBERRY_JUICE.get(), output);
         createJuice(ModItems.BLUEBERRY.get(), ModItems.BLUEBERRY_JUICE.get(), output);
@@ -125,7 +135,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     private void createJuice(Item item, Item result, RecipeOutput output) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result)
                 .requires(item, 1)
-                .requires(Items.GLASS_BOTTLE, 1)
+                .requires(ModItems.BOTTLE, 1)
                 .requires(ModItems.MINT, 1)
                 .unlockedBy("has_" + item.toString().toLowerCase(), has(item)).save(output);
     }

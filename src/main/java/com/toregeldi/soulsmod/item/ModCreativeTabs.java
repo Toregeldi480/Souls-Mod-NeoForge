@@ -81,6 +81,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.ORANGE_JUICE);
                         output.accept(ModItems.LEMON_JUICE);
                         output.accept(ModItems.SWEET_BERRIES_JUICE);
+                        output.accept(ModItems.ESTUS_FLASK);
                     })
                     .build());
 

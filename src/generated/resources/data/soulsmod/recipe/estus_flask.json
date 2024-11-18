@@ -3,17 +3,23 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "soulsmod:lemon"
-    },
-    {
       "item": "soulsmod:bottle"
     },
     {
+      "item": "minecraft:gold_nugget"
+    },
+    {
       "item": "soulsmod:mint"
+    },
+    {
+      "item": "soulsmod:orange"
+    },
+    {
+      "item": "soulsmod:lemon"
     }
   ],
   "result": {
     "count": 1,
-    "id": "soulsmod:lemon_juice"
+    "id": "soulsmod:estus_flask"
   }
 }
