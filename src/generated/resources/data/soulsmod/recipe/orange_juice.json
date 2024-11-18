@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "soulsmod:orange"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "soulsmod:mint"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "soulsmod:orange_juice"
+  }
+}

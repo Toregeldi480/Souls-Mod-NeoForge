@@ -26,6 +26,22 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.LEMON)));
 
 
+    public static final DeferredItem<Item> BLACKBERRY_JUICE = ITEMS.register("blackberry_juice",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BLACKBERRY_JUICE)));
+    public static final DeferredItem<Item> BLUEBERRY_JUICE = ITEMS.register("blueberry_juice",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BLUEBERRY_JUICE)));
+    public static final DeferredItem<Item> RASPBERRY_JUICE = ITEMS.register("raspberry_juice",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.RASPBERRY_JUICE)));
+    public static final DeferredItem<Item> STRAWBERRY_JUICE = ITEMS.register("strawberry_juice",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.STRAWBERRY_JUICE)));
+    public static final DeferredItem<Item> ORANGE_JUICE = ITEMS.register("orange_juice",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ORANGE_JUICE)));
+    public static final DeferredItem<Item> LEMON_JUICE = ITEMS.register("lemon_juice",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.LEMON_JUICE)));
+    public static final DeferredItem<Item> SWEET_BERRIES_JUICE = ITEMS.register("sweet_berries_juice",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SWEET_BERRIES_JUICE)));
+
+
     public static final DeferredItem<Item> RUBY_APPLE = ITEMS.register("ruby_apple",
             () -> new Item(new Item.Properties().food(ModFoodProperties.RUBY_APPLE)));
     public static final DeferredItem<Item> SAPPHIRE_APPLE = ITEMS.register("sapphire_apple",
@@ -218,95 +234,95 @@ public class ModItems {
 
     public static final DeferredItem<PickaxeItem> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe",
             () -> new PickaxeItem(ModToolTiers.PLATINUM, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM, 1, -3f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM, 1, -2.8f))));
     public static final DeferredItem<PickaxeItem> PALLADIUM_PICKAXE = ITEMS.register("palladium_pickaxe",
             () -> new PickaxeItem(ModToolTiers.PALLADIUM, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PALLADIUM, 2, -3f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PALLADIUM, 2, -2.8f))));
     public static final DeferredItem<PickaxeItem> TITANIUM_PICKAXE = ITEMS.register("titanium_pickaxe",
             () -> new PickaxeItem(ModToolTiers.TITANIUM, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.TITANIUM, 2, -3f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.TITANIUM, 2, -2.8f))));
     public static final DeferredItem<PickaxeItem> CHLOROPHYTE_PICKAXE = ITEMS.register("chlorophyte_pickaxe",
             () -> new PickaxeItem(ModToolTiers.CHLOROPHYTE, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.CHLOROPHYTE, 3, -3f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.CHLOROPHYTE, 3, -2.8f))));
     public static final DeferredItem<PickaxeItem> SPECTRE_PICKAXE = ITEMS.register("spectre_pickaxe",
             () -> new PickaxeItem(ModToolTiers.SPECTRE, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.SPECTRE, 3, -3f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.SPECTRE, 3, -2.8f))));
     public static final DeferredItem<PickaxeItem> SHROOMITE_PICKAXE = ITEMS.register("shroomite_pickaxe",
             () -> new PickaxeItem(ModToolTiers.SHROOMITE, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.SHROOMITE, 3, -3f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.SHROOMITE, 3, -2.8f))));
     public static final DeferredItem<PickaxeItem> HELLSTONE_PICKAXE = ITEMS.register("hellstone_pickaxe",
             () -> new PickaxeItem(ModToolTiers.HELLSTONE, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.HELLSTONE, 4, -3f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.HELLSTONE, 4, -2.8f))));
 
 
 
     public static final DeferredItem<AxeItem> PLATINUM_AXE = ITEMS.register("platinum_axe",
             () -> new AxeItem(ModToolTiers.PLATINUM, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.PLATINUM, 5, -2.8f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.PLATINUM, 5, -3f))));
     public static final DeferredItem<AxeItem> PALLADIUM_AXE = ITEMS.register("palladium_axe",
             () -> new AxeItem(ModToolTiers.PALLADIUM, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.PALLADIUM, 7, -2.8f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.PALLADIUM, 7, -3f))));
     public static final DeferredItem<AxeItem> TITANIUM_AXE = ITEMS.register("titanium_axe",
             () -> new AxeItem(ModToolTiers.TITANIUM, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.TITANIUM, 9, -2.8f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.TITANIUM, 9, -3f))));
     public static final DeferredItem<AxeItem> CHLOROPHYTE_AXE = ITEMS.register("chlorophyte_axe",
             () -> new AxeItem(ModToolTiers.CHLOROPHYTE, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.CHLOROPHYTE, 11, -2.8f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.CHLOROPHYTE, 11, -3f))));
     public static final DeferredItem<AxeItem> SPECTRE_AXE = ITEMS.register("spectre_axe",
             () -> new AxeItem(ModToolTiers.SPECTRE, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.SPECTRE, 12, -2.8f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.SPECTRE, 12, -3f))));
     public static final DeferredItem<AxeItem> SHROOMITE_AXE = ITEMS.register("shroomite_axe",
             () -> new AxeItem(ModToolTiers.SHROOMITE, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.SHROOMITE, 12, -2.8f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.SHROOMITE, 12, -3f))));
     public static final DeferredItem<AxeItem> HELLSTONE_AXE = ITEMS.register("hellstone_axe",
             () -> new AxeItem(ModToolTiers.HELLSTONE, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.HELLSTONE, 13, -2.8f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.HELLSTONE, 13, -3f))));
 
 
     public static final DeferredItem<ShovelItem> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel",
             () -> new ShovelItem(ModToolTiers.PLATINUM, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.PLATINUM, 1, -3.2f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.PLATINUM, 1, -3f))));
     public static final DeferredItem<ShovelItem> PALLADIUM_SHOVEL = ITEMS.register("palladium_shovel",
             () -> new ShovelItem(ModToolTiers.PALLADIUM, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.PALLADIUM, 2, -3.2f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.PALLADIUM, 2, -3f))));
     public static final DeferredItem<ShovelItem> TITANIUM_SHOVEL = ITEMS.register("titanium_shovel",
             () -> new ShovelItem(ModToolTiers.TITANIUM, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.TITANIUM, 2, -3.2f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.TITANIUM, 2, -3f))));
     public static final DeferredItem<ShovelItem> CHLOROPHYTE_SHOVEL = ITEMS.register("chlorophyte_shovel",
             () -> new ShovelItem(ModToolTiers.CHLOROPHYTE, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.CHLOROPHYTE, 3, -3.2f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.CHLOROPHYTE, 3, -3f))));
     public static final DeferredItem<ShovelItem> SPECTRE_SHOVEL = ITEMS.register("spectre_shovel",
             () -> new ShovelItem(ModToolTiers.SPECTRE, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.SPECTRE, 3, -3.2f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.SPECTRE, 3, -3f))));
     public static final DeferredItem<ShovelItem> SHROOMITE_SHOVEL = ITEMS.register("shroomite_shovel",
             () -> new ShovelItem(ModToolTiers.SHROOMITE, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.SHROOMITE, 3, -3.2f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.SHROOMITE, 3, -3f))));
     public static final DeferredItem<ShovelItem> HELLSTONE_SHOVEL = ITEMS.register("hellstone_shovel",
             () -> new ShovelItem(ModToolTiers.HELLSTONE, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.HELLSTONE, 4, -3.2f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.HELLSTONE, 4, -3f))));
 
 
     public static final DeferredItem<HoeItem> PLATINUM_HOE = ITEMS.register("platinum_hoe",
             () -> new HoeItem(ModToolTiers.PLATINUM, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.PLATINUM, 1, -3.6f))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.PLATINUM, 1, 0f))));
     public static final DeferredItem<HoeItem> PALLADIUM_HOE = ITEMS.register("palladium_hoe",
             () -> new HoeItem(ModToolTiers.PALLADIUM, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.PALLADIUM, 2, -3.6f))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.PALLADIUM, 2, 0f))));
     public static final DeferredItem<HoeItem> TITANIUM_HOE = ITEMS.register("titanium_hoe",
             () -> new HoeItem(ModToolTiers.TITANIUM, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.TITANIUM, 2, -3.6f))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.TITANIUM, 2, 0f))));
     public static final DeferredItem<HoeItem> CHLOROPHYTE_HOE = ITEMS.register("chlorophyte_hoe",
             () -> new HoeItem(ModToolTiers.CHLOROPHYTE, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.CHLOROPHYTE, 3, -3.6f))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.CHLOROPHYTE, 3, 0f))));
     public static final DeferredItem<HoeItem> SPECTRE_HOE = ITEMS.register("spectre_hoe",
             () -> new HoeItem(ModToolTiers.SPECTRE, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.SPECTRE, 3, -3.6f))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.SPECTRE, 3, 0f))));
     public static final DeferredItem<HoeItem> SHROOMITE_HOE = ITEMS.register("shroomite_hoe",
             () -> new HoeItem(ModToolTiers.SHROOMITE, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.SHROOMITE, 3, -3.6f))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.SHROOMITE, 3, 0f))));
     public static final DeferredItem<HoeItem> HELLSTONE_HOE = ITEMS.register("hellstone_hoe",
             () -> new HoeItem(ModToolTiers.HELLSTONE, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.HELLSTONE, 4, -3.6f))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.HELLSTONE, 4, 0f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

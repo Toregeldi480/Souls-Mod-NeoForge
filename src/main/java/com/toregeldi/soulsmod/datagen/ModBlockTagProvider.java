@@ -63,9 +63,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.NETHERITE_BLOCK)
                 .add(Blocks.NETHERRACK);
 
-        tag(ModTags.Blocks.NEEDS_HELLSTONE_TOOL)
-                .add(Blocks.BEDROCK);
-
 
         tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_PLATINUM_TOOL)
@@ -95,7 +92,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_CHLOROPHYTE_TOOL)
                 .addTag(ModTags.Blocks.INCORRECT_FOR_NETHERITE_TOOL);
 
-        tag(ModTags.Blocks.INCORRECT_FOR_NETHERITE_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_HELLSTONE_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_NETHERITE_TOOL);
     }
 }

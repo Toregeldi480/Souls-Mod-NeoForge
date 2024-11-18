@@ -67,6 +67,20 @@ public class ModCreativeTabs {
                         output.accept(ModItems.RUBY_APPLE);
                         output.accept(ModItems.SAPPHIRE_APPLE);
                         output.accept(ModItems.TOPAZ_APPLE);
+                        output.accept(ModItems.MINT);
+                        output.accept(ModItems.BLACKBERRY);
+                        output.accept(ModItems.BLUEBERRY);
+                        output.accept(ModItems.RASPBERRY);
+                        output.accept(ModItems.STRAWBERRY);
+                        output.accept(ModItems.ORANGE);
+                        output.accept(ModItems.LEMON);
+                        output.accept(ModItems.BLACKBERRY_JUICE);
+                        output.accept(ModItems.BLUEBERRY_JUICE);
+                        output.accept(ModItems.RASPBERRY_JUICE);
+                        output.accept(ModItems.STRAWBERRY_JUICE);
+                        output.accept(ModItems.ORANGE_JUICE);
+                        output.accept(ModItems.LEMON_JUICE);
+                        output.accept(ModItems.SWEET_BERRIES_JUICE);
                     })
                     .build());
 

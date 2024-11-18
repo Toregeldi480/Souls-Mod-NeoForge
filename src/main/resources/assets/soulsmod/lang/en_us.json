@@ -8,13 +8,19 @@
   "item.soulsmod.orange": "Orange",
   "item.soulsmod.lemon": "Lemon",
 
+  "item.soulsmod.cranberry_juice": "Cranberry Juice",
+  "item.soulsmod.blackberry_juice": "Blackberry Juice",
+  "item.soulsmod.blueberry_juice": "Blueberry Juice",
+  "item.soulsmod.raspberry_juice": "Raspberry Juice",
+  "item.soulsmod.strawberry_juice": "Strawberry Juice",
+  "item.soulsmod.orange_juice": "Orange Juice",
+  "item.soulsmod.lemon_juice": "Lemon Juice",
+  "item.soulsmod.sweet_berries_juice": "Sweet Berries Juice",
+
   "item.soulsmod.ruby_apple": "Ruby Apple",
   "item.soulsmod.sapphire_apple": "Sapphire Apple",
   "item.soulsmod.topaz_apple": "Topaz Apple",
 
-
-  "item.minecraft.potion.effect.mint_water": "Mint Water",
-  "item.minecraft.potion.effect.juice": "Juice",
 
   "item.minecraft.potion.effect.estus_flask": "Estus Flask",
 

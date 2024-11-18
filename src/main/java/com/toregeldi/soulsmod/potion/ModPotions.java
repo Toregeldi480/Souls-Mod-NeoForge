@@ -16,12 +16,6 @@ public class ModPotions {
     public static final DeferredRegister<Potion> POTIONS =
         DeferredRegister.create(BuiltInRegistries.POTION, SoulsMod.MOD_ID);
 
-    public static final Holder<Potion> MINT_WATER = POTIONS.register("mint_water",
-            () -> new Potion(new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0)));
-
-    public static final Holder<Potion> JUICE = POTIONS.register("juice",
-            () -> new Potion(new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0)));
-
     public static final Holder<Potion> ESTUS_FLASK = POTIONS.register("estus_flask",
         () -> new Potion(new MobEffectInstance(MobEffects.REGENERATION, 300, 3)));
 

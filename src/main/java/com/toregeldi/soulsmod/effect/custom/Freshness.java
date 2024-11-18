@@ -14,9 +14,9 @@ public class Freshness extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-        livingEntity.addEffect(new MobEffectInstance(MobEffects.LUCK, 4000, 1, true, false, false));
-        livingEntity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 4000, 1, true, false, false));
-        livingEntity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 4000, 1,true, false, false));
+        livingEntity.addEffect(new MobEffectInstance(MobEffects.LUCK, 2000, 1, true, false, false));
+        livingEntity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 2000, 1, true, false, false));
+        livingEntity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 2000, 1,true, false, false));
 
         return super.applyEffectTick(livingEntity, amplifier);
     }

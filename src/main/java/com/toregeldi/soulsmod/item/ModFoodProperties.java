@@ -1,5 +1,6 @@
 package com.toregeldi.soulsmod.item;
 
+import com.toregeldi.soulsmod.effect.ModEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -25,6 +26,35 @@ public class ModFoodProperties {
             .build();
     public static final FoodProperties LEMON = new FoodProperties.Builder()
             .nutrition(3)
+            .build();
+
+    public static final FoodProperties BLACKBERRY_JUICE = new FoodProperties.Builder()
+            .nutrition(6)
+            .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .build();
+    public static final FoodProperties BLUEBERRY_JUICE = new FoodProperties.Builder()
+            .nutrition(6)
+            .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .build();
+    public static final FoodProperties RASPBERRY_JUICE = new FoodProperties.Builder()
+            .nutrition(6)
+            .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .build();
+    public static final FoodProperties STRAWBERRY_JUICE = new FoodProperties.Builder()
+            .nutrition(6)
+            .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .build();
+    public static final FoodProperties ORANGE_JUICE = new FoodProperties.Builder()
+            .nutrition(6)
+            .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .build();
+    public static final FoodProperties LEMON_JUICE = new FoodProperties.Builder()
+            .nutrition(6)
+            .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
+            .build();
+    public static final FoodProperties SWEET_BERRIES_JUICE = new FoodProperties.Builder()
+            .nutrition(6)
+            .effect(() -> new MobEffectInstance(ModEffects.FRESHNESS, 2000, 0), 100)
             .build();
 
     public static final FoodProperties RUBY_APPLE = new FoodProperties.Builder()

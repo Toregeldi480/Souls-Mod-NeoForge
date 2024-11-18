@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_soulsmod:raspberry": {
+      "conditions": {
+        "items": [
+          {
+            "items": "soulsmod:raspberry"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "soulsmod:raspberry_juice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_soulsmod:raspberry"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "soulsmod:raspberry_juice"
+    ]
+  }
+}

@@ -4,13 +4,11 @@ import com.toregeldi.soulsmod.block.ModBlocks;
 import com.toregeldi.soulsmod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.ShapelessRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
@@ -28,6 +26,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> PALLADIUM_SMELTABLES = List.of(ModItems.RAW_PALLADIUM, ModBlocks.PALLADIUM_ORE);
         List<ItemLike> TITANIUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM, ModBlocks.TITANIUM_ORE);
         List<ItemLike> CHLOROPHYTE_SMELTABLES = List.of(ModItems.RAW_CHLOROPHYTE, ModBlocks.CHLOROPHYTE_ORE);
+
+        createJuice(ModItems.BLACKBERRY.get(), ModItems.BLACKBERRY_JUICE.get(), output);
+        createJuice(ModItems.BLUEBERRY.get(), ModItems.BLUEBERRY_JUICE.get(), output);
+        createJuice(ModItems.RASPBERRY.get(), ModItems.RASPBERRY_JUICE.get(), output);
+        createJuice(ModItems.STRAWBERRY.get(), ModItems.STRAWBERRY_JUICE.get(), output);
+        createJuice(ModItems.ORANGE.get(), ModItems.ORANGE_JUICE.get(), output);
+        createJuice(ModItems.LEMON.get(), ModItems.LEMON_JUICE.get(), output);
+        createJuice(Items.SWEET_BERRIES, ModItems.SWEET_BERRIES_JUICE.get(), output);
 
         createApple(ModItems.RUBY.get(), ModItems.RUBY_APPLE.get(), output);
         createApple(ModItems.SAPPHIRE.get(), ModItems.SAPPHIRE_APPLE.get(), output);
@@ -114,6 +120,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(output, PALLADIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PALLADIUM_INGOT.get(), 0.25f, 250, "palladium");
         oreBlasting(output, CHLOROPHYTE_SMELTABLES, RecipeCategory.MISC, ModItems.CHLOROPHYTE_INGOT.get(), 0.25f, 250, "chlorophyte");
         oreBlasting(output, TITANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(), 0.25f, 250, "titanium");
+    }
+
+    private void createJuice(Item item, Item result, RecipeOutput output) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, result)
+                .requires(item, 1)
+                .requires(Items.GLASS_BOTTLE, 1)
+                .requires(ModItems.MINT, 1)
+                .unlockedBy("has_" + item.toString().toLowerCase(), has(item)).save(output);
     }
 
     private void createApple(Item item, Item result, RecipeOutput output) {

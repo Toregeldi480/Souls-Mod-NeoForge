@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_soulsmod:orange": {
+      "conditions": {
+        "items": [
+          {
+            "items": "soulsmod:orange"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "soulsmod:orange_juice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_soulsmod:orange"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "soulsmod:orange_juice"
+    ]
+  }
+}

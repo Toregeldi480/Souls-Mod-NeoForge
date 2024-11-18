@@ -1,6 +1,8 @@
-// 1.21	2024-11-17T21:11:50.857238632	Item Models: soulsmod
+// 1.21	2024-11-18T11:26:27.568878477	Item Models: soulsmod
 200489da61daca5d7e3981b0e9f3a71cba3686c9 assets/soulsmod/models/item/blackberry.json
+ca33978e356d63521328c88d46721f399fb7acc0 assets/soulsmod/models/item/blackberry_juice.json
 387daa9b0256c08678166ecdb4ab0c35950655a5 assets/soulsmod/models/item/blueberry.json
+1c8a8c23f927bcfb3e69455322df3c823f79e4f8 assets/soulsmod/models/item/blueberry_juice.json
 8235eadbd1bff4a3bd898f679724dba70d36fa29 assets/soulsmod/models/item/chlorophyte_axe.json
 c2974fb3e31577bf16b16ae2739abebdb3c448e6 assets/soulsmod/models/item/chlorophyte_boots.json
 7c47a8b71d7d5b245a9607e128c8203b72827547 assets/soulsmod/models/item/chlorophyte_chestplate.json
@@ -22,7 +24,9 @@ d755e88b02e9041f06b3997daf14b15eeb8584a1 assets/soulsmod/models/item/hellstone_l
 e0c298aaf14b78855de0718309f076d437362069 assets/soulsmod/models/item/hellstone_shovel.json
 cc995f8ed5a215e0b55f6011a8c0d06f3f59994c assets/soulsmod/models/item/hellstone_sword.json
 28177b2e35b1056a15645ecaa809459ea8477da7 assets/soulsmod/models/item/lemon.json
+825bc86e3ef191bd53c85e004de9e503aa48f403 assets/soulsmod/models/item/lemon_juice.json
 11471c77ea7ab35546c67b14c216312a3ae6ac47 assets/soulsmod/models/item/orange.json
+d7b61c306cea31561299e5398590b9192347aa37 assets/soulsmod/models/item/orange_juice.json
 33259e59bbd7e35d849ed3a4493401c3340c8f65 assets/soulsmod/models/item/palladium_axe.json
 2dd90824109c9aea17e50ba3ecf3cd7d35c9f2f4 assets/soulsmod/models/item/palladium_boots.json
 a9e2ea3976000e5a30eb77f4050d01d81f727e6d assets/soulsmod/models/item/palladium_chestplate.json
@@ -44,6 +48,7 @@ d759eb102b83779c5d286f710b399c93e687bd5a assets/soulsmod/models/item/platinum_le
 ad0c7d764ea8cf52004669f8ad746ce5e5fbed7f assets/soulsmod/models/item/platinum_shovel.json
 994fc56ea6d30c16c8251d1b93fdbfba7a3b8c52 assets/soulsmod/models/item/platinum_sword.json
 0d8dfa391d8dac59fd1da028b35237eeda2f63f3 assets/soulsmod/models/item/raspberry.json
+83fec87af87ad64d82cc47b0f5d2b4ee5a661ef3 assets/soulsmod/models/item/raspberry_juice.json
 92d67c42b0da005c30af08cc4d51e956924ea79e assets/soulsmod/models/item/raw_chlorophyte.json
 49ea04bd406655bff2ad468f4fe2534a2eac3725 assets/soulsmod/models/item/raw_hellstone.json
 f3baf6da600b85c2aee22c9147e4bc2dd4dc4eb5 assets/soulsmod/models/item/raw_palladium.json
@@ -76,6 +81,8 @@ c63d34f28813939de765e3535b983e0f5e6bb8ea assets/soulsmod/models/item/spectre_leg
 8a89d37b13879a47520cb5771b3af6f589656161 assets/soulsmod/models/item/spectre_shovel.json
 12f9a02d459030e5cb0c46c3075834838d2445ff assets/soulsmod/models/item/spectre_sword.json
 0e05f8d603ac78fc47594e6989daf0bdcc454928 assets/soulsmod/models/item/strawberry.json
+1be091317fce04a4d55ad221a65cfa767bed2372 assets/soulsmod/models/item/strawberry_juice.json
+d445d7761395059a1ebc92625608c01aed89650c assets/soulsmod/models/item/sweet_berries_juice.json
 e9cd19ec1c36bf21a4648deba9639a0e9ae8dec9 assets/soulsmod/models/item/titanium_axe.json
 b66ade913597e841c11c956ef0cb2ed4532eb937 assets/soulsmod/models/item/titanium_boots.json
 da5429c61c3f50159eec89c4c3c8caf2fa7575c9 assets/soulsmod/models/item/titanium_chestplate.json
