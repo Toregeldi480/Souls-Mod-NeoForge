@@ -123,7 +123,7 @@ public class ModItems {
             ));
     public static final DeferredItem<ArmorItem> HELLSTONE_HELMET = ITEMS.register("hellstone_helmet",
             () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19)).fireResistant()
             ));
 
 
@@ -153,7 +153,7 @@ public class ModItems {
             ));
     public static final DeferredItem<ArmorItem> HELLSTONE_CHESTPLATE = ITEMS.register("hellstone_chestplate",
             () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19)).fireResistant()
             ));
 
 
@@ -183,7 +183,7 @@ public class ModItems {
             ));
     public static final DeferredItem<ArmorItem> HELLSTONE_LEGGINGS = ITEMS.register("hellstone_leggings",
             () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19)).fireResistant()
             ));
 
 
@@ -213,7 +213,7 @@ public class ModItems {
             ));
     public static final DeferredItem<ArmorItem> HELLSTONE_BOOTS = ITEMS.register("hellstone_boots",
             () -> new ArmorItem(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19)).fireResistant()
             ));
 
 
