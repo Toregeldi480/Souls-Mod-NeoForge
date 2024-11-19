@@ -2,7 +2,6 @@ package com.toregeldi.soulsmod.item;
 
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.block.ModBlocks;
-import com.toregeldi.soulsmod.potion.ModPotions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;

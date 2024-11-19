@@ -1,5 +1,13 @@
 {
   "values": [
+    "soulsmod:bottle",
+    "soulsmod:blackberry_juice",
+    "soulsmod:blueberry_juice",
+    "soulsmod:raspberry_juice",
+    "soulsmod:strawberry_juice",
+    "soulsmod:orange_juice",
+    "soulsmod:lemon_juice",
+    "soulsmod:estus_flask",
     "soulsmod:raw_platinum",
     "soulsmod:raw_hellstone",
     "soulsmod:raw_chlorophyte",

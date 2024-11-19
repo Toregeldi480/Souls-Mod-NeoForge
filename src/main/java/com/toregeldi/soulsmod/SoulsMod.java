@@ -51,6 +51,30 @@ public class SoulsMod
 
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.MINT);
+            event.accept(ModItems.BLACKBERRY);
+            event.accept(ModItems.BLUEBERRY);
+            event.accept(ModItems.RASPBERRY);
+            event.accept(ModItems.STRAWBERRY);
+            event.accept(ModItems.ORANGE);
+            event.accept(ModItems.LEMON);
+
+            event.accept(ModItems.BLACKBERRY_JUICE);
+            event.accept(ModItems.BLUEBERRY_JUICE);
+            event.accept(ModItems.RASPBERRY_JUICE);
+            event.accept(ModItems.STRAWBERRY_JUICE);
+            event.accept(ModItems.ORANGE_JUICE);
+            event.accept(ModItems.LEMON_JUICE);
+            event.accept(ModItems.SWEET_BERRIES_JUICE);
+
+            event.accept(ModItems.RUBY_APPLE);
+            event.accept(ModItems.SAPPHIRE_APPLE);
+            event.accept(ModItems.TOPAZ_APPLE);
+
+
+        }
+
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.PLATINUM_PICKAXE);
             event.accept(ModItems.PALLADIUM_PICKAXE);
@@ -129,26 +153,6 @@ public class SoulsMod
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BOTTLE);
-
-            event.accept(ModItems.MINT);
-            event.accept(ModItems.BLACKBERRY);
-            event.accept(ModItems.BLUEBERRY);
-            event.accept(ModItems.RASPBERRY);
-            event.accept(ModItems.STRAWBERRY);
-            event.accept(ModItems.ORANGE);
-            event.accept(ModItems.LEMON);
-
-            event.accept(ModItems.BLACKBERRY_JUICE);
-            event.accept(ModItems.BLUEBERRY_JUICE);
-            event.accept(ModItems.RASPBERRY_JUICE);
-            event.accept(ModItems.STRAWBERRY_JUICE);
-            event.accept(ModItems.ORANGE_JUICE);
-            event.accept(ModItems.LEMON_JUICE);
-            event.accept(ModItems.SWEET_BERRIES_JUICE);
-
-            event.accept(ModItems.RUBY_APPLE);
-            event.accept(ModItems.SAPPHIRE_APPLE);
-            event.accept(ModItems.TOPAZ_APPLE);
 
             event.accept(ModItems.RAW_PLATINUM);
             event.accept(ModItems.RAW_PALLADIUM);

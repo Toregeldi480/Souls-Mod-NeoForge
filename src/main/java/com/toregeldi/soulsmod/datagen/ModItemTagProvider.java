@@ -21,6 +21,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
+                .add(ModItems.BOTTLE.get())
+                .add(ModItems.BLACKBERRY_JUICE.get())
+                .add(ModItems.BLUEBERRY_JUICE.get())
+                .add(ModItems.RASPBERRY_JUICE.get())
+                .add(ModItems.STRAWBERRY_JUICE.get())
+                .add(ModItems.ORANGE_JUICE.get())
+                .add(ModItems.LEMON_JUICE.get())
+                .add(ModItems.ESTUS_FLASK.get())
+
                 .add(ModItems.RAW_PLATINUM.get())
                 .add(ModItems.RAW_HELLSTONE.get())
                 .add(ModItems.RAW_CHLOROPHYTE.get())

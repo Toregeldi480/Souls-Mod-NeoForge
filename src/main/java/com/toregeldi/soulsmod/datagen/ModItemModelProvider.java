@@ -22,6 +22,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        basicItem(ModItems.BOTTLE.get());
+
         basicItem(ModItems.RAW_PLATINUM.get());
         basicItem(ModItems.RAW_HELLSTONE.get());
         basicItem(ModItems.RAW_CHLOROPHYTE.get());
@@ -74,6 +76,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SAPPHIRE.get());
         basicItem(ModItems.TOPAZ.get());
 
+        basicItem(ModItems.MINT.get());
         basicItem(ModItems.BLACKBERRY.get());
         basicItem(ModItems.BLUEBERRY.get());
         basicItem(ModItems.RASPBERRY.get());
