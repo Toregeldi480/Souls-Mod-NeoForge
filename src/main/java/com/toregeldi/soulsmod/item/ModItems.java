@@ -1,9 +1,10 @@
 package com.toregeldi.soulsmod.item;
 
 import com.toregeldi.soulsmod.SoulsMod;
+import com.toregeldi.soulsmod.item.custom.DrinkItem;
 import com.toregeldi.soulsmod.item.custom.WayfinderItem;
-import com.toregeldi.soulsmod.potion.ModPotions;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -34,22 +35,29 @@ public class ModItems {
 
 
     public static final DeferredItem<Item> BLACKBERRY_JUICE = ITEMS.register("blackberry_juice",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.BLACKBERRY_JUICE)));
+            () -> new DrinkItem(new Item.Properties()
+                    .food(ModFoodProperties.BLACKBERRY_JUICE)));
     public static final DeferredItem<Item> BLUEBERRY_JUICE = ITEMS.register("blueberry_juice",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.BLUEBERRY_JUICE)));
+            () -> new DrinkItem(new Item.Properties()
+                    .food(ModFoodProperties.BLUEBERRY_JUICE)));
     public static final DeferredItem<Item> RASPBERRY_JUICE = ITEMS.register("raspberry_juice",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.RASPBERRY_JUICE)));
+            () -> new DrinkItem(new Item.Properties()
+                    .food(ModFoodProperties.RASPBERRY_JUICE)));
     public static final DeferredItem<Item> STRAWBERRY_JUICE = ITEMS.register("strawberry_juice",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.STRAWBERRY_JUICE)));
+            () -> new DrinkItem(new Item.Properties()
+                    .food(ModFoodProperties.STRAWBERRY_JUICE)));
     public static final DeferredItem<Item> ORANGE_JUICE = ITEMS.register("orange_juice",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.ORANGE_JUICE)));
+            () -> new DrinkItem(new Item.Properties()
+                    .food(ModFoodProperties.ORANGE_JUICE)));
     public static final DeferredItem<Item> LEMON_JUICE = ITEMS.register("lemon_juice",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.LEMON_JUICE)));
+            () -> new DrinkItem(new Item.Properties()
+                    .food(ModFoodProperties.LEMON_JUICE)));
     public static final DeferredItem<Item> SWEET_BERRIES_JUICE = ITEMS.register("sweet_berries_juice",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.SWEET_BERRIES_JUICE)));
+            () -> new DrinkItem(new Item.Properties()
+                    .food(ModFoodProperties.SWEET_BERRIES_JUICE)));
 
     public static final DeferredItem<Item> ESTUS_FLASK = ITEMS.register("estus_flask",
-            () -> new Item(new Item.Properties()
+            () -> new DrinkItem(new Item.Properties()
                     .food(ModFoodProperties.ESTUS_FLASK)
                     .stacksTo(16)));
 

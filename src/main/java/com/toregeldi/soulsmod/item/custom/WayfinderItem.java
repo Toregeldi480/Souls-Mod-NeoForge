@@ -1,20 +1,17 @@
 package com.toregeldi.soulsmod.item.custom;
 
 import com.toregeldi.soulsmod.component.ModDataComponents;
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
 import java.util.List;
@@ -24,30 +21,38 @@ public class WayfinderItem extends Item {
         super(properties);
     }
 
-
     @Override
     public UseAnim getUseAnimation(ItemStack stack) {
-        return UseAnim.SPEAR;
+        return UseAnim.BOW;
+    }
+
+    @Override
+    public int getUseDuration(ItemStack stack, LivingEntity entity) {
+        return 40;
+    }
+
+    @Override
+    public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity livingEntity) {
+        super.finishUsingItem(stack, level, livingEntity);
+
+        if(livingEntity instanceof ServerPlayer serverPlayer) {
+            CriteriaTriggers.USING_ITEM.trigger(serverPlayer, stack);
+        }
+
+        if(!level.isClientSide()) {
+            level.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.END_PORTAL_SPAWN, SoundSource.AMBIENT);
+
+            livingEntity.getUseItem().set(ModDataComponents.COORDINATES, livingEntity.getBlockPosBelowThatAffectsMyMovement());
+        }
+
+        return stack;
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        return super.use(level, player, usedHand);
+        return ItemUtils.startUsingInstantly(level, player, usedHand);
     }
 
-    @Override
-    public InteractionResult useOn(UseOnContext context) {
-        Level level = context.getLevel();
-
-        if(!level.isClientSide()) {
-            level.playSound(null, context.getClickedPos(), SoundEvents.END_PORTAL_SPAWN, SoundSource.AMBIENT);
-
-            context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
-        }
-
-
-        return InteractionResult.SUCCESS;
-    }
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
