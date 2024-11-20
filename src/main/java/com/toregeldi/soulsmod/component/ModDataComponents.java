@@ -10,7 +10,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.UnaryOperator;
 
 public class ModDataComponents {
-    public static final DeferredRegister<DataComponentType<?>> DATA_COMPONENT_TYPE =
+    public static final DeferredRegister<DataComponentType<?>> DATA_COMPONENT_TYPES =
             DeferredRegister.createDataComponents(SoulsMod.MOD_ID);
 
 
@@ -20,11 +20,12 @@ public class ModDataComponents {
 
     private static <T>DeferredHolder<DataComponentType<?>, DataComponentType<T>> register(String name,
                                                                                           UnaryOperator<DataComponentType.Builder<T>> builderOperator) {
-        return DATA_COMPONENT_TYPE.register(name, () -> builderOperator.apply(DataComponentType.builder()).build());
+
+        return DATA_COMPONENT_TYPES.register(name, () -> builderOperator.apply(DataComponentType.builder()).build());
     }
 
     public static void register(IEventBus eventBus) {
-        DATA_COMPONENT_TYPE.register(eventBus);
+        DATA_COMPONENT_TYPES.register(eventBus);
     }
 
 }
