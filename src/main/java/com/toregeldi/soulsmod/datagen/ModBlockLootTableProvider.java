@@ -43,6 +43,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get(), 2, 5));
         add(ModBlocks.TOPAZ_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.TOPAZ_ORE.get(), ModItems.TOPAZ.get(), 2, 5));
+
+        dropSelf(ModBlocks.AUTOHAMMER.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {
