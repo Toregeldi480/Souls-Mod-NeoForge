@@ -1,4 +1,6 @@
 {
+
+
   "item.soulsmod.bottle": "Bottle",
 
   "item.soulsmod.mint": "Mint",
@@ -97,6 +99,8 @@
   "item.soulsmod.spectre_sword": "Spectre Sword",
   "item.soulsmod.shroomite_sword": "Shroomite Sword",
   "item.soulsmod.hellstone_sword": "Hellstone Sword",
+
+  "item.soulsmod.wayfinder": "Wayfinder",
 
   "item.soulsmod.platinum_pickaxe": "Platinum Pickaxe",
   "item.soulsmod.palladium_pickaxe": "Palladium Pickaxe",

@@ -142,6 +142,8 @@ public class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModItems.PLATINUM_PICKAXE.get()))
                     .title(Component.translatable("creativetab.soulsmod.tools"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.WAYFINDER);
+
                         output.accept(ModItems.PLATINUM_PICKAXE);
                         output.accept(ModItems.PALLADIUM_PICKAXE);
                         output.accept(ModItems.TITANIUM_PICKAXE);

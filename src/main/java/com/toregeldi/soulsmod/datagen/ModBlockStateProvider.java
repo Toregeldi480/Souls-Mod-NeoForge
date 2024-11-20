@@ -24,8 +24,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
         blockWithItem(ModBlocks.TOPAZ_ORE);
 
-        simpleBlock(ModBlocks.AUTOHAMMER.get(),
-                new ModelFile.UncheckedModelFile(modLoc("block/autohammer")));
+//        simpleBlock(ModBlocks.AUTOHAMMER.get(),
+//                new ModelFile.UncheckedModelFile(modLoc("block/autohammer")));
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

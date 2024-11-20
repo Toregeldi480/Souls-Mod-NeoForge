@@ -1,13 +1,12 @@
 package com.toregeldi.soulsmod.block;
 
 import com.toregeldi.soulsmod.SoulsMod;
-import com.toregeldi.soulsmod.block.custom.Autohammer;
+//import com.toregeldi.soulsmod.block.custom.Autohammer;
 import com.toregeldi.soulsmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -20,8 +19,8 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SoulsMod.MOD_ID);
 
-    public static final DeferredBlock<Block> AUTOHAMMER = registerBlock("autohammer",
-            () -> new Autohammer(BlockBehaviour.Properties.ofFullCopy(Blocks.FURNACE).noOcclusion()));
+//    public static final DeferredBlock<Block> AUTOHAMMER = registerBlock("autohammer",
+//            () -> new Autohammer(BlockBehaviour.Properties.ofFullCopy(Blocks.FURNACE).noOcclusion()));
 
     public static final DeferredBlock<Block> PLATINUM_ORE = registerBlock("platinum_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),

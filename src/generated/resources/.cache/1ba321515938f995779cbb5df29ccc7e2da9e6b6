@@ -1,4 +1,4 @@
-// 1.21	2024-11-19T11:41:24.494543375	Item Models: soulsmod
+// 1.21	2024-11-20T12:06:12.478568913	Item Models: soulsmod
 200489da61daca5d7e3981b0e9f3a71cba3686c9 assets/soulsmod/models/item/blackberry.json
 ca33978e356d63521328c88d46721f399fb7acc0 assets/soulsmod/models/item/blackberry_juice.json
 387daa9b0256c08678166ecdb4ab0c35950655a5 assets/soulsmod/models/item/blueberry.json
@@ -98,3 +98,4 @@ af6ba4461368e30461179832366dc1fdcccd597f assets/soulsmod/models/item/titanium_pi
 cf0e3da633a1b337ef43ec687b25438dc5a1ec08 assets/soulsmod/models/item/titanium_sword.json
 13b002331e357d6492d78a01b399a0e3ed67bb3a assets/soulsmod/models/item/topaz.json
 33b7b3f2e048ea0ec0195cb2dbc3b23f493ca982 assets/soulsmod/models/item/topaz_apple.json
+7b623d87a312be2509bada57fba730620589bb38 assets/soulsmod/models/item/wayfinder.json

@@ -105,6 +105,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SHROOMITE_SWORD);
         handheldItem(ModItems.HELLSTONE_SWORD);
 
+        handheldItem(ModItems.WAYFINDER);
+
         handheldItem(ModItems.PLATINUM_PICKAXE);
         handheldItem(ModItems.PALLADIUM_PICKAXE);
         handheldItem(ModItems.TITANIUM_PICKAXE);

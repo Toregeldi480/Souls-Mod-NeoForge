@@ -1,6 +1,7 @@
 package com.toregeldi.soulsmod.item;
 
 import com.toregeldi.soulsmod.SoulsMod;
+import com.toregeldi.soulsmod.item.custom.WayfinderItem;
 import com.toregeldi.soulsmod.potion.ModPotions;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -9,6 +10,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SoulsMod.MOD_ID);
+
+    public static final DeferredItem<Item> WAYFINDER =  ITEMS.register("wayfinder",
+            () -> new WayfinderItem(new Item.Properties()));
 
     public static final DeferredItem<Item> BOTTLE = ITEMS.register("bottle",
             () -> new Item(new Item.Properties()));

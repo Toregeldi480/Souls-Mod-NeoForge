@@ -76,6 +76,8 @@ public class SoulsMod
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.WAYFINDER);
+
             event.accept(ModItems.PLATINUM_PICKAXE);
             event.accept(ModItems.PALLADIUM_PICKAXE);
             event.accept(ModItems.TITANIUM_PICKAXE);
