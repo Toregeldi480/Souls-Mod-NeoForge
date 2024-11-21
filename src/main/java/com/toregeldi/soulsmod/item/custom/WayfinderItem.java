@@ -3,6 +3,7 @@ package com.toregeldi.soulsmod.item.custom;
 import com.toregeldi.soulsmod.component.ModDataComponents;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -13,6 +14,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
+import net.neoforged.fml.common.Mod;
 
 import java.util.List;
 
@@ -40,9 +42,18 @@ public class WayfinderItem extends Item {
         }
 
         if(!level.isClientSide()) {
-            level.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.END_PORTAL_SPAWN, SoundSource.AMBIENT);
+            if(livingEntity.isCrouching()) {
+                livingEntity.teleportTo(
+                        livingEntity.getUseItem().get(ModDataComponents.COORDINATES).get(Direction.Axis.X),
+                        livingEntity.getUseItem().get(ModDataComponents.COORDINATES).get(Direction.Axis.Y) + 1,
+                        livingEntity.getUseItem().get(ModDataComponents.COORDINATES).get(Direction.Axis.Z));
 
-            livingEntity.getUseItem().set(ModDataComponents.COORDINATES, livingEntity.getBlockPosBelowThatAffectsMyMovement());
+                level.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.PORTAL_TRAVEL, SoundSource.AMBIENT, 0.5f, 1f);
+            } else {
+                level.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.END_PORTAL_SPAWN, SoundSource.AMBIENT, 0.5f, 1f);
+
+                livingEntity.getUseItem().set(ModDataComponents.COORDINATES, livingEntity.getBlockPosBelowThatAffectsMyMovement());
+            }
         }
 
         return stack;
