@@ -49,7 +49,7 @@ public class DrinkItem extends Item {
         }
 
         if (stack.isEmpty()) {
-            return new ItemStack(Items.GLASS_BOTTLE);
+            return new ItemStack(ModItems.BOTTLE.get());
         } else {
             if (livingEntity instanceof Player player && !player.hasInfiniteMaterials()) {
                 ItemStack itemstack = new ItemStack(ModItems.BOTTLE.get());
