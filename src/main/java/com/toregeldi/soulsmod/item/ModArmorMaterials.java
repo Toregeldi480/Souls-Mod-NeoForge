@@ -36,6 +36,7 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BOOTS, 4);
                 attribute.put(ArmorItem.Type.BODY, 7);
             }), 16, 2f, 0.2f, () -> ModItems.PALLADIUM_INGOT.get());
+
     public static final Holder<ArmorMaterial> TITANIUM_ARMOR_MATERIAL = register("titanium",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.HELMET, 10);

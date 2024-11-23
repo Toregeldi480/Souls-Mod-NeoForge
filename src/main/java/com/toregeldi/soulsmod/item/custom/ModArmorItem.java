@@ -19,11 +19,18 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>()
-                    .put(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, List.of(
-                            new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 1, false, false)
+                    .put(ModArmorMaterials.CHLOROPHYTE_ARMOR_MATERIAL, List.of(
+                            new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1, 1, false, false)
                     ))
-                    .put(ArmorMaterials.DIAMOND, List.of(
-//                            new MobEffectInstance(ModEffects.)
+                    .put(ModArmorMaterials.SHROOMITE_ARMOR_MATERIAL, List.of(
+                            new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1, 1, false, false)
+                    ))
+                    .put(ModArmorMaterials.SPECTRE_ARMOR_MATERIAL, List.of(
+                            new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1, 1, false, false)
+                    ))
+                    .put(ModArmorMaterials.HELLSTONE_ARMOR_MATERIAL, List.of(
+                            new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1, 1, false, false),
+                            new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1, 1, false, false)
                     ))
             .build());
 
@@ -75,11 +82,11 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private boolean hasFullSuitOfArmorOn(Player player) {
-        ItemStack boots = player.getInventory().getArmor(0);
+        ItemStack boots = player.getInventory().getArmor(0);;
         ItemStack leggings = player.getInventory().getArmor(1);
         ItemStack chestplate = player.getInventory().getArmor(2);
         ItemStack helmet = player.getInventory().getArmor(3);
 
-        return !(boots.isEmpty() && leggings.isEmpty() && chestplate.isEmpty() && helmet.isEmpty());
+        return !boots.isEmpty() && !leggings.isEmpty() && !chestplate.isEmpty() && !helmet.isEmpty();
     }
 }

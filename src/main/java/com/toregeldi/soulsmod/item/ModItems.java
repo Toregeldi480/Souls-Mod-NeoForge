@@ -5,7 +5,6 @@ import com.toregeldi.soulsmod.item.custom.DrinkItem;
 import com.toregeldi.soulsmod.item.custom.ModArmorItem;
 import com.toregeldi.soulsmod.item.custom.WayfinderItem;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
