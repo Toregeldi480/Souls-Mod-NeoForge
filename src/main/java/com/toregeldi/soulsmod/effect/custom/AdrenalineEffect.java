@@ -6,8 +6,8 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 
-public class Adrenaline extends MobEffect {
-    public Adrenaline(MobEffectCategory category, int color) {
+public class AdrenalineEffect extends MobEffect {
+    public AdrenalineEffect(MobEffectCategory category, int color) {
         super(category, color);
     }
 
