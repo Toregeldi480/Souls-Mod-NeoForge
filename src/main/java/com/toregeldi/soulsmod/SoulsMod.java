@@ -71,11 +71,15 @@ public class SoulsMod
             event.accept(ModItems.LEMON_JUICE);
             event.accept(ModItems.SWEET_BERRIES_JUICE);
 
+            event.accept(ModBlocks.MINT_BUSH);
+            event.accept(ModBlocks.BLACKBERRY_BUSH);
+            event.accept(ModBlocks.BLUEBERRY_BUSH);
+            event.accept(ModBlocks.RASPBERRY_BUSH);
+            event.accept(ModBlocks.STRAWBERRY_BUSH);
+
             event.accept(ModItems.RUBY_APPLE);
             event.accept(ModItems.SAPPHIRE_APPLE);
             event.accept(ModItems.TOPAZ_APPLE);
-
-
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

@@ -54,6 +54,12 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.RUBY_ORE);
                         output.accept(ModBlocks.SAPPHIRE_ORE);
                         output.accept(ModBlocks.TOPAZ_ORE);
+
+                        output.accept(ModBlocks.MINT_BUSH);
+                        output.accept(ModBlocks.BLACKBERRY_BUSH);
+                        output.accept(ModBlocks.BLUEBERRY_BUSH);
+                        output.accept(ModBlocks.RASPBERRY_BUSH);
+                        output.accept(ModBlocks.STRAWBERRY_BUSH);
                     }).build());
 
 
@@ -66,6 +72,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.RUBY_APPLE);
                         output.accept(ModItems.SAPPHIRE_APPLE);
                         output.accept(ModItems.TOPAZ_APPLE);
+
                         output.accept(ModItems.MINT);
                         output.accept(ModItems.BLACKBERRY);
                         output.accept(ModItems.BLUEBERRY);
@@ -73,6 +80,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.STRAWBERRY);
                         output.accept(ModItems.ORANGE);
                         output.accept(ModItems.LEMON);
+
                         output.accept(ModItems.BLACKBERRY_JUICE);
                         output.accept(ModItems.BLUEBERRY_JUICE);
                         output.accept(ModItems.RASPBERRY_JUICE);
@@ -80,6 +88,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.ORANGE_JUICE);
                         output.accept(ModItems.LEMON_JUICE);
                         output.accept(ModItems.SWEET_BERRIES_JUICE);
+
                         output.accept(ModItems.ESTUS_FLASK);
                     })
                     .build());

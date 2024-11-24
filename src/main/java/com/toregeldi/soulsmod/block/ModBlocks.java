@@ -2,11 +2,13 @@ package com.toregeldi.soulsmod.block;
 
 import com.toregeldi.soulsmod.SoulsMod;
 //import com.toregeldi.soulsmod.block.custom.Autohammer;
+import com.toregeldi.soulsmod.block.custom.*;
 import com.toregeldi.soulsmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -18,6 +20,17 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SoulsMod.MOD_ID);
+
+    public static final DeferredBlock<Block> MINT_BUSH = BLOCKS.register("mint_bush",
+            () -> new MintBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
+    public static final DeferredBlock<Block> BLACKBERRY_BUSH = BLOCKS.register("blackberry_bush",
+            () -> new BlackberryBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
+    public static final DeferredBlock<Block> BLUEBERRY_BUSH = BLOCKS.register("blueberry_bush",
+            () -> new BlueberryBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
+    public static final DeferredBlock<Block> RASPBERRY_BUSH = BLOCKS.register("raspberry_bush",
+            () -> new RaspberryBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
+    public static final DeferredBlock<Block> STRAWBERRY_BUSH = BLOCKS.register("strawberry_bush",
+            () -> new StrawberryBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
 //    public static final DeferredBlock<Block> AUTOHAMMER = registerBlock("autohammer",
 //            () -> new Autohammer(BlockBehaviour.Properties.ofFullCopy(Blocks.FURNACE).noOcclusion()));

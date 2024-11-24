@@ -1,6 +1,7 @@
 package com.toregeldi.soulsmod.item;
 
 import com.toregeldi.soulsmod.SoulsMod;
+import com.toregeldi.soulsmod.block.ModBlocks;
 import com.toregeldi.soulsmod.item.custom.DrinkItem;
 import com.toregeldi.soulsmod.item.custom.ModArmorItem;
 import com.toregeldi.soulsmod.item.custom.WayfinderItem;
@@ -19,15 +20,15 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> MINT = ITEMS.register("mint",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.MINT)));
+            () -> new ItemNameBlockItem(ModBlocks.MINT_BUSH.get() ,new Item.Properties().food(ModFoodProperties.MINT)));
     public static final DeferredItem<Item> BLACKBERRY = ITEMS.register("blackberry",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.BLACKBERRY)));
+            () -> new ItemNameBlockItem(ModBlocks.BLACKBERRY_BUSH.get() ,new Item.Properties().food(ModFoodProperties.BLACKBERRY)));
     public static final DeferredItem<Item> BLUEBERRY = ITEMS.register("blueberry",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.BLUEBERRY)));
+            () -> new ItemNameBlockItem(ModBlocks.BLUEBERRY_BUSH.get() ,new Item.Properties().food(ModFoodProperties.BLUEBERRY)));
     public static final DeferredItem<Item> RASPBERRY = ITEMS.register("raspberry",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.RASPBERRY)));
+            () -> new ItemNameBlockItem(ModBlocks.RASPBERRY_BUSH.get() ,new Item.Properties().food(ModFoodProperties.RASPBERRY)));
     public static final DeferredItem<Item> STRAWBERRY = ITEMS.register("strawberry",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.STRAWBERRY)));
+            () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_BUSH.get() ,new Item.Properties().food(ModFoodProperties.STRAWBERRY)));
     public static final DeferredItem<Item> ORANGE = ITEMS.register("orange",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ORANGE)));
     public static final DeferredItem<Item> LEMON = ITEMS.register("lemon",

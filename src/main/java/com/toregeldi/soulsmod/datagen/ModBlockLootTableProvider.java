@@ -2,6 +2,7 @@ package com.toregeldi.soulsmod.datagen;
 
 import com.toregeldi.soulsmod.block.ModBlocks;
 import com.toregeldi.soulsmod.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -13,10 +14,13 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
@@ -45,6 +49,31 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.TOPAZ_ORE.get(), ModItems.TOPAZ.get(), 2, 5));
 
 //        dropSelf(ModBlocks.AUTOHAMMER.get());
+
+        createBushDrop(ModBlocks.MINT_BUSH.get(), ModItems.MINT.get());
+        createBushDrop(ModBlocks.BLACKBERRY_BUSH.get(), ModItems.BLACKBERRY.get());
+        createBushDrop(ModBlocks.BLUEBERRY_BUSH.get(), ModItems.BLACKBERRY.get());
+        createBushDrop(ModBlocks.RASPBERRY_BUSH.get(), ModItems.RASPBERRY.get());
+        createBushDrop(ModBlocks.STRAWBERRY_BUSH.get(), ModItems.STRAWBERRY.get());
+    }
+
+    protected void createBushDrop(Block bushBlock, Item item) {
+        HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+
+        this.add(bushBlock, block -> this.applyExplosionDecay(
+                block, LootTable.lootTable().withPool(LootPool.lootPool().when(
+                                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(bushBlock)
+                                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3))
+                                ).add(LootItem.lootTableItem(item))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))
+                ).withPool(LootPool.lootPool().when(
+                                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(bushBlock)
+                                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2))
+                                ).add(LootItem.lootTableItem(item))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))
+                )));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {

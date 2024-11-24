@@ -1,8 +1,13 @@
-// 1.21	2024-11-16T11:28:24.916246727	Loot Tables
+// 1.21	2024-11-24T16:01:51.784851634	Loot Tables
+5789783dea1fb1df5c8f29b6696fde0a1e293e51 data/soulsmod/loot_table/blocks/blackberry_bush.json
+a86594fadbb4a738a7113e2f5df838713b5ea4fc data/soulsmod/loot_table/blocks/blueberry_bush.json
 0717560588a181c8dfe844293ba3ffb3247625f6 data/soulsmod/loot_table/blocks/chlorophyte_ore.json
+5d822d05dfcd7334f45df0de44a0aab6d7c39508 data/soulsmod/loot_table/blocks/mint_bush.json
 ab274a90bee634726eb10d205d93d7eab5db581f data/soulsmod/loot_table/blocks/palladium_ore.json
 44709b2120f0c7397c39a5375731d76712ab052c data/soulsmod/loot_table/blocks/platinum_ore.json
+c054f6f61fd105c1165934f4f7d74e708b127e7e data/soulsmod/loot_table/blocks/raspberry_bush.json
 d059a2522488e91e908a157aa38ac7ddd9f69179 data/soulsmod/loot_table/blocks/ruby_ore.json
 b35383e8fa8e0451fb63f5ea8c29bd46ed029129 data/soulsmod/loot_table/blocks/sapphire_ore.json
+4ba88b259105705bcf36dddd68d1df6a684bc6a4 data/soulsmod/loot_table/blocks/strawberry_bush.json
 9ccc5ea586d6023002f4116ae4417a793279497c data/soulsmod/loot_table/blocks/titanium_ore.json
 3d8105c584da33b657a4f7e00b5b460401cb288f data/soulsmod/loot_table/blocks/topaz_ore.json
