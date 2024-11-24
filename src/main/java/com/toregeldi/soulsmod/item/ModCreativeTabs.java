@@ -54,12 +54,6 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.RUBY_ORE);
                         output.accept(ModBlocks.SAPPHIRE_ORE);
                         output.accept(ModBlocks.TOPAZ_ORE);
-
-                        output.accept(ModBlocks.MINT_BUSH);
-                        output.accept(ModBlocks.BLACKBERRY_BUSH);
-                        output.accept(ModBlocks.BLUEBERRY_BUSH);
-                        output.accept(ModBlocks.RASPBERRY_BUSH);
-                        output.accept(ModBlocks.STRAWBERRY_BUSH);
                     }).build());
 
 
