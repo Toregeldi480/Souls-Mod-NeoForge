@@ -1,13 +1,10 @@
 package com.toregeldi.soulsmod.item.custom;
 
-import com.toregeldi.soulsmod.component.ModDataComponents;
 import com.toregeldi.soulsmod.item.ModItems;
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;

@@ -9,11 +9,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -48,7 +46,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.TOPAZ_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.TOPAZ_ORE.get(), ModItems.TOPAZ.get(), 2, 5));
 
-//        dropSelf(ModBlocks.AUTOHAMMER.get());
+        dropSelf(ModBlocks.AUTOHAMMER.get());
 
         createBushDrop(ModBlocks.MINT_BUSH.get(), ModItems.MINT.get());
         createBushDrop(ModBlocks.BLACKBERRY_BUSH.get(), ModItems.BLACKBERRY.get());

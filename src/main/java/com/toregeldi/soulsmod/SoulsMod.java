@@ -178,6 +178,8 @@ public class SoulsMod
             event.accept(ModItems.TOPAZ);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.AUTOHAMMER);
+
             event.accept(ModBlocks.PALLADIUM_ORE);
             event.accept(ModBlocks.TITANIUM_ORE);
             event.accept(ModBlocks.RUBY_ORE);

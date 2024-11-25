@@ -1,7 +1,6 @@
 package com.toregeldi.soulsmod.block;
 
 import com.toregeldi.soulsmod.SoulsMod;
-//import com.toregeldi.soulsmod.block.custom.Autohammer;
 import com.toregeldi.soulsmod.block.custom.*;
 import com.toregeldi.soulsmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -32,8 +31,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STRAWBERRY_BUSH = BLOCKS.register("strawberry_bush",
             () -> new StrawberryBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
-//    public static final DeferredBlock<Block> AUTOHAMMER = registerBlock("autohammer",
-//            () -> new Autohammer(BlockBehaviour.Properties.ofFullCopy(Blocks.FURNACE).noOcclusion()));
+    public static final DeferredBlock<Block> AUTOHAMMER = registerBlock("autohammer",
+            () -> new Autohammer(BlockBehaviour.Properties.ofFullCopy(Blocks.CARTOGRAPHY_TABLE)));
 
     public static final DeferredBlock<Block> PLATINUM_ORE = registerBlock("platinum_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),

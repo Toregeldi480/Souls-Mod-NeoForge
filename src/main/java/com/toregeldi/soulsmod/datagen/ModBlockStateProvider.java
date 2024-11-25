@@ -8,7 +8,6 @@ import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
-import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
@@ -30,8 +29,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
         blockWithItem(ModBlocks.TOPAZ_ORE);
 
-//        simpleBlock(ModBlocks.AUTOHAMMER.get(),
-//                new ModelFile.UncheckedModelFile(modLoc("block/autohammer")));
+        simpleBlock(ModBlocks.AUTOHAMMER.get(), new ConfiguredModel(models().cubeAll("autohammer",
+                ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "block/autohammer")).renderType("solid")));
 
         createBush(((SweetBerryBushBlock) ModBlocks.MINT_BUSH.get()), "mint_bush_stage", "mint_bush_stage");
         createBush(((SweetBerryBushBlock) ModBlocks.BLACKBERRY_BUSH.get()), "blackberry_bush_stage", "blackberry_bush_stage");

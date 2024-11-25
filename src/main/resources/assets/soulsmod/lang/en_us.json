@@ -127,6 +127,8 @@
   "item.soulsmod.shroomite_hoe": "Shroomite Hoe",
   "item.soulsmod.hellstone_hoe": "Hellstone Hoe",
 
+  "block.soulsmod.autohammer": "Autohammer",
+
   "block.soulsmod.mint_bush": "Mint Bush",
   "block.soulsmod.cranberry_bush": "Cranberry Bush",
   "block.soulsmod.blackberry_bush": "Blackberry Bush",
@@ -142,11 +144,6 @@
   "block.soulsmod.ruby_ore": "Block of Ruby Ore",
   "block.soulsmod.sapphire_ore": "Block of Sapphire Ore",
   "block.soulsmod.topaz_ore": "Block of Topaz Ore",
-
-
-
-  "block.soulsmod.autohammer": "Autohammer",
-
 
   "creativetab.soulsmod.fossil_items": "Fossil Items",
   "creativetab.soulsmod.fossil_blocks": "Fossil Blocks",

@@ -1,4 +1,5 @@
-// 1.21	2024-11-24T16:01:51.786132205	Block States: soulsmod
+// 1.21	2024-11-25T11:10:32.336979985	Block States: soulsmod
+266a56d7036ffb093f450b52cc85e432166addb9 assets/soulsmod/blockstates/autohammer.json
 39a950f91d9fa803be72767ab56580a97d046945 assets/soulsmod/blockstates/blackberry_bush.json
 412296d5bb27e5224ada45f966bf97bbf65b7b37 assets/soulsmod/blockstates/blueberry_bush.json
 34af3e0be442a37bb32c934992d8f392e22c0736 assets/soulsmod/blockstates/chlorophyte_ore.json
@@ -11,6 +12,7 @@ f7dd31f5d6b2253ecb7261d567649aa1431a7444 assets/soulsmod/blockstates/raspberry_b
 12f83f41a216b8a83643a93404facacc4bc51909 assets/soulsmod/blockstates/strawberry_bush.json
 14590293dcd8ce1099ef5928f6237d66d6f3acf6 assets/soulsmod/blockstates/titanium_ore.json
 999880fe2f42aa4f96934dfde4bc52fa00c7cc11 assets/soulsmod/blockstates/topaz_ore.json
+13592d053479db76c731e451f33eb0904f5c3287 assets/soulsmod/models/block/autohammer.json
 3b89a9cccdeb1faa5214743944438668c64c648b assets/soulsmod/models/block/blackberry_bush_stage0.json
 bfac971d69a3d8401af214d1d82a30ec522cbc21 assets/soulsmod/models/block/blackberry_bush_stage1.json
 65deb60b50a05b8776ed258e8f7824f1b1392c68 assets/soulsmod/models/block/blackberry_bush_stage2.json
