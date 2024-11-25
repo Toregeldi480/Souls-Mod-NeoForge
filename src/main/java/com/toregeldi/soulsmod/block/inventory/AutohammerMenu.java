@@ -84,6 +84,16 @@ public class AutohammerMenu extends AbstractContainerMenu {
                 super.onTake(player, stack);
             }
         });
+
+//        for (int i = 0; i < 3; i++) {
+//            for (int j = 0; j < 9; j++) {
+//                this.addSlot(new Slot(playerInventory, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
+//            }
+//        }
+//
+//        for (int k = 0; k < 9; k++) {
+//            this.addSlot(new Slot(playerInventory, k, 8 + k * 18, 142));
+//        }
     }
 
     @Override
@@ -96,10 +106,10 @@ public class AutohammerMenu extends AbstractContainerMenu {
         return stillValid(this.access, player, ModBlocks.AUTOHAMMER.get());
     }
 
-    @Override
-    public void removed(Player player) {
-        super.removed(player);
-        this.resultContainer.removeItemNoUpdate(2);
-        this.access.execute((level, blockPos) -> this.clearContainer(player, this.container));
-    }
+//    @Override
+//    public void removed(Player player) {
+//        super.removed(player);
+//        this.resultContainer.removeItemNoUpdate(2);
+//        this.access.execute((level, blockPos) -> this.clearContainer(player, this.container));
+//    }
 }
