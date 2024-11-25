@@ -8,6 +8,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -41,7 +42,7 @@ public class Autohammer extends Block {
     @Override
     protected MenuProvider getMenuProvider(BlockState state, Level level, BlockPos pos) {
         return new SimpleMenuProvider(
-                (containerId, playerInventory, player) -> new AutohammerMenu(containerId, playerInventory), CONTAINER_TITLE
+                (containerId, playerInventory, player) -> new AutohammerMenu(containerId, playerInventory, ContainerLevelAccess.create(level, pos)), CONTAINER_TITLE
         );
     }
 }
