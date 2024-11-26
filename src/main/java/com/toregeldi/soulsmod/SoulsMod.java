@@ -1,6 +1,7 @@
 package com.toregeldi.soulsmod;
 
 import com.toregeldi.soulsmod.block.ModBlocks;
+import com.toregeldi.soulsmod.client.ModKeyBindings;
 import com.toregeldi.soulsmod.component.ModDataComponents;
 import com.toregeldi.soulsmod.effect.ModEffects;
 import com.toregeldi.soulsmod.item.ModCreativeTabs;
@@ -11,6 +12,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import org.slf4j.Logger;
@@ -51,7 +53,6 @@ public class SoulsMod
     private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
-
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
@@ -178,8 +179,6 @@ public class SoulsMod
             event.accept(ModItems.TOPAZ);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.AUTOHAMMER);
-
             event.accept(ModBlocks.PALLADIUM_ORE);
             event.accept(ModBlocks.TITANIUM_ORE);
             event.accept(ModBlocks.RUBY_ORE);
@@ -195,9 +194,16 @@ public class SoulsMod
         LOGGER.info("HELLO from server starting");
     }
 
+
+
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
+        @SubscribeEvent
+        public static void registerKeys(RegisterKeyMappingsEvent event) {
+            event.register(ModKeyBindings.RAGE_KEY.get());
+        }
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {

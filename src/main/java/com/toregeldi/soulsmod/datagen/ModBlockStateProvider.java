@@ -29,9 +29,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
         blockWithItem(ModBlocks.TOPAZ_ORE);
 
-        simpleBlock(ModBlocks.AUTOHAMMER.get(), new ConfiguredModel(models().cubeAll("autohammer",
-                ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "block/autohammer")).renderType("solid")));
-
         createBush(((SweetBerryBushBlock) ModBlocks.MINT_BUSH.get()), "mint_bush_stage", "mint_bush_stage");
         createBush(((SweetBerryBushBlock) ModBlocks.BLACKBERRY_BUSH.get()), "blackberry_bush_stage", "blackberry_bush_stage");
         createBush(((SweetBerryBushBlock) ModBlocks.BLUEBERRY_BUSH.get()), "blueberry_bush_stage", "blueberry_bush_stage");

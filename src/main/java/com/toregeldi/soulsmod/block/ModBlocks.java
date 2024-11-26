@@ -31,9 +31,6 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STRAWBERRY_BUSH = BLOCKS.register("strawberry_bush",
             () -> new StrawberryBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
-    public static final DeferredBlock<Block> AUTOHAMMER = registerBlock("autohammer",
-            () -> new Autohammer(BlockBehaviour.Properties.of()));
-
     public static final DeferredBlock<Block> PLATINUM_ORE = registerBlock("platinum_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of()

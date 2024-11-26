@@ -4,7 +4,10 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+
+import javax.annotation.Nullable;
 
 public class RageEffect extends MobEffect {
     public RageEffect(MobEffectCategory category, int color) {
@@ -12,12 +15,13 @@ public class RageEffect extends MobEffect {
     }
 
 
+
     @Override
-    public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
+    public void applyInstantenousEffect(@Nullable Entity source, @Nullable Entity indirectSource, LivingEntity livingEntity, int amplifier, double health) {
         livingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500, 1, true, false, false));
         livingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 500, 1, true, false, false));
 
-        return super.applyEffectTick(livingEntity, amplifier);
+        this.applyEffectTick(livingEntity, amplifier);
     }
 
     @Override

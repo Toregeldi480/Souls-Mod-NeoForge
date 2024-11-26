@@ -15,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class WayfinderItem extends Item {
@@ -41,7 +42,7 @@ public class WayfinderItem extends Item {
         }
 
         if(!level.isClientSide()) {
-            if(livingEntity.isCrouching()) {
+            if(livingEntity.isCrouching() ) {
                 livingEntity.teleportTo(
                         livingEntity.getUseItem().get(ModDataComponents.COORDINATES).get(Direction.Axis.X),
                         livingEntity.getUseItem().get(ModDataComponents.COORDINATES).get(Direction.Axis.Y) + 1,
