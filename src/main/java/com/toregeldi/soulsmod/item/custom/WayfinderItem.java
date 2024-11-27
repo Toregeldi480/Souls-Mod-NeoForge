@@ -1,9 +1,8 @@
 package com.toregeldi.soulsmod.item.custom;
 
-import com.toregeldi.soulsmod.component.ModDataComponents;
+import com.toregeldi.soulsmod.util.ModTags;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -15,7 +14,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class WayfinderItem extends Item {
@@ -42,17 +40,20 @@ public class WayfinderItem extends Item {
         }
 
         if(!level.isClientSide()) {
-            if(livingEntity.isCrouching() ) {
+            if(livingEntity.isCrouching()) {
                 livingEntity.teleportTo(
-                        livingEntity.getUseItem().get(ModDataComponents.COORDINATES).get(Direction.Axis.X),
-                        livingEntity.getUseItem().get(ModDataComponents.COORDINATES).get(Direction.Axis.Y) + 1,
-                        livingEntity.getUseItem().get(ModDataComponents.COORDINATES).get(Direction.Axis.Z));
+                    ModTags.WAYFINDER_COORDINATES.getDouble("X"),
+                    ModTags.WAYFINDER_COORDINATES.getDouble("Y"),
+                    ModTags.WAYFINDER_COORDINATES.getDouble("Z")
+                );
 
                 level.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.PORTAL_TRAVEL, SoundSource.AMBIENT, 0.5f, 1f);
             } else {
                 level.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.END_PORTAL_SPAWN, SoundSource.AMBIENT, 0.5f, 1f);
 
-                livingEntity.getUseItem().set(ModDataComponents.COORDINATES, livingEntity.getBlockPosBelowThatAffectsMyMovement());
+                ModTags.WAYFINDER_COORDINATES.putDouble("X", livingEntity.getX());
+                ModTags.WAYFINDER_COORDINATES.putDouble("Y", livingEntity.getY());
+                ModTags.WAYFINDER_COORDINATES.putDouble("Z", livingEntity.getZ());
             }
         }
 
@@ -72,10 +73,6 @@ public class WayfinderItem extends Item {
         }
         else {
             tooltipComponents.add(Component.translatable("tooltip.soulsmod.wayfinder"));
-        }
-
-        if(stack.get(ModDataComponents.COORDINATES) != null) {
-            tooltipComponents.add(Component.literal("Portal Position " + stack.get(ModDataComponents.COORDINATES)));
         }
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);

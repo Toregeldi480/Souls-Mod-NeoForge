@@ -1,6 +1,7 @@
 package com.toregeldi.soulsmod.util;
 
 import com.toregeldi.soulsmod.SoulsMod;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -9,6 +10,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class ModTags {
+    public static CompoundTag WAYFINDER_COORDINATES = new CompoundTag();
+
     public static class Blocks {
         public static final TagKey<Block> NEEDS_PLATINUM_TOOL = createTag("needs_platinum_tool");
         public static final TagKey<Block> NEEDS_PALLADIUM_TOOL = createTag("needs_palladium_tool");

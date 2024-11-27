@@ -1,7 +1,6 @@
 package com.toregeldi.soulsmod;
 
 import com.toregeldi.soulsmod.block.ModBlocks;
-import com.toregeldi.soulsmod.client.ModKeyBindings;
 import com.toregeldi.soulsmod.component.ModDataComponents;
 import com.toregeldi.soulsmod.effect.ModEffects;
 import com.toregeldi.soulsmod.item.ModCreativeTabs;
@@ -35,6 +34,7 @@ public class SoulsMod
 
     public SoulsMod(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
+
         NeoForge.EVENT_BUS.register(this);
 
         ModCreativeTabs.register(modEventBus);
@@ -187,21 +187,18 @@ public class SoulsMod
         }
     }
 
-
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
         LOGGER.info("HELLO from server starting");
     }
 
-
-
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
         @SubscribeEvent
         public static void registerKeys(RegisterKeyMappingsEvent event) {
-            event.register(ModKeyBindings.RAGE_KEY.get());
+
         }
 
         @SubscribeEvent

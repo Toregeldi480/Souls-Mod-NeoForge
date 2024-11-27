@@ -2,9 +2,6 @@
   "tooltip.soulsmod.wayfinder_shift_down": "Hold RMB To Create",
   "tooltip.soulsmod.wayfinder": "Creates Portal On Block",
 
-  "key.soulsmod.rage": "Rage Key",
-  "key.soulsmod.adrenaline": "Adrenaline Key",
-
   "item.soulsmod.bottle": "Bottle",
 
   "item.soulsmod.mint": "Mint",
@@ -31,10 +28,7 @@
   "item.soulsmod.sapphire_apple": "Sapphire Apple",
   "item.soulsmod.topaz_apple": "Topaz Apple",
 
-  "effect.soulsmod.adrenaline": "Adrenaline",
-  "effect.soulsmod.rage": "Rage",
   "effect.soulsmod.freshness": "Freshness",
-  "effect.soulsmod.archery": "Archery",
 
   "item.soulsmod.ruby": "Ruby",
   "item.soulsmod.sapphire": "Sapphire",
