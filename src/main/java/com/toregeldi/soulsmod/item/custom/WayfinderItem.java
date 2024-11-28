@@ -1,8 +1,10 @@
 package com.toregeldi.soulsmod.item.custom;
 
+import com.toregeldi.soulsmod.component.ModDataComponents;
 import com.toregeldi.soulsmod.util.ModTags;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -14,9 +16,13 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class WayfinderItem extends Item {
+    @Nullable
+    BlockPos coordinates;
+
     public WayfinderItem(Properties properties) {
         super(properties);
     }
@@ -39,21 +45,23 @@ public class WayfinderItem extends Item {
             CriteriaTriggers.USING_ITEM.trigger(serverPlayer, stack);
         }
 
+        coordinates = stack.get(ModDataComponents.WAYFINDER_COORDINATES);
+
         if(!level.isClientSide()) {
-            if(livingEntity.isCrouching()) {
+            if(livingEntity.isCrouching() && coordinates != null) {
                 livingEntity.teleportTo(
-                    ModTags.WAYFINDER_COORDINATES.getDouble("X"),
-                    ModTags.WAYFINDER_COORDINATES.getDouble("Y"),
-                    ModTags.WAYFINDER_COORDINATES.getDouble("Z")
+                        coordinates.getX(),
+                        coordinates.getY() + 1,
+                        coordinates.getZ()
                 );
 
                 level.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.PORTAL_TRAVEL, SoundSource.AMBIENT, 0.5f, 1f);
             } else {
                 level.playSound(null, livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), SoundEvents.END_PORTAL_SPAWN, SoundSource.AMBIENT, 0.5f, 1f);
 
-                ModTags.WAYFINDER_COORDINATES.putDouble("X", livingEntity.getX());
-                ModTags.WAYFINDER_COORDINATES.putDouble("Y", livingEntity.getY());
-                ModTags.WAYFINDER_COORDINATES.putDouble("Z", livingEntity.getZ());
+                coordinates = livingEntity.getBlockPosBelowThatAffectsMyMovement();
+
+                stack.set(ModDataComponents.WAYFINDER_COORDINATES, coordinates);
             }
         }
 

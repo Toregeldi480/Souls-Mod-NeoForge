@@ -1,11 +1,10 @@
 package com.toregeldi.soulsmod.component;
 
 import com.toregeldi.soulsmod.SoulsMod;
+import com.toregeldi.soulsmod.item.custom.WayfinderItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponentType;
-import net.minecraft.nbt.CompoundTag;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -16,6 +15,9 @@ public class ModDataComponents {
     public static final DeferredRegister<DataComponentType<?>> DATA_COMPONENT_TYPES =
             DeferredRegister.createDataComponents(SoulsMod.MOD_ID);
 
+    public static final Supplier<DataComponentType<BlockPos>> WAYFINDER_COORDINATES = register("wayfinder_coordinates",
+            builder -> builder.persistent(BlockPos.CODEC)
+    );
 
     private static <T>DeferredHolder<DataComponentType<?>, DataComponentType<T>> register(String name,
                                                                                           UnaryOperator<DataComponentType.Builder<T>> builderOperator) {
