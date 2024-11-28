@@ -1,7 +1,6 @@
 package com.toregeldi.soulsmod.item.custom;
 
 import com.toregeldi.soulsmod.component.ModDataComponents;
-import com.toregeldi.soulsmod.util.ModTags;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
