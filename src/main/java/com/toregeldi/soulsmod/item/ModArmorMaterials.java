@@ -82,7 +82,7 @@ public class ModArmorMaterials {
             }), 16, 2f, 0.2f, () -> ModItems.HELLSTONE_INGOT.get());
 
 
-    private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
+    public static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistanse,
                                                   Supplier<Item> ingredientItem) {
         ResourceLocation location = ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, name);

@@ -3,6 +3,7 @@ package com.toregeldi.soulsmod.block;
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.block.custom.*;
 import com.toregeldi.soulsmod.item.ModItems;
+import net.minecraft.client.model.Model;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -19,6 +20,9 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SoulsMod.MOD_ID);
+
+    public static final DeferredBlock<Block> AUTOHAMMER = BLOCKS.register("autohammer",
+            () -> new Autohammer(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)));
 
     public static final DeferredBlock<Block> MINT_BUSH = BLOCKS.register("mint_bush",
             () -> new MintBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));

@@ -29,6 +29,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
         blockWithItem(ModBlocks.TOPAZ_ORE);
 
+        horizontalBlock(ModBlocks.AUTOHAMMER.get(), this.models().withExistingParent("autohammer", ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "block/autohammer")));
+
         createBush(((SweetBerryBushBlock) ModBlocks.MINT_BUSH.get()), "mint_bush_stage", "mint_bush_stage");
         createBush(((SweetBerryBushBlock) ModBlocks.BLACKBERRY_BUSH.get()), "blackberry_bush_stage", "blackberry_bush_stage");
         createBush(((SweetBerryBushBlock) ModBlocks.BLUEBERRY_BUSH.get()), "blueberry_bush_stage", "blueberry_bush_stage");
@@ -36,13 +38,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         createBush(((SweetBerryBushBlock) ModBlocks.STRAWBERRY_BUSH.get()), "strawberry_bush_stage", "strawberry_bush_stage");
     }
 
-    public void createBush(SweetBerryBushBlock block, String modelName, String textureName) {
-        Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
+    private void createBush(SweetBerryBushBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> bushStates(state, modelName, textureName);
 
         getVariantBuilder(block).forAllStates(function);
     }
 
-    private ConfiguredModel[] states(BlockState state, String modelName, String textureName) {
+    private ConfiguredModel[] bushStates(BlockState state, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(SweetBerryBushBlock.AGE),
                 ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "block/" + textureName + state.getValue(SweetBerryBushBlock.AGE))).renderType("cutout"));

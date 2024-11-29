@@ -2,6 +2,7 @@ package com.toregeldi.soulsmod;
 
 import com.toregeldi.soulsmod.block.ModBlocks;
 import com.toregeldi.soulsmod.component.ModDataComponents;
+import com.toregeldi.soulsmod.datagen.DataGenerators;
 import com.toregeldi.soulsmod.effect.ModEffects;
 import com.toregeldi.soulsmod.item.ModCreativeTabs;
 import com.toregeldi.soulsmod.item.ModItems;

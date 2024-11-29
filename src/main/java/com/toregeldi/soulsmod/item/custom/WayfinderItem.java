@@ -20,7 +20,7 @@ import java.util.List;
 
 public class WayfinderItem extends Item {
     @Nullable
-    BlockPos coordinates;
+    private BlockPos coordinates;
 
     public WayfinderItem(Properties properties) {
         super(properties);

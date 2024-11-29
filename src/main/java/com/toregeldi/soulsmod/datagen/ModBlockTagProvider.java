@@ -87,7 +87,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(ModTags.Blocks.NEEDS_CHLOROPHYTE_TOOL)
                 .addTag(ModTags.Blocks.INCORRECT_FOR_CHLOROPHYTE_TOOL)
                 .add(Blocks.NETHERRACK)
-                .add(Blocks.NETHERITE_BLOCK);;
+                .add(Blocks.NETHERITE_BLOCK);
 
         tag(ModTags.Blocks.INCORRECT_FOR_CHLOROPHYTE_TOOL)
                 .addTag(ModTags.Blocks.INCORRECT_FOR_NETHERITE_TOOL);

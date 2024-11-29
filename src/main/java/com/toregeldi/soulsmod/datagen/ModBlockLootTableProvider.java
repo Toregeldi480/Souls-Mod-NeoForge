@@ -46,6 +46,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.TOPAZ_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.TOPAZ_ORE.get(), ModItems.TOPAZ.get(), 2, 5));
 
+        dropSelf(ModBlocks.AUTOHAMMER.get());
+
         createBushDrop(ModBlocks.MINT_BUSH.get(), ModItems.MINT.get());
         createBushDrop(ModBlocks.BLACKBERRY_BUSH.get(), ModItems.BLACKBERRY.get());
         createBushDrop(ModBlocks.BLUEBERRY_BUSH.get(), ModItems.BLACKBERRY.get());
