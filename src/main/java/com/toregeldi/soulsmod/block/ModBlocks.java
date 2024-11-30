@@ -21,8 +21,8 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SoulsMod.MOD_ID);
 
-    public static final DeferredBlock<Block> AUTOHAMMER = BLOCKS.register("autohammer",
-            () -> new Autohammer(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)));
+//    public static final DeferredBlock<Block> AUTOHAMMER = BLOCKS.register("autohammer",
+//            () -> new Autohammer(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)));
 
     public static final DeferredBlock<Block> MINT_BUSH = BLOCKS.register("mint_bush",
             () -> new MintBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
@@ -66,6 +66,38 @@ public class ModBlocks {
                             .destroyTime(5f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
+
+//    public static final DeferredBlock<Block> DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum_ore",
+//            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+//                    BlockBehaviour.Properties.of()
+//                            .strength(3f)
+//                            .destroyTime(2f)
+//                            .requiresCorrectToolForDrops()
+//                            .sound(SoundType.STONE)));
+//
+//    public static final DeferredBlock<Block> DEEPSLATE_PALLADIUM_ORE = registerBlock("deepslate_palladium_ore",
+//            () -> new DropExperienceBlock(UniformInt.of(3, 5),
+//                    BlockBehaviour.Properties.of()
+//                            .strength(3f)
+//                            .destroyTime(3f)
+//                            .requiresCorrectToolForDrops()
+//                            .sound(SoundType.STONE)));
+//
+//    public static final DeferredBlock<Block> DEEPSLATE_TITANIUM_ORE = registerBlock("deepslate_titanium_ore",
+//            () -> new DropExperienceBlock(UniformInt.of(4, 6),
+//                    BlockBehaviour.Properties.of()
+//                            .strength(3f)
+//                            .destroyTime(4f)
+//                            .requiresCorrectToolForDrops()
+//                            .sound(SoundType.STONE)));
+//
+//    public static final DeferredBlock<Block> DEEPSLATE_CHLOROPHYTE_ORE = registerBlock("deepslate_chlorophyte_ore",
+//            () -> new DropExperienceBlock(UniformInt.of(5, 10),
+//                    BlockBehaviour.Properties.of()
+//                            .strength(3f)
+//                            .destroyTime(5f)
+//                            .requiresCorrectToolForDrops()
+//                            .sound(SoundType.STONE)));
 
 
     public static final DeferredBlock<Block> RUBY_ORE = registerBlock("ruby_ore",
