@@ -1,8 +1,10 @@
 package com.toregeldi.soulsmod.datagen;
 
+import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.worldgen.ModBiomeModifier;
 import com.toregeldi.soulsmod.worldgen.ModConfiguredFeatures;
 import com.toregeldi.soulsmod.worldgen.ModPlacedFeatures;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
@@ -18,7 +20,7 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
             .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifier::bootstrap);
 
-    public ModDatapackProvider(PackOutput output, CompletableFuture<RegistrySetBuilder.PatchedRegistries> registries, Set<String> modIds) {
-        super(output, registries, modIds);
+    public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, BUILDER, Set.of(SoulsMod.MOD_ID));
     }
 }

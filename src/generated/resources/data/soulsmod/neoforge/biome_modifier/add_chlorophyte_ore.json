@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:jungle",
+    "minecraft:bamboo_jungle",
+    "minecraft:sparse_jungle"
+  ],
+  "features": "soulsmod:placed_chlorophyte_ore",
+  "step": "underground_ores"
+}
