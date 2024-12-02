@@ -27,25 +27,25 @@ public class ModPlacedFeatures {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, PLACED_PLATINUM_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_PLATINUM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(90, HeightRangePlacement.uniform(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(190))));
+                ModOrePlacement.commonOrePlacement(20, HeightRangePlacement.uniform(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(190))));
 
         register(context, PLACED_PALLADIUM_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_PALLADIUM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(90, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(120))));
+                ModOrePlacement.commonOrePlacement(90, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(150))));
 
         register(context, PLACED_TITANIUM_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TITANIUM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(20, HeightRangePlacement.uniform(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(80))));
+                ModOrePlacement.commonOrePlacement(50, HeightRangePlacement.uniform(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(100))));
 
         register(context, PLACED_CHLOROPHYTE_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CHLOROPHYTE_ORE_KEY),
-                ModOrePlacement.rareOrePlacement(10, HeightRangePlacement.triangle(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(80))));
+                ModOrePlacement.commonOrePlacement(70, HeightRangePlacement.triangle(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(80))));
 
         register(context, PLACED_RUBY_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUBY_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(100, HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(400))));
+                ModOrePlacement.commonOrePlacement(30, HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(400))));
 
         register(context, PLACED_SAPPHIRE_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SAPPHIRE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(100, HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(400))));
+                ModOrePlacement.commonOrePlacement(30, HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(400))));
 
         register(context, PLACED_TOPAZ_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TOPAZ_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(100, HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(400))));
+                ModOrePlacement.commonOrePlacement(30, HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(400))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

@@ -7,10 +7,13 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
@@ -45,15 +48,15 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(stoneReplaceables, ModBlocks.CHLOROPHYTE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.CHLOROPHYTE_ORE.get().defaultBlockState())
         );
-        List<OreConfiguration.TargetBlockState> overworldRubyOre = List.of(
-                OreConfiguration.target(stoneReplaceables, ModBlocks.TOPAZ_ORE.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, ModBlocks.TOPAZ_ORE.get().defaultBlockState())
+        List<OreConfiguration.TargetBlockState> overworldRubyOres = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.RUBY_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.RUBY_ORE.get().defaultBlockState())
         );
-        List<OreConfiguration.TargetBlockState> overworldSapphireOre = List.of(
+        List<OreConfiguration.TargetBlockState> overworldSapphireOres = List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.SAPPHIRE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.SAPPHIRE_ORE.get().defaultBlockState())
         );
-        List<OreConfiguration.TargetBlockState> overworldTopazOre = List.of(
+        List<OreConfiguration.TargetBlockState> overworldTopazOres = List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.TOPAZ_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.TOPAZ_ORE.get().defaultBlockState())
         );
@@ -62,9 +65,9 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_PALLADIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPalladiumOres, 5));
         register(context, OVERWORLD_TITANIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTitaniumOres, 4));
         register(context, OVERWORLD_CHLOROPHYTE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldChlorophyteOres, 3));
-        register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRubyOre, 9));
-        register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPlatinumOres, 9));
-        register(context, OVERWORLD_TOPAZ_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPlatinumOres, 9));
+        register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRubyOres, 5));
+        register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres, 5));
+        register(context, OVERWORLD_TOPAZ_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTopazOres, 5));
     }
 
     private static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

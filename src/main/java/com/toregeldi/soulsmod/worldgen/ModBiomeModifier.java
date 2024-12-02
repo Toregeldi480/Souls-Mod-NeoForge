@@ -1,7 +1,6 @@
 package com.toregeldi.soulsmod.worldgen;
 
 import com.toregeldi.soulsmod.SoulsMod;
-import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -38,12 +37,25 @@ public class ModBiomeModifier {
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
         context.register(ADD_TITANIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.SNOWY_BEACH), biomes.getOrThrow(Biomes.SNOWY_PLAINS), biomes.getOrThrow(Biomes.SNOWY_SLOPES), biomes.getOrThrow(Biomes.SNOWY_TAIGA)),
+                HolderSet.direct(
+                        biomes.getOrThrow(Biomes.SNOWY_BEACH),
+                        biomes.getOrThrow(Biomes.SNOWY_PLAINS),
+                        biomes.getOrThrow(Biomes.SNOWY_SLOPES),
+                        biomes.getOrThrow(Biomes.SNOWY_TAIGA),
+                        biomes.getOrThrow(Biomes.FROZEN_OCEAN),
+                        biomes.getOrThrow(Biomes.FROZEN_PEAKS),
+                        biomes.getOrThrow(Biomes.FROZEN_RIVER),
+                        biomes.getOrThrow(Biomes.DEEP_FROZEN_OCEAN),
+                        biomes.getOrThrow(Biomes.DEEP_DARK)),
+
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PLACED_TITANIUM_ORE_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
         context.register(ADD_CHLOROPHYTE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.JUNGLE), biomes.getOrThrow(Biomes.BAMBOO_JUNGLE), biomes.getOrThrow(Biomes.SPARSE_JUNGLE)),
+                HolderSet.direct(
+                        biomes.getOrThrow(Biomes.JUNGLE),
+                        biomes.getOrThrow(Biomes.BAMBOO_JUNGLE),
+                        biomes.getOrThrow(Biomes.SPARSE_JUNGLE)),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PLACED_CHLOROPHYTE_ORE_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
