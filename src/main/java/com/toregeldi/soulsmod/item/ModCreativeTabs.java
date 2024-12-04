@@ -47,6 +47,8 @@ public class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModBlocks.RUBY_ORE.get()))
                     .title(Component.translatable("creativetab.soulsmod.fossil_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.GLOWING_MUSHROOM_BLOCK);
+
                         output.accept(ModBlocks.PLATINUM_ORE);
                         output.accept(ModBlocks.CHLOROPHYTE_ORE);
                         output.accept(ModBlocks.PALLADIUM_ORE);
@@ -63,6 +65,10 @@ public class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModItems.RUBY_APPLE.get()))
                     .title(Component.translatable("creativetab.soulsmod.foods"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.GLOWING_MUSHROOM);
+
+                        output.accept(ModItems.BOTTLE);
+
                         output.accept(ModItems.RUBY_APPLE);
                         output.accept(ModItems.SAPPHIRE_APPLE);
                         output.accept(ModItems.TOPAZ_APPLE);

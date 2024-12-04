@@ -2,7 +2,6 @@ package com.toregeldi.soulsmod;
 
 import com.toregeldi.soulsmod.block.ModBlocks;
 import com.toregeldi.soulsmod.component.ModDataComponents;
-import com.toregeldi.soulsmod.datagen.DataGenerators;
 import com.toregeldi.soulsmod.effect.ModEffects;
 import com.toregeldi.soulsmod.item.ModCreativeTabs;
 import com.toregeldi.soulsmod.item.ModItems;
@@ -157,6 +156,8 @@ public class SoulsMod
         }
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModBlocks.GLOWING_MUSHROOM);
+
             event.accept(ModItems.BOTTLE);
 
             event.accept(ModItems.RAW_PLATINUM);
@@ -180,6 +181,7 @@ public class SoulsMod
             event.accept(ModItems.TOPAZ);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.GLOWING_MUSHROOM_BLOCK);
             event.accept(ModBlocks.PALLADIUM_ORE);
             event.accept(ModBlocks.TITANIUM_ORE);
             event.accept(ModBlocks.RUBY_ORE);

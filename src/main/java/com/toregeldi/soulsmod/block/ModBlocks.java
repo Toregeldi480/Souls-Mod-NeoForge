@@ -3,14 +3,11 @@ package com.toregeldi.soulsmod.block;
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.block.custom.*;
 import com.toregeldi.soulsmod.item.ModItems;
-import net.minecraft.client.model.Model;
+import com.toregeldi.soulsmod.worldgen.ModTreeFeatures;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -21,7 +18,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SoulsMod.MOD_ID);
 
-//    public static final DeferredBlock<Block> AUTOHAMMER = BLOCKS.register("autohammer",
+//    public static final DeferredBlock<Block> AUTOHAMMER = BLOCKS.registerBlock("autohammer",
 //            () -> new Autohammer(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)));
 
     public static final DeferredBlock<Block> MINT_BUSH = BLOCKS.register("mint_bush",
@@ -123,6 +120,19 @@ public class ModBlocks {
                             .destroyTime(1f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> GLOWING_MUSHROOM_BLOCK = registerBlock("glowing_mushroom_block",
+            () -> new HugeMushroomBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_MUSHROOM_BLOCK)
+                    .lightLevel(lightLevel -> 10)
+            ));
+
+    public static final DeferredBlock<Block> GLOWING_MUSHROOM = registerBlock("glowing_mushroom",
+            () -> new MushroomBlock(
+                    ModTreeFeatures.HUGE_SHROOMITE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_MUSHROOM)
+                            .lightLevel(lightLevel -> 10)
+            ));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

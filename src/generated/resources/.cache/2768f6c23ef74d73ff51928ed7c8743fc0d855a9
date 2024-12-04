@@ -1,7 +1,9 @@
-// 1.21	2024-11-27T21:22:40.029869795	Block States: soulsmod
+// 1.21	2024-12-04T20:10:04.869045183	Block States: soulsmod
 39a950f91d9fa803be72767ab56580a97d046945 assets/soulsmod/blockstates/blackberry_bush.json
 412296d5bb27e5224ada45f966bf97bbf65b7b37 assets/soulsmod/blockstates/blueberry_bush.json
 34af3e0be442a37bb32c934992d8f392e22c0736 assets/soulsmod/blockstates/chlorophyte_ore.json
+b7590a23b89b3768f856be124be87fd9237c9f6e assets/soulsmod/blockstates/glowing_mushroom.json
+47b8011a71673b198bffe8eeba216ec581945e0e assets/soulsmod/blockstates/glowing_mushroom_block.json
 081061237dcb79c647bf328f9d379876688fd79f assets/soulsmod/blockstates/mint_bush.json
 a90203984bc30aa59e718dce03b61f5b9e710d6c assets/soulsmod/blockstates/palladium_ore.json
 5e943850a7f29801ad562a6a095f44c0776a75e1 assets/soulsmod/blockstates/platinum_ore.json
@@ -20,6 +22,8 @@ cd69b74e9ff1bb59638f0e9236ab26fae10b8a60 assets/soulsmod/models/block/blackberry
 e7e61fee65695128efd096edb5737a3b613a1ad7 assets/soulsmod/models/block/blueberry_bush_stage2.json
 91f21aa097aad5c3991db45e6f6603f6461182b5 assets/soulsmod/models/block/blueberry_bush_stage3.json
 0745aa7e89cee2757b961a26e10c728293d0bbad assets/soulsmod/models/block/chlorophyte_ore.json
+8b8250464185a0bc15498ddb8f6628e21f282f15 assets/soulsmod/models/block/glowing_mushroom.json
+4d26f81e1ae3c0a53098aaca4c84e98f782ea044 assets/soulsmod/models/block/glowing_mushroom_block.json
 22f54e959575b25bd7136d7b19824bbfa7e2824f assets/soulsmod/models/block/mint_bush_stage0.json
 ed9714daa72a9f99bcfb27929140fa9ef2d4545c assets/soulsmod/models/block/mint_bush_stage1.json
 4a25097b071a462bb2ee34a3490961349a48c4ee assets/soulsmod/models/block/mint_bush_stage2.json
@@ -39,6 +43,8 @@ e5dd3c87e96342e2867d5577d52d89fab9aeb366 assets/soulsmod/models/block/strawberry
 4c66639e06fb0d7c6e32e57313e66a6d335f2c2b assets/soulsmod/models/block/titanium_ore.json
 0dfdf280bdc355b3b60c38aba5747e98ddc54657 assets/soulsmod/models/block/topaz_ore.json
 d8b0e193040771ca331e25e2f7f9c0f6d80b1c75 assets/soulsmod/models/item/chlorophyte_ore.json
+cff66f226f5bf829a326b7fe831d12a8c803b0a9 assets/soulsmod/models/item/glowing_mushroom.json
+efedeba8511c551849b794c4e8bea351f0af1d74 assets/soulsmod/models/item/glowing_mushroom_block.json
 5cfdc11ac7781b98758f3b6b8083acd8eaffa9ea assets/soulsmod/models/item/palladium_ore.json
 31ac124eabf8896025c5f5763559377cd05c3714 assets/soulsmod/models/item/platinum_ore.json
 952781dbf0d8aa1967406a3a7c747248ab76e409 assets/soulsmod/models/item/ruby_ore.json
