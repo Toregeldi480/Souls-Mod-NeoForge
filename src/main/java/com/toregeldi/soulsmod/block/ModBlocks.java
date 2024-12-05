@@ -3,12 +3,14 @@ package com.toregeldi.soulsmod.block;
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.block.custom.*;
 import com.toregeldi.soulsmod.item.ModItems;
-import com.toregeldi.soulsmod.worldgen.ModTreeFeatures;
+import com.toregeldi.soulsmod.worldgen.ModConfiguredFeatures;
+import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -129,7 +131,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> GLOWING_MUSHROOM = registerBlock("glowing_mushroom",
             () -> new MushroomBlock(
-                    ModTreeFeatures.HUGE_SHROOMITE,
+                    ModConfiguredFeatures.HUGE_GLOWING_MUSHROOM_KEY,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_MUSHROOM)
                             .lightLevel(lightLevel -> 10)
             ));

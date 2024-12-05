@@ -21,7 +21,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.GLOWING_MUSHROOM_BLOCK);
-        simpleBlockWithItem(ModBlocks.GLOWING_MUSHROOM.get(), models().cross("glowing_mushroom", ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "block/glowing_mushroom")));
+
 
         blockWithItem(ModBlocks.PLATINUM_ORE);
         blockWithItem(ModBlocks.CHLOROPHYTE_ORE);
@@ -34,6 +34,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 //        horizontalBlock(ModBlocks.AUTOHAMMER.get(), this.models().withExistingParent("autohammer", ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "block/autohammer")));
 
+        simpleBlockWithItem(ModBlocks.GLOWING_MUSHROOM.get(), models().cross("glowing_mushroom", ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "block/glowing_mushroom")).renderType("cutout"));
 
         createBush(((SweetBerryBushBlock) ModBlocks.MINT_BUSH.get()), "mint_bush_stage", "mint_bush_stage");
         createBush(((SweetBerryBushBlock) ModBlocks.BLACKBERRY_BUSH.get()), "blackberry_bush_stage", "blackberry_bush_stage");
