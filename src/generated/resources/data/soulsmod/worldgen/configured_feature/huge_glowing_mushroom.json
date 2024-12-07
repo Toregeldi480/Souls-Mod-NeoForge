@@ -10,7 +10,7 @@
     },
     "foliage_placer": {
       "type": "minecraft:dark_oak_foliage_placer",
-      "offset": 2,
+      "offset": 5,
       "radius": 10
     },
     "foliage_provider": {
@@ -30,16 +30,19 @@
     "force_dirt": false,
     "ignore_vines": false,
     "minimum_size": {
-      "type": "minecraft:two_layers_feature_size",
-      "limit": 1,
-      "lower_size": 5,
+      "type": "minecraft:three_layers_feature_size",
+      "limit": 0,
+      "lower_size": 10,
+      "middle_size": 10,
+      "min_clipped_height": 10,
+      "upper_limit": 1,
       "upper_size": 10
     },
     "trunk_placer": {
       "type": "minecraft:straight_trunk_placer",
       "base_height": 4,
-      "height_rand_a": 10,
-      "height_rand_b": 20
+      "height_rand_a": 4,
+      "height_rand_b": 4
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",

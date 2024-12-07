@@ -1,7 +1,6 @@
 package com.toregeldi.soulsmod.component;
 
 import com.toregeldi.soulsmod.SoulsMod;
-import com.toregeldi.soulsmod.item.custom.WayfinderItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponentType;
 import net.neoforged.bus.api.IEventBus;
