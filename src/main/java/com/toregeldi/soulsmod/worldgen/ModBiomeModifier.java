@@ -22,6 +22,8 @@ public class ModBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_SAPPHIRE_ORE = registryKey("add_sapphire_ore");
     public static final ResourceKey<BiomeModifier> ADD_TOPAZ_ORE = registryKey("add_topaz_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_GLOWING_MUSHROOM = registryKey("add_glowing_mushroom");
+
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
@@ -73,6 +75,28 @@ public class ModBiomeModifier {
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PLACED_TOPAZ_ORE_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
+        ));
+        context.register(ADD_GLOWING_MUSHROOM, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(
+                        biomes.getOrThrow(Biomes.FLOWER_FOREST),
+                        biomes.getOrThrow(Biomes.TAIGA),
+                        biomes.getOrThrow(Biomes.SNOWY_TAIGA),
+                        biomes.getOrThrow(Biomes.SNOWY_PLAINS),
+                        biomes.getOrThrow(Biomes.DARK_FOREST),
+                        biomes.getOrThrow(Biomes.OLD_GROWTH_BIRCH_FOREST),
+                        biomes.getOrThrow(Biomes.WINDSWEPT_FOREST),
+                        biomes.getOrThrow(Biomes.WARPED_FOREST),
+                        biomes.getOrThrow(Biomes.BIRCH_FOREST),
+                        biomes.getOrThrow(Biomes.JUNGLE),
+                        biomes.getOrThrow(Biomes.SPARSE_JUNGLE),
+                        biomes.getOrThrow(Biomes.BAMBOO_JUNGLE),
+                        biomes.getOrThrow(Biomes.FOREST),
+                        biomes.getOrThrow(Biomes.MUSHROOM_FIELDS),
+                        biomes.getOrThrow(Biomes.PLAINS),
+                        biomes.getOrThrow(Biomes.SNOWY_PLAINS),
+                        biomes.getOrThrow(Biomes.SUNFLOWER_PLAINS)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PLACED_HUGE_GLOWING_MUSHROOM)),
+                GenerationStep.Decoration.VEGETAL_DECORATION
         ));
     }
 

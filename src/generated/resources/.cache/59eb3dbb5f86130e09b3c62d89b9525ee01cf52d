@@ -1,11 +1,11 @@
-// 1.21	2024-12-04T20:15:10.760196613	Loot Tables
+// 1.21	2024-12-08T00:32:29.377969688	Loot Tables
 5789783dea1fb1df5c8f29b6696fde0a1e293e51 data/soulsmod/loot_table/blocks/blackberry_bush.json
 a86594fadbb4a738a7113e2f5df838713b5ea4fc data/soulsmod/loot_table/blocks/blueberry_bush.json
 0717560588a181c8dfe844293ba3ffb3247625f6 data/soulsmod/loot_table/blocks/chlorophyte_ore.json
-f5ffd6461e39d726fc8a011aba39e9fb9f6a7942 data/soulsmod/loot_table/blocks/glowing_mushroom.json
-67a9bf0d2f58e1e396a9f70495d1103d02bb6edc data/soulsmod/loot_table/blocks/glowing_mushroom_block.json
+5d3f8134536f56eec8ddbb33107a9d47c450ece1 data/soulsmod/loot_table/blocks/glowing_mushroom_block.json
 5d822d05dfcd7334f45df0de44a0aab6d7c39508 data/soulsmod/loot_table/blocks/mint_bush.json
 ab274a90bee634726eb10d205d93d7eab5db581f data/soulsmod/loot_table/blocks/palladium_ore.json
+aaea63f596e0ec3f17f8d39e5851a9febbca134a data/soulsmod/loot_table/blocks/planted_glowing_mushroom.json
 44709b2120f0c7397c39a5375731d76712ab052c data/soulsmod/loot_table/blocks/platinum_ore.json
 c054f6f61fd105c1165934f4f7d74e708b127e7e data/soulsmod/loot_table/blocks/raspberry_bush.json
 d059a2522488e91e908a157aa38ac7ddd9f69179 data/soulsmod/loot_table/blocks/ruby_ore.json

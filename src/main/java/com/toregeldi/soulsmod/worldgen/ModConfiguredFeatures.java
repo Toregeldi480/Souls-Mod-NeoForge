@@ -2,23 +2,18 @@ package com.toregeldi.soulsmod.worldgen;
 
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.block.ModBlocks;
-import com.toregeldi.soulsmod.worldgen.features.HugeGlowingMushroomFoliagePlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.HugeMushroomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
-import net.minecraft.world.level.levelgen.feature.featuresize.ThreeLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
@@ -34,7 +29,6 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_TOPAZ_ORE_KEY = registerKey("topaz_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HUGE_GLOWING_MUSHROOM_KEY = registerKey("huge_glowing_mushroom");
-
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -77,13 +71,11 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres, 5));
         register(context, OVERWORLD_TOPAZ_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTopazOres, 5));
 
-        register(context, HUGE_GLOWING_MUSHROOM_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(Blocks.MUSHROOM_STEM),
-                new StraightTrunkPlacer(4, 4, 4),
+        register(context, HUGE_GLOWING_MUSHROOM_KEY, Feature.HUGE_RED_MUSHROOM, new HugeMushroomFeatureConfiguration(
                 BlockStateProvider.simple(ModBlocks.GLOWING_MUSHROOM_BLOCK.get()),
-                new HugeGlowingMushroomFoliagePlacer(ConstantInt.of(11),ConstantInt.of(19)),
-                new TwoLayersFeatureSize(0, 0, 0)
-        ).build());
+                BlockStateProvider.simple(Blocks.MUSHROOM_STEM),
+                2
+        ));
     }
 
     private static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

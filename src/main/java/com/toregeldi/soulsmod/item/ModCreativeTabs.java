@@ -65,7 +65,7 @@ public class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModItems.RUBY_APPLE.get()))
                     .title(Component.translatable("creativetab.soulsmod.foods"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.GLOWING_MUSHROOM);
+                        output.accept(ModItems.GLOWING_MUSHROOM);
 
                         output.accept(ModItems.BOTTLE);
 

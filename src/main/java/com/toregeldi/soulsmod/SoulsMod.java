@@ -154,7 +154,7 @@ public class SoulsMod
         }
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModBlocks.GLOWING_MUSHROOM);
+            event.accept(ModItems.GLOWING_MUSHROOM);
 
             event.accept(ModItems.BOTTLE);
 

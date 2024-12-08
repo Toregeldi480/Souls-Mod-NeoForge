@@ -32,6 +32,19 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STRAWBERRY_BUSH = BLOCKS.register("strawberry_bush",
             () -> new StrawberryBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
+    public static final DeferredBlock<Block> GLOWING_MUSHROOM_BLOCK = registerBlock("glowing_mushroom_block",
+            () -> new HugeMushroomBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.RED_MUSHROOM_BLOCK)
+                            .lightLevel(lightLevel -> 10)
+            ));
+
+    public static final DeferredBlock<Block> PLANTED_GLOWING_MUSHROOM = registerBlock("planted_glowing_mushroom",
+            () -> new MushroomBlock(
+                    ModConfiguredFeatures.HUGE_GLOWING_MUSHROOM_KEY,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.RED_MUSHROOM)
+                            .lightLevel(lightLevel -> 10)
+            ));
+
     public static final DeferredBlock<Block> PLATINUM_ORE = registerBlock("platinum_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of()
@@ -120,19 +133,6 @@ public class ModBlocks {
                             .destroyTime(1f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.AMETHYST)));
-
-    public static final DeferredBlock<Block> GLOWING_MUSHROOM_BLOCK = registerBlock("glowing_mushroom_block",
-            () -> new HugeMushroomBlock(
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_MUSHROOM_BLOCK)
-                    .lightLevel(lightLevel -> 10)
-            ));
-
-    public static final DeferredBlock<Block> GLOWING_MUSHROOM = registerBlock("glowing_mushroom",
-            () -> new MushroomBlock(
-                    ModConfiguredFeatures.HUGE_GLOWING_MUSHROOM_KEY,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_MUSHROOM)
-                            .lightLevel(lightLevel -> 10)
-            ));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

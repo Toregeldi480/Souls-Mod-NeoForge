@@ -1,0 +1,24 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:flower_forest",
+    "minecraft:taiga",
+    "minecraft:snowy_taiga",
+    "minecraft:snowy_plains",
+    "minecraft:dark_forest",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:windswept_forest",
+    "minecraft:warped_forest",
+    "minecraft:birch_forest",
+    "minecraft:jungle",
+    "minecraft:sparse_jungle",
+    "minecraft:bamboo_jungle",
+    "minecraft:forest",
+    "minecraft:mushroom_fields",
+    "minecraft:plains",
+    "minecraft:snowy_plains",
+    "minecraft:sunflower_plains"
+  ],
+  "features": "soulsmod:placed_huge_glowing_mushroom",
+  "step": "vegetal_decoration"
+}

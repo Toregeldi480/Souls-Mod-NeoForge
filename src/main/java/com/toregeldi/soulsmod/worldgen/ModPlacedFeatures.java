@@ -1,9 +1,12 @@
 package com.toregeldi.soulsmod.worldgen;
 
 import com.toregeldi.soulsmod.SoulsMod;
+import com.toregeldi.soulsmod.block.ModBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
@@ -22,6 +25,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PLACED_RUBY_ORE_KEY = registerKey("placed_ruby_ore");
     public static final ResourceKey<PlacedFeature> PLACED_SAPPHIRE_ORE_KEY = registerKey("placed_sapphire_ore");
     public static final ResourceKey<PlacedFeature> PLACED_TOPAZ_ORE_KEY = registerKey("placed_topaz_ore");
+
+    public static final ResourceKey<PlacedFeature> PLACED_HUGE_GLOWING_MUSHROOM = registerKey("placed_huge_glowing_mushroom");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -46,6 +51,10 @@ public class ModPlacedFeatures {
 
         register(context, PLACED_TOPAZ_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TOPAZ_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(30, HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(400))));
+
+        register(context, PLACED_HUGE_GLOWING_MUSHROOM, configuredFeatures.getOrThrow(ModConfiguredFeatures.HUGE_GLOWING_MUSHROOM_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.2f, 2),
+                        ModBlocks.PLANTED_GLOWING_MUSHROOM.get()));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {
