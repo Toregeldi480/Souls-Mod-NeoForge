@@ -1,4 +1,4 @@
-package com.toregeldi.soulsmod.worldgen.features;
+package com.toregeldi.soulsmod.worldgen.feature;
 
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;

@@ -1,9 +1,8 @@
-package com.toregeldi.soulsmod.worldgen.features;
+package com.toregeldi.soulsmod.worldgen.feature;
 
 import com.toregeldi.soulsmod.SoulsMod;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.HugeMushroomFeatureConfiguration;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 

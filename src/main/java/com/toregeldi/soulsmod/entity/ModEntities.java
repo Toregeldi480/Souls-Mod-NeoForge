@@ -12,8 +12,8 @@ import java.util.function.Supplier;
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> MOD_ENTITIES = DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, SoulsMod.MOD_ID);
 
-    public static final Supplier<EntityType<GhostEntity>> GHOST_ENTITY = MOD_ENTITIES.register("ghost_entity",
-            () -> EntityType.Builder.of(GhostEntity::new, MobCategory.MONSTER).build("ghost_entity"));
+    public static final Supplier<EntityType<GhostEntity>> GHOST = MOD_ENTITIES.register("ghost",
+            () -> EntityType.Builder.of(GhostEntity::new, MobCategory.MONSTER).sized(0.75f, 1).build("ghost"));
 
     public void register(IEventBus eventBus) {
         MOD_ENTITIES.register(eventBus);
