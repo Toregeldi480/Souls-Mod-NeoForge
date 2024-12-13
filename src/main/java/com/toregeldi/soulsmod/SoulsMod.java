@@ -43,6 +43,7 @@ public class SoulsMod
         ModPotions.register(modEventBus);
         ModEffects.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.MOD_ENTITIES.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
 
