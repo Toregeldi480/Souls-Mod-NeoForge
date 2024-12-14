@@ -12,7 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 
 public class GhostEntityModel <T extends Entity> extends EntityModel<T> {
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "ghost_entity_model"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "ghost"), "main");
 	private final ModelPart body;
 	private final ModelPart head;
 	private final ModelPart right_arm;

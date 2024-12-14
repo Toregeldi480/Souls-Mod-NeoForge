@@ -1,7 +1,6 @@
 package com.toregeldi.soulsmod.entity;
 
 import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -29,7 +28,6 @@ public class GhostEntity extends Monster {
     public void tick() {
         super.tick();
         this.noPhysics = true;
-        this.setNoGravity(true);
     }
 
     @Override
@@ -44,6 +42,7 @@ public class GhostEntity extends Monster {
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
                 .add(Attributes.ATTACK_DAMAGE, 5.5f)
+                .add(Attributes.MAX_HEALTH, 10)
                 .add(Attributes.MOVEMENT_SPEED, 0.5f)
                 .add(Attributes.FOLLOW_RANGE, 50)
                 .add(Attributes.ATTACK_SPEED, 1f);

@@ -4,8 +4,8 @@ import com.mojang.logging.LogUtils;
 import com.toregeldi.soulsmod.block.ModBlocks;
 import com.toregeldi.soulsmod.component.ModDataComponents;
 import com.toregeldi.soulsmod.effect.ModEffects;
-import com.toregeldi.soulsmod.entity.GhostEntity;
 import com.toregeldi.soulsmod.entity.ModEntities;
+import com.toregeldi.soulsmod.entity.client.ModEntityRenderers;
 import com.toregeldi.soulsmod.item.ModCreativeTabs;
 import com.toregeldi.soulsmod.item.ModItems;
 import com.toregeldi.soulsmod.potion.ModPotions;
@@ -20,6 +20,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
@@ -44,6 +45,7 @@ public class SoulsMod
         ModEffects.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.MOD_ENTITIES.register(modEventBus);
+//        ModEntityRenderers.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
 
@@ -200,11 +202,6 @@ public class SoulsMod
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
-        @SubscribeEvent
-        public static void registerKeys(RegisterKeyMappingsEvent event) {
-
-        }
-
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {

@@ -144,7 +144,7 @@
   "block.soulsmod.sapphire_ore": "Block of Sapphire Ore",
   "block.soulsmod.topaz_ore": "Block of Topaz Ore",
 
-  "entity.soulsmod.ghost_entity": "Ghost",
+  "entity.soulsmod.ghost": "Ghost",
 
   "creativetab.soulsmod.fossil_items": "Fossil Items",
   "creativetab.soulsmod.fossil_blocks": "Fossil Blocks",
