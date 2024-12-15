@@ -14,7 +14,7 @@ public class ModEntities {
     public static final DeferredRegister<EntityType<?>> MOD_ENTITIES = DeferredRegister.create(BuiltInRegistries.ENTITY_TYPE, SoulsMod.MOD_ID);
 
     public static final Supplier<EntityType<GhostEntity>> GHOST = MOD_ENTITIES.register("ghost",
-            () -> EntityType.Builder.of(GhostEntity::new, MobCategory.MONSTER).sized(0.75f, 1).build(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "ghost").toString()));
+            () -> EntityType.Builder.of(GhostEntity::new, MobCategory.MONSTER).sized(0.75f, 2f).build(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "ghost").toString()));
 
     public void register(IEventBus eventBus) {
         MOD_ENTITIES.register(eventBus);
