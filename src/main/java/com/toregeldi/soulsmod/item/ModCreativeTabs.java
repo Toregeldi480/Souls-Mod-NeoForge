@@ -15,10 +15,10 @@ import java.util.function.Supplier;
 public class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SoulsMod.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> FOSSIL_ITEMS_TAB = CREATIVE_MODE_TAB.register("fossil_items_tab",
+    public static final Supplier<CreativeModeTab> ITEMS_TAB = CREATIVE_MODE_TAB.register("items_tab",
             () ->  CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.PLATINUM_INGOT.get()))
-                    .title(Component.translatable("creativetab.soulsmod.fossil_items"))
+                    .title(Component.translatable("creativetab.soulsmod.items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RAW_PLATINUM);
                         output.accept(ModItems.RAW_HELLSTONE);
@@ -41,11 +41,11 @@ public class ModCreativeTabs {
                         output.accept(ModItems.TOPAZ);
                     }).build());
 
-    public static final Supplier<CreativeModeTab> FOSSIL_BLOCKS_TAB = CREATIVE_MODE_TAB.register("fossil_blocks_tab",
+    public static final Supplier<CreativeModeTab> BLOCKS_TAB = CREATIVE_MODE_TAB.register("blocks_tab",
             () ->  CreativeModeTab.builder()
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "fossil_items_tab"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "items_tab"))
                     .icon(() -> new ItemStack(ModBlocks.RUBY_ORE.get()))
-                    .title(Component.translatable("creativetab.soulsmod.fossil_blocks"))
+                    .title(Component.translatable("creativetab.soulsmod.blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.GLOWING_MUSHROOM_BLOCK);
 
@@ -61,7 +61,7 @@ public class ModCreativeTabs {
 
     public static final Supplier<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TAB.register("foods_tab",
             () -> CreativeModeTab.builder()
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "fossil_blocks_tab"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "blocks_tab"))
                     .icon(() -> new ItemStack(ModItems.RUBY_APPLE.get()))
                     .title(Component.translatable("creativetab.soulsmod.foods"))
                     .displayItems((itemDisplayParameters, output) -> {

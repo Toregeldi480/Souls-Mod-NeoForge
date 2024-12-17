@@ -35,7 +35,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.LEMON)));
 
     public static final DeferredItem<Item> GLOWING_MUSHROOM = ITEMS.register("glowing_mushroom",
-            () -> new BlockItem(ModBlocks.PLANTED_GLOWING_MUSHROOM.get(), new Item.Properties()));
+            () -> new BlockItem(ModBlocks.GLOWING_MUSHROOM.get(), new Item.Properties()));
 
     public static final DeferredItem<Item> BLACKBERRY_JUICE = ITEMS.register("blackberry_juice",
             () -> new DrinkItem(new Item.Properties()

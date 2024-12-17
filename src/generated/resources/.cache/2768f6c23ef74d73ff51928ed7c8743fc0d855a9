@@ -1,11 +1,11 @@
-// 1.21	2024-12-08T00:32:29.379368993	Block States: soulsmod
+// 1.21	2024-12-17T21:26:40.565320676	Block States: soulsmod
 39a950f91d9fa803be72767ab56580a97d046945 assets/soulsmod/blockstates/blackberry_bush.json
 412296d5bb27e5224ada45f966bf97bbf65b7b37 assets/soulsmod/blockstates/blueberry_bush.json
 34af3e0be442a37bb32c934992d8f392e22c0736 assets/soulsmod/blockstates/chlorophyte_ore.json
+b7590a23b89b3768f856be124be87fd9237c9f6e assets/soulsmod/blockstates/glowing_mushroom.json
 47b8011a71673b198bffe8eeba216ec581945e0e assets/soulsmod/blockstates/glowing_mushroom_block.json
 081061237dcb79c647bf328f9d379876688fd79f assets/soulsmod/blockstates/mint_bush.json
 a90203984bc30aa59e718dce03b61f5b9e710d6c assets/soulsmod/blockstates/palladium_ore.json
-b7590a23b89b3768f856be124be87fd9237c9f6e assets/soulsmod/blockstates/planted_glowing_mushroom.json
 5e943850a7f29801ad562a6a095f44c0776a75e1 assets/soulsmod/blockstates/platinum_ore.json
 f7dd31f5d6b2253ecb7261d567649aa1431a7444 assets/soulsmod/blockstates/raspberry_bush.json
 6928f1f691ffe15b292602e0d1eea94d13253d5e assets/soulsmod/blockstates/ruby_ore.json
@@ -43,9 +43,9 @@ e5dd3c87e96342e2867d5577d52d89fab9aeb366 assets/soulsmod/models/block/strawberry
 4c66639e06fb0d7c6e32e57313e66a6d335f2c2b assets/soulsmod/models/block/titanium_ore.json
 0dfdf280bdc355b3b60c38aba5747e98ddc54657 assets/soulsmod/models/block/topaz_ore.json
 d8b0e193040771ca331e25e2f7f9c0f6d80b1c75 assets/soulsmod/models/item/chlorophyte_ore.json
+cff66f226f5bf829a326b7fe831d12a8c803b0a9 assets/soulsmod/models/item/glowing_mushroom.json
 efedeba8511c551849b794c4e8bea351f0af1d74 assets/soulsmod/models/item/glowing_mushroom_block.json
 5cfdc11ac7781b98758f3b6b8083acd8eaffa9ea assets/soulsmod/models/item/palladium_ore.json
-cff66f226f5bf829a326b7fe831d12a8c803b0a9 assets/soulsmod/models/item/planted_glowing_mushroom.json
 31ac124eabf8896025c5f5763559377cd05c3714 assets/soulsmod/models/item/platinum_ore.json
 952781dbf0d8aa1967406a3a7c747248ab76e409 assets/soulsmod/models/item/ruby_ore.json
 1f5b5604183cd1b5d1fe4a0c62a12ce06d679d0f assets/soulsmod/models/item/sapphire_ore.json

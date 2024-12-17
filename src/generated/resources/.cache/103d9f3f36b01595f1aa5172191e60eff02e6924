@@ -1,4 +1,4 @@
-// 1.21	2024-12-08T18:14:55.501377748	Registries
+// 1.21	2024-12-17T21:26:40.564929607	Registries
 c0ba686f2bb2aa52b219071912be50564e74fda8 data/soulsmod/neoforge/biome_modifier/add_chlorophyte_ore.json
 1bf7361c5c987dc1eff915f0d94476a80c0790e1 data/soulsmod/neoforge/biome_modifier/add_glowing_mushroom.json
 f819b71320b9eacdf6ed39099c4d3eee9c5fcf39 data/soulsmod/neoforge/biome_modifier/add_palladium_ore.json
@@ -16,7 +16,7 @@ e4c20be0132e8e6bc064decbb75770a0d15c8075 data/soulsmod/worldgen/configured_featu
 237c9b20e9b6c20663c0179bf4553af545102e4c data/soulsmod/worldgen/configured_feature/titanium_ore.json
 599049ca28248b9cd0f639d9916aec5049ec57c4 data/soulsmod/worldgen/configured_feature/topaz_ore.json
 01aa1e164b4b1c27f6ad247b74bf61952813c650 data/soulsmod/worldgen/placed_feature/placed_chlorophyte_ore.json
-2a04ffaa10db8593e91eaa62f8a6a53938a9bae5 data/soulsmod/worldgen/placed_feature/placed_huge_glowing_mushroom.json
+576ee363939bb9aa5968ca1fe24678069343cf54 data/soulsmod/worldgen/placed_feature/placed_huge_glowing_mushroom.json
 a3c706b895c0a8fdd736ff01b17be1ed118f437b data/soulsmod/worldgen/placed_feature/placed_palladium_ore.json
 bda5a6f5e5edb963248b87f1935398b2fa0f0644 data/soulsmod/worldgen/placed_feature/placed_platinum_ore.json
 ab757192d7aa3a593cbcf28244b029044a0b1e12 data/soulsmod/worldgen/placed_feature/placed_ruby_ore.json

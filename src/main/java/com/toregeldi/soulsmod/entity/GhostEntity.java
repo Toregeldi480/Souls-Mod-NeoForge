@@ -18,6 +18,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import org.jetbrains.annotations.Nullable;
 
+
 public class GhostEntity extends Vex {
     public GhostEntity(EntityType<? extends Vex> entityType, Level level) {
         super(entityType, level);

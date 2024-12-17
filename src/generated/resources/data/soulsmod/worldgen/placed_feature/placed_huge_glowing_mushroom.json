@@ -36,7 +36,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "soulsmod:planted_glowing_mushroom"
+          "Name": "soulsmod:glowing_mushroom"
         }
       }
     }

@@ -46,10 +46,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.TOPAZ_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.TOPAZ_ORE.get(), ModItems.TOPAZ.get(), 2, 5));
 
-        dropSelf(ModBlocks.PLANTED_GLOWING_MUSHROOM.get());
+        dropSelf(ModBlocks.GLOWING_MUSHROOM.get());
 
         add(ModBlocks.GLOWING_MUSHROOM_BLOCK.get(),
-                block -> createMushroomBlockDrop(ModBlocks.GLOWING_MUSHROOM_BLOCK.get(), ModBlocks.PLANTED_GLOWING_MUSHROOM.get()));
+                block -> createMushroomBlockDrop(ModBlocks.GLOWING_MUSHROOM_BLOCK.get(), ModBlocks.GLOWING_MUSHROOM.get()));
 
 //        dropSelf(ModBlocks.AUTOHAMMER.get());
 

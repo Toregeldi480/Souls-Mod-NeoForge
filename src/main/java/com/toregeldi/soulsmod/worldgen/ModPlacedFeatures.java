@@ -54,7 +54,7 @@ public class ModPlacedFeatures {
 
         register(context, PLACED_HUGE_GLOWING_MUSHROOM, configuredFeatures.getOrThrow(ModConfiguredFeatures.HUGE_GLOWING_MUSHROOM_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
-                        ModBlocks.PLANTED_GLOWING_MUSHROOM.get()));
+                        ModBlocks.GLOWING_MUSHROOM.get()));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

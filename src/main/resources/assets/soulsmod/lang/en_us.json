@@ -146,8 +146,8 @@
 
   "entity.soulsmod.ghost": "Ghost",
 
-  "creativetab.soulsmod.fossil_items": "Fossil Items",
-  "creativetab.soulsmod.fossil_blocks": "Fossil Blocks",
+  "creativetab.soulsmod.items": "Items",
+  "creativetab.soulsmod.blocks": "Blocks",
   "creativetab.soulsmod.potions": "Potions",
   "creativetab.soulsmod.foods": "Foods",
   "creativetab.soulsmod.combat": "Combat",

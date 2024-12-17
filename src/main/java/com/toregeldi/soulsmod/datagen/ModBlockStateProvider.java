@@ -21,7 +21,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.GLOWING_MUSHROOM_BLOCK);
-        simpleBlockWithItem(ModBlocks.PLANTED_GLOWING_MUSHROOM.get(), models().cross("glowing_mushroom", ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "block/glowing_mushroom")).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.GLOWING_MUSHROOM.get(), models().cross("glowing_mushroom", ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "block/glowing_mushroom")).renderType("cutout"));
 
         blockWithItem(ModBlocks.PLATINUM_ORE);
         blockWithItem(ModBlocks.CHLOROPHYTE_ORE);
