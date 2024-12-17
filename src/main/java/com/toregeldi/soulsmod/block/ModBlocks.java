@@ -38,7 +38,7 @@ public class ModBlocks {
                             .lightLevel(lightLevel -> 10)
             ));
 
-    public static final DeferredBlock<Block> GLOWING_MUSHROOM = registerBlock("glowing_mushroom",
+    public static final DeferredBlock<Block> GLOWING_MUSHROOM = BLOCKS.register("glowing_mushroom",
             () -> new MushroomBlock(
                     ModConfiguredFeatures.HUGE_GLOWING_MUSHROOM_KEY,
                     BlockBehaviour.Properties.ofFullCopy(Blocks.RED_MUSHROOM)
