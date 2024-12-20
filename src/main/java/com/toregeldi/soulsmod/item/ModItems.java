@@ -14,7 +14,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SoulsMod.MOD_ID);
 
-    public static final DeferredItem<Item> GHOST_SPAWN_EGG = ITEMS.register("ghost_spawn_egg",
+    public static final DeferredItem<SpawnEggItem> GHOST_SPAWN_EGG = ITEMS.register("ghost_spawn_egg",
             () -> new SpawnEggItem(ModEntities.GHOST.get(), 0x000000, 0xffffff, new Item.Properties()));
 
     public static final DeferredItem<Item> WAYFINDER =  ITEMS.register("wayfinder",
