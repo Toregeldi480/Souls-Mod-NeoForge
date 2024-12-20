@@ -2,6 +2,7 @@ package com.toregeldi.soulsmod.item;
 
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.block.ModBlocks;
+import com.toregeldi.soulsmod.entity.ModEntities;
 import com.toregeldi.soulsmod.item.custom.DrinkItem;
 import com.toregeldi.soulsmod.item.custom.ModArmorItem;
 import com.toregeldi.soulsmod.item.custom.WayfinderItem;
@@ -12,6 +13,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SoulsMod.MOD_ID);
+
+    public static final DeferredItem<Item> GHOST_SPAWN_EGG = ITEMS.register("ghost_spawn_egg",
+            () -> new SpawnEggItem(ModEntities.GHOST.get(), 0x000000, 0xffffff, new Item.Properties()));
 
     public static final DeferredItem<Item> WAYFINDER =  ITEMS.register("wayfinder",
             () -> new WayfinderItem(new Item.Properties()));

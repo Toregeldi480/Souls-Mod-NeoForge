@@ -187,6 +187,16 @@ public class ModCreativeTabs {
                     })
                     .build());
 
+    public static final Supplier<CreativeModeTab> SPAWN_EGGS_TAB = CREATIVE_MODE_TAB.register("spawn_eggs_tab",
+            () -> CreativeModeTab.builder()
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "tools_tab"))
+                    .icon(() -> new ItemStack(ModItems.GHOST_SPAWN_EGG.get()))
+                    .title(Component.translatable("creativetab.soulsmod.spawn_eggs"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.GHOST_SPAWN_EGG);
+                    })
+                    .build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }
