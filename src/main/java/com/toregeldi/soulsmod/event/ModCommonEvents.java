@@ -3,7 +3,6 @@ package com.toregeldi.soulsmod.event;
 import com.toregeldi.soulsmod.SoulsMod;
 import com.toregeldi.soulsmod.entity.GhostEntity;
 import com.toregeldi.soulsmod.entity.ModEntities;
-import net.minecraft.world.entity.SpawnPlacementType;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.levelgen.Heightmap;

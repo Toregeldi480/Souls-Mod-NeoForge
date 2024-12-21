@@ -22,6 +22,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        withExistingParent(ModItems.GHOST_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
         basicItem(ModItems.BOTTLE.get());
 
         basicItem(ModItems.RAW_PLATINUM.get());

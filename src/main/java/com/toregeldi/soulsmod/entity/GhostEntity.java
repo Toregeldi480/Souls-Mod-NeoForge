@@ -44,6 +44,11 @@ public class GhostEntity extends Vex {
         this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
     }
 
+    @Override
+    public void tick() {
+        super.tick();
+    }
+
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
                 .add(Attributes.MOVEMENT_SPEED, 10)
