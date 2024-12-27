@@ -51,8 +51,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.GLOWING_MUSHROOM_BLOCK.get(),
                 block -> createMushroomBlockDrop(ModBlocks.GLOWING_MUSHROOM_BLOCK.get(), ModBlocks.GLOWING_MUSHROOM.get()));
 
-//        dropSelf(ModBlocks.AUTOHAMMER.get());
-
         createBushDrop(ModBlocks.MINT_BUSH.get(), ModItems.MINT.get());
         createBushDrop(ModBlocks.BLACKBERRY_BUSH.get(), ModItems.BLACKBERRY.get());
         createBushDrop(ModBlocks.BLUEBERRY_BUSH.get(), ModItems.BLACKBERRY.get());

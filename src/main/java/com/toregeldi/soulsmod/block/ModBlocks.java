@@ -18,9 +18,6 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SoulsMod.MOD_ID);
 
-//    public static final DeferredBlock<Block> AUTOHAMMER = BLOCKS.registerBlock("autohammer",
-//            () -> new Autohammer(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)));
-
     public static final DeferredBlock<Block> MINT_BUSH = BLOCKS.register("mint_bush",
             () -> new MintBush(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
     public static final DeferredBlock<Block> BLACKBERRY_BUSH = BLOCKS.register("blackberry_bush",

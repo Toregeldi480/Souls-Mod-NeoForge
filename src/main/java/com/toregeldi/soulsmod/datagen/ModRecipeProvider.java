@@ -26,6 +26,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> TITANIUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM, ModBlocks.TITANIUM_ORE);
         List<ItemLike> CHLOROPHYTE_SMELTABLES = List.of(ModItems.RAW_CHLOROPHYTE, ModBlocks.CHLOROPHYTE_ORE);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GLOWING_MUSHROOM_BLOCK)
+                .requires(ModItems.GLOWING_MUSHROOM, 9)
+                .unlockedBy("has_glowing_mushroom", has(ModItems.GLOWING_MUSHROOM)).save(output);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.ESTUS_FLASK)
                 .requires(ModItems.BOTTLE, 1)
                 .requires(Items.GOLD_NUGGET, 1)
